@@ -1,7 +1,17 @@
 h1 {
-    padding: 10%;
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: brown;
+  padding: 3%;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: brown;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid brown;
+  padding: 2px;
+  display: block;
+  margin: auto;
 }
