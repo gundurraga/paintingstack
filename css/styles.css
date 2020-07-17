@@ -1,17 +1,41 @@
-h1 {
-  padding: 3%;
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("/paintingstack/images/Malevich.jpg");
+  background-position: top;
+  background-repeat: repeat-y;
+  background-size: cover;
   text-align: center;
-  font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: brown;
+}
+
+h1 {
+  font-size: 0.8rem;
+  padding: 1rem;
+  color: rgba(107, 43, 43, 0.9);
+}
+
+h3 {
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  color: rgba(40, 40, 136, 0.9);
 }
 
 img {
   max-width: 50%;
   height: auto;
-  border-radius: 10px;
-  border: 5px solid brown;
-  padding: 2px;
   display: block;
   margin: auto;
+}
+
+img.frame {
+  border-image: url("/paintingstack/images/frame.png") 127 129;
+  border-color: #f4be52;
+  border-style: inset;
+  border-width: 1rem;
+  display: block;
+  border-width: auto;
+  height: auto;
 }
