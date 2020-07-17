@@ -3,9 +3,8 @@ body {
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
-    url("images/Malevich.jpg");
+    url("images/Malevich.png");
   background-position: top;
-  background-repeat: repeat-y;
   background-size: cover;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,8 +30,8 @@ img {
 }
 
 img.frame {
-  border-image: url("/images/frame.png") 127 129;
   border-color: #f4be52;
+  border-image: url("images/frame.png") 127 129 127 129;
   border-style: inset;
   border-width: 1rem;
   display: block;
