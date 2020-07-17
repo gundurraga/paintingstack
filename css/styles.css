@@ -3,7 +3,7 @@ body {
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
-    url("/paintingstack/images/Malevich.jpg");
+    url("images/Malevich.jpg");
   background-position: top;
   background-repeat: repeat-y;
   background-size: cover;
@@ -31,7 +31,7 @@ img {
 }
 
 img.frame {
-  border-image: url("/paintingstack/images/frame.png") 127 129;
+  border-image: url("/images/frame.png") 127 129;
   border-color: #f4be52;
   border-style: inset;
   border-width: 1rem;
