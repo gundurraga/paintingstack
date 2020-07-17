@@ -37,4 +37,6 @@ img.frame {
   display: block;
   border-width: auto;
   height: auto;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  box-shadow: ;
 }
