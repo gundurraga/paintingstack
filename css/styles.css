@@ -1,7 +1,7 @@
 body {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
     ),
     url("../images/Malevich.png");
   background-position: top;
@@ -37,6 +37,5 @@ img.frame {
   display: block;
   border-width: auto;
   height: auto;
-  box-shadow: 5px 5px 5px #aaaaaa;
-  box-shadow: ;
+  box-shadow: 0.2rem 0.2rem 5px #aaaaaa;
 }
