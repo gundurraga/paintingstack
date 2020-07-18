@@ -1,28 +1,23 @@
 body {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
     ),
-    url("../images/Malevich.png");
+    url("../images/brick-wall.png");
   background-position: top;
-  background-size: cover;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
-  font-size: 0.8rem;
-  padding: 1rem;
-  color: rgba(107, 43, 43, 0.9);
-}
-
 h3 {
   font-size: 0.6rem;
+  font-style: italic;
   padding: 0.5rem;
   color: rgba(40, 40, 136, 0.9);
 }
 
 img {
+  position: relative;
   max-width: 50%;
   height: auto;
   display: block;
@@ -30,12 +25,14 @@ img {
 }
 
 img.frame {
+  position: relative;
   border-image: url("../images/frame.png") 127 129 127 129;
   border-color: #f4be52;
   border-style: inset;
-  border-width: 1rem;
   display: block;
-  border-width: auto;
+  border-width: 1rem;
   height: auto;
-  box-shadow: 0.2rem 0.2rem 5px #aaaaaa;
+  box-shadow: 0 0 0.3rem rgb(9, 9, 155);
+  -webkit-box-shadow: 0 0 0.3rem rgb(9, 9, 155);
+  -moz-box-shadow: 0 0 0.3rem rgb(9, 9, 155);
 }
