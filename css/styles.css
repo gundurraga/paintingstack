@@ -12,27 +12,28 @@ body {
 h3 {
   font-size: 0.6rem;
   font-style: italic;
-  padding: 0.5rem;
   color: rgba(40, 40, 136, 0.9);
+  margin: 6.7vh;
 }
 
 img {
   position: relative;
-  max-width: 50%;
-  height: auto;
+  max-height: 67vh;
+  max-width: 67vw;
   display: block;
   margin: auto;
+  margin-top: 6.7vh;
 }
 
 img.frame {
   position: relative;
   border-image: url("../images/frame.png") 127 129 127 129;
   border-color: #f4be52;
-  border-style: inset;
-  display: block;
+  border-style:inset;
   border-width: 1rem;
   height: auto;
-  box-shadow: 0 0 0.3rem rgb(9, 9, 155);
-  -webkit-box-shadow: 0 0 0.3rem rgb(9, 9, 155);
-  -moz-box-shadow: 0 0 0.3rem rgb(9, 9, 155);
+  box-shadow: 0 0 0.3rem brown;
+  -webkit-box-shadow: 0 0 0.3rem brown;
+  -moz-box-shadow: 0 0 0.3rem brown;
 }
+
