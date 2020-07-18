@@ -19,21 +19,33 @@ h3 {
 img {
   position: relative;
   max-height: 67vh;
-  max-width: 67vw;
+  max-width: 78vw;
   display: block;
   margin: auto;
   margin-top: 6.7vh;
+}
+
+@media screen and (max-width: 650px) {
+  img {
+    margin-top: 6.7vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  img {
+    max-height: 78vh;
+    max-width: 67vw;
+  }
 }
 
 img.frame {
   position: relative;
   border-image: url("../images/frame.png") 127 129 127 129;
   border-color: #f4be52;
-  border-style:inset;
+  border-style: inset;
   border-width: 1rem;
   height: auto;
   box-shadow: 0 0 0.3rem brown;
   -webkit-box-shadow: 0 0 0.3rem brown;
   -moz-box-shadow: 0 0 0.3rem brown;
 }
-
