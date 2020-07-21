@@ -7,10 +7,10 @@ body {
 body {
   background-image: url("../images/brick-wall.jpg");
   background-size: contain;
-  background-position: center;
+  background-position: initial;
   background-color: rgba(248, 250, 242, 0.767);
-  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 h3 {
@@ -21,15 +21,16 @@ h3 {
 }
 
 .container {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.pintura {
   margin-top: 6.7vh;
+  display: grid;
+  grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
+  grid-template-rows: repeat(auto-fit, max-content);
+  gap: 6.7vh 2vw;
 }
 
+.painting {
+  grid-column: center-start / center-end
+}
 
 img {
   position: relative;
@@ -39,11 +40,29 @@ img {
   margin:auto
 }
 
+img.frame {
+  position: relative;
+  border-image: url("../images/frame.png") 103 87 93 87;
+  border-color: #f4be52;
+  border-style: inset;
+  border-width: 1rem;
+  -moz-box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
+    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
+    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
+    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
+} 
+
 @media screen and (max-width: 650px) {
-  .pintura {
-    margin-top: 6.7vw;
+  .container {
+    margin-top: 4vw
+    gap: 4vw 2vw;
   }
-}
+  img.frame {
+    border-width: 0.5rem;
+  }
+} 
 
 @media screen and (orientation: landscape) {
   img {
@@ -52,16 +71,18 @@ img {
   }
 }
 
-img.frame {
-  position: relative;
-  border-image: url("../images/frame.png") 127 129 127 129;
-  border-color: #f4be52;
-  border-style: inset;
-  border-width: 1rem;
-  -moz-box-shadow: 0px 2px 20px 4px rgba(0, 0, 0, 0.5),
-    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 2px 20px 4px rgba(0, 0, 0, 0.5),
-    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 20px 4px rgba(0, 0, 0, 0.5),
-    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
-} 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
