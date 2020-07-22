@@ -5,16 +5,13 @@ body {
 }
 
 body {
-  background-image: url("../images/brick-wall.jpg");
-  background-size: contain;
-  background-position: initial;
-  background-color: rgba(248, 250, 242, 0.767);
+  background-color: rgb(245, 245, 245)
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
 h3 {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-style: italic;
   color: rgba(40, 40, 136, 0.9);
   margin: 6.7vh;
@@ -42,7 +39,7 @@ img {
 
 img.frame {
   position: relative;
-  border-image: url("../images/frame.png") 103 87 93 87;
+  border-image: url("../images/frame.png") 101 87 93 86;
   border-color: #f4be52;
   border-style: inset;
   border-width: 1rem;
@@ -69,7 +66,6 @@ img.frame {
     max-height: 78vh;
     max-width: 67vw;
   }
-}
 
 ::-webkit-scrollbar {
   width: 10px;
