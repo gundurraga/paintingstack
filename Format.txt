@@ -1,0 +1,8 @@
+Images
+
+maxDimension=
+Original:*
+HD:1120px
+Desktop:780px
+Mobil:500px
+ppi:72
