@@ -1,2 +1,2 @@
-# paintingstack
+# Paintingstack
 A online museum
