@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="description" content="A online museum">
+  <meta name="keywords" content="Painting, Art, Museum, Open Source">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-  <title>Paintingstack - A painting website</title>
+  <title>Paintingstack, a online museum</title>
+  <script src="js/main.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172950117-1"></script>
   <script>
@@ -23,24 +26,31 @@
 
 <body>
   <div class="container">
+    <div class="painting">
+      <a href="https://en.wikipedia.org/wiki/Paul_Cézanne" target="_blank">
+        <img src="images/Cezanne-1900_500p.webp" class="frame" loading="lazy" srcset="
+              images/Cezanne-1900_780p.webp   780w,
+              images/Cezanne-1900_1120p.webp 1120w
+            " alt="Paul Cézanne - Still Life with Milk Jug and Fruit (1900)" sizes="78vw" />
+      </a>
+    </div>
+    <div class="painting">
+      <a href="https://en.wikipedia.org/wiki/Edward_Hopper" target="_blank">
+        <img src="images/Hopper-1939_500p.webp" class="frame" loading="lazy" srcset="
+            images/Hopper-1939_780p.webp   780w,
+            images/Hopper-1939_1120p.webp 1120w
+          " alt="Edward Hopper - Cape Cod Evening (1939)" sizes="78vw" />
+      </a>
+    </div>
 
-    <a href="https://en.wikipedia.org/wiki/Paul_Cézanne" class="painting" target="_blank">
-    <img src="images/Cezanne-1900_500p.webp" class="frame" loading="lazy"
-      srcset="images/Cezanne-1900_780p.webp 780w, images/Cezanne-1900_1120p.webp 1120w"
-      alt="Paul Cézanne - Still Life with Milk Jug and Fruit 1900">
-    </a>
-
-    <a href="https://en.wikipedia.org/wiki/Edward_Hopper" class="painting" target="_blank">
-    <img src="images/Hopper-1939_500p.webp" class="frame" loading="lazy"
-      srcset="images/Hopper-1939_780p.webp 780w, images/Hopper-1939_1120p.webp 1120w"
-      alt="Edward Hopper - Cape Cod Evening 1939">
-    </a>
-
-    <a href="https://en.wikipedia.org/wiki/Paul_Gauguin" class="painting" target="_blank">
-    <img src="images/Gauguin-1891_500p.webp" class="frame" loading="lazy"
-      srcset="images/Gauguin-1891_780p.webp 780w, images/Gauguin-1891_1120p.webp 1120w"
-      alt="Paul Gauguin - The Big Tree 1891">
-    </a>
+    <div class="painting">
+      <a href="https://en.wikipedia.org/wiki/Paul_Gauguin" target="_blank">
+        <img src="images/Gauguin-1891_500p.webp" class="frame" loading="lazy" srcset="
+            images/Gauguin-1891_780p.webp   780w,
+            images/Gauguin-1891_1120p.webp 1120w
+          " alt="Paul Gauguin - The Big Tree (1891)" sizes="78vw" />
+      </a>
+    </div>
 
     <!-- <a href="https://en.wikipedia.org/wiki/Claude_Monet" class="painting" target="_blank">
       <img src="images/Monet.jpg" alt="Monet" class="frame" loading="lazy" /></a>
@@ -53,9 +63,12 @@
 
     <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh" class="painting" target="_blank">
       <img src="images/vanGogh.jpg" alt="Van Gogh" class="frame" loading="lazy" /></a> -->
-
   </div>
-  <h3>hello@paintingstack.com</h3>
+
+  <h3>hello@paintingstack.com </h3>
+  <h3><a href="https://github.com/gundurraga/paintingstack">Source code</a></h3>
+
+  <br>
 </body>
 
 </html>

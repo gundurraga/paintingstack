@@ -1,3 +1,4 @@
+
 html,
 body {
   margin: 0;
@@ -5,20 +6,19 @@ body {
 }
 
 body {
-  background-color: rgb(245, 245, 245)
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(245, 245, 245);
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
 h3 {
   font-size: 0.8rem;
-  font-style: italic;
+  font-weight: bold;
   color: rgba(40, 40, 136, 0.9);
-  margin: 6.7vh;
 }
 
 .container {
-  margin-top: 6.7vh;
+  margin: 6.7vh 0;
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
@@ -26,7 +26,9 @@ h3 {
 }
 
 .painting {
-  grid-column: center-start / center-end
+  grid-column: center-start / center-end;
+  display:flex;
+  margin: auto;
 }
 
 img {
@@ -34,12 +36,11 @@ img {
   max-height: 67vh;
   max-width: 78vw;
   display: block;
-  margin:auto
 }
 
 img.frame {
   position: relative;
-  border-image: url("../images/frame.png") 101 87 93 86;
+  border-image: url("../images/frame.png") 101 87 92 86;
   border-color: #f4be52;
   border-style: inset;
   border-width: 1rem;
@@ -51,9 +52,35 @@ img.frame {
     0px 2px 5px 2px rgba(0, 0, 0, 0.5);
 } 
 
+/*start links*/
+
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: rgb(95, 95, 95);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(95, 95, 95);
+}
+
+/* mouse over link */
+a:hover {
+  color: orangered;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/*end links*/
+
+/*start media queries*/
 @media screen and (max-width: 650px) {
   .container {
-    margin-top: 4vw
+    margin: 4vw 0;
     gap: 4vw 2vw;
   }
   img.frame {
@@ -66,7 +93,10 @@ img.frame {
     max-height: 78vh;
     max-width: 67vw;
   }
+}
+/*end media queries*/
 
+/*start scrollbar*/
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -82,3 +112,4 @@ img.frame {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+/*end scrollbar*/
