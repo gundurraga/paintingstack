@@ -1,2 +1,0 @@
-# Paintingstack
-A online museum
