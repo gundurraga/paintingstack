@@ -1,4 +1,3 @@
-
 html,
 body {
   margin: 0;
@@ -18,22 +17,22 @@ h3 {
 }
 
 .container {
-  margin: 6.7vh 0;
+  margin: 6.7vmax 0;
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
-  gap: 6.7vh 2vw;
+  gap: 6.7vmax 2vmin;
 }
 
 .painting {
   grid-column: center-start / center-end;
-  display:flex;
+  display: flex;
   margin: auto;
 }
 
 img {
   position: relative;
-  max-height: 67vh;
+  max-height: 78vh;
   max-width: 78vw;
   display: block;
 }
@@ -50,7 +49,7 @@ img.frame {
     0px 2px 5px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
     0px 2px 5px 2px rgba(0, 0, 0, 0.5);
-} 
+}
 
 /*start links*/
 
@@ -79,19 +78,19 @@ a:active {
 
 /*start media queries*/
 @media screen and (max-width: 650px) {
-  .container {
-    margin: 6.7vw 0;
-    gap: 6.7vw 2vw;
-  }
   img.frame {
     border-width: 0.5rem;
   }
-} 
+}
 
 @media screen and (orientation: landscape) {
   img {
     max-height: 78vh;
-    max-width: 67vw;
+    max-width: 78vw;
+  }
+  .container {
+    margin: 6.7vmin 0;
+    gap: 6.7vmin 2vmin;
   }
 }
 /*end media queries*/
@@ -102,14 +101,22 @@ a:active {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: rgba(0, 0, 255, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: rgba(255, 255, 0, 0.5);
+  border: 1px solid rgba(255, 255, 0.75);
+  border-radius: 2px;
+  width: 9x;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: rgba(255, 0, 0, 0.4);
+  border: 1px solid rgba(255, 0, 0, 0.65);
+  border-radius: 2px;
+  width: 9x;
+
 }
+
 /*end scrollbar*/
