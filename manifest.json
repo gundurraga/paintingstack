@@ -1,0 +1,19 @@
+{
+    "name": "Paintingstack",
+    "short_name": "Paintingstack",
+    "description": "A online museum",
+    "lang": "en_US",
+    "dir": "ltr",
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "any",
+    "icons": [
+        {
+            "src":"images/icons/apple-touch-icon-144x144.png",
+            "sizes":"144x144",
+            "type":"image/png"
+        }
+    ]
+}
