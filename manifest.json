@@ -4,16 +4,23 @@
     "description": "A online museum",
     "lang": "en_US",
     "dir": "ltr",
-    "start_url": ".",
+    "start_url": "https://paintingstack.com",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
     "display": "standalone",
-    "orientation": "any",
+    "orientation": "portrait",
     "icons": [
         {
             "src":"images/icons/apple-touch-icon-144x144.png",
             "sizes":"144x144",
             "type":"image/png"
+        },
+        {
+            "src":"images/icons/favicon-1024x1024.png",
+            "sizes":"1024x1024",
+            "type":"image/png",
+            "purpose": "maskable"
         }
+
     ]
 }
