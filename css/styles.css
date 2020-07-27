@@ -39,10 +39,9 @@ img {
 
 img.frame {
   position: relative;
-  border-image: url("../images/frame.png") 101 87 92 86;
-  border-color: #f4be52;
-  border-style: inset;
-  border-width: 1rem;
+  border-color: rgba(245, 242, 242, 0.5);
+  border-style: outset;
+  border-width: 1vmin;
   -moz-box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
     0px 2px 5px 2px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
@@ -97,7 +96,7 @@ a:active {
 
 /*start scrollbar*/
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 1vmin;
 }
 
 ::-webkit-scrollbar-track {
@@ -108,15 +107,12 @@ a:active {
   background: rgba(255, 255, 0, 0.5);
   border: 1px solid rgba(255, 255, 0.75);
   border-radius: 2px;
-  width: 9x;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 0, 0, 0.4);
   border: 1px solid rgba(255, 0, 0, 0.65);
   border-radius: 2px;
-  width: 9x;
-
 }
 
 /*end scrollbar*/
