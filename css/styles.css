@@ -21,7 +21,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
-  gap: 6.7vmax 2vmin;
+  gap: 3rem 0.5rem;
 }
 
 .painting {
@@ -41,7 +41,7 @@ img.frame {
   position: relative;
   border-color: rgba(245, 242, 242, 0.5);
   border-style: outset;
-  border-width: 1vmin;
+  border-width: 0.8rem;
   -moz-box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
     0px 2px 5px 2px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
@@ -89,7 +89,6 @@ a:active {
   }
   .container {
     margin: 6.7vmin 0;
-    gap: 6.7vmin 2vmin;
   }
 }
 /*end media queries*/
