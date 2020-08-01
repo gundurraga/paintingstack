@@ -13,11 +13,11 @@ body {
 h3 {
   font-size: 0.8rem;
   font-weight: bold;
-  color: rgba(40, 40, 136, 0.9);
+  color: rgb(55, 55, 120);
 }
 
 .container {
-  margin: 6.7vmax 0;
+  margin: 5vh 0;
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
@@ -38,64 +38,49 @@ img {
 }
 
 img.frame {
-  position: relative;
-  border-color: rgba(245, 242, 242, 0.5);
-  border-style: outset;
-  border-width: 0.8rem;
-  -moz-box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
-    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
-    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5),
-    0px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  border-width: 7px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(230, 230, 230);
+  box-shadow: 0px 1px 3px 1px rgb(200, 200, 200);
+  -moz-box-shadow: 0px 1px 4px 1px rgb(200, 200, 200);
+  -webkit-box-shadow: 0px 1px 4px 1px rgb(200, 200, 200);
 }
 
 /*start links*/
-
-/* unvisited link */
 a:link {
   text-decoration: none;
   color: rgb(95, 95, 95);
 }
 
-/* visited link */
 a:visited {
   color: rgb(95, 95, 95);
 }
 
-/* mouse over link */
 a:hover {
   color: orangered;
 }
 
-/* selected link */
 a:active {
   color: blue;
 }
-
 /*end links*/
 
 /*start media queries*/
-@media screen and (max-width: 650px) {
-  img.frame {
-    border-width: 0.5rem;
-  }
-}
-
 @media screen and (orientation: landscape) {
   img {
     max-height: 78vh;
     max-width: 78vw;
   }
   .container {
-    margin: 6.7vmin 0;
+    margin: 5vw 0;
   }
 }
 /*end media queries*/
 
 /*start scrollbar*/
 ::-webkit-scrollbar {
-  width: 1vmin;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -103,15 +88,14 @@ a:active {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 0, 0.5);
-  border: 1px solid rgba(255, 255, 0.75);
+  background: rgba(40, 40, 180, 0.2);
+  border: 1px solid rgba(40, 40, 180, 0.45);
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 0, 0, 0.4);
-  border: 1px solid rgba(255, 0, 0, 0.65);
+  background: rgba(40, 40, 180, 0.4);
+  border: 1px solid rgba(40, 40, 180, 0.65);
   border-radius: 2px;
 }
-
 /*end scrollbar*/
