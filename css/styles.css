@@ -16,35 +16,41 @@ h3 {
   color: rgb(55, 55, 120);
 }
 
+.navigation {
+  height: 56px;
+  padding-bottom: 20px;
+}
+
 .container {
-  margin: 5vh 0;
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
-  gap: 3rem 0.5rem;
+  gap: 3rem 5px;
 }
 
-.painting {
+.post {
   grid-column: center-start / center-end;
   display: flex;
   margin: auto;
 }
 
-img {
+.painting {
   position: relative;
-  max-height: 78vh;
-  max-width: 78vw;
   display: block;
-}
-
-img.frame {
+  max-height: 85vh;
+  max-width: 85vw;
   border-width: 7px;
   border-style: solid;
   border-radius: 2px;
   border-color: rgb(230, 230, 230);
-  box-shadow: 0px 1px 3px 1px rgb(200, 200, 200);
+  box-shadow: 0px 1px 4px 1px rgb(200, 200, 200);
   -moz-box-shadow: 0px 1px 4px 1px rgb(200, 200, 200);
   -webkit-box-shadow: 0px 1px 4px 1px rgb(200, 200, 200);
+}
+
+.footer {
+  padding-top: 20px;
+  height: 56px;
 }
 
 /*start links*/
@@ -67,20 +73,18 @@ a:active {
 /*end links*/
 
 /*start media queries*/
-@media screen and (orientation: landscape) {
-  img {
+@media screen and (min-width: 700px) {
+  .painting {
     max-height: 78vh;
     max-width: 78vw;
-  }
-  .container {
-    margin: 5vw 0;
+    border-width: 10px;
   }
 }
 /*end media queries*/
 
 /*start scrollbar*/
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
