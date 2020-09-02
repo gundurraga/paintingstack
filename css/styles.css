@@ -137,11 +137,11 @@ footer {
 
 footer p {
   position: absolute;
-  height: 30px;
+  height: 20px;
   top: 50%;
-  margin-top: -15px;
+  margin-top: -10px;
   color: #2a2d33;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 /*start links*/
