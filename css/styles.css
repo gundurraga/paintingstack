@@ -5,7 +5,7 @@ body {
 }
 
 * {
-  --logo-color: rgb(65, 65, 115);
+  --logo-color: rgb(22, 22, 63);
 }
 
 body {
@@ -112,17 +112,18 @@ strong {
   margin: auto;
   margin-top: 1rem;
   color: #202124;
-  font-weight: normal;
 }
 
 .info h4 {
   margin: 0;
   font-size: 0.9rem;
+  font-weight: normal;
 }
 
 .info h5 {
   margin: 0;
   font-size: 0.75rem;
+  font-weight: normal;
 }
 
 footer {
