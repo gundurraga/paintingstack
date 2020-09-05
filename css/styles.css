@@ -112,6 +112,9 @@ strong {
   margin: auto;
   margin-top: 1rem;
   color: #202124;
+  background-color: rgb(238, 238, 238);
+  padding: 7px;
+  border-radius: 4px;
 }
 
 .info h4 {
@@ -124,6 +127,13 @@ strong {
   margin: 0;
   font-size: 0.75rem;
   font-weight: normal;
+  padding-bottom: 7px;
+}
+
+/*.fas, .fab icons*/
+.fas, .fab {
+  padding: 7px;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -155,7 +165,7 @@ a:visited {
 }
 
 a:hover {
-  color: orangered;
+  color: rgb(22, 22, 63);
 }
 
 a:active {
@@ -166,8 +176,8 @@ a:active {
 /*start media queries*/
 @media screen and (min-width: 700px) {
   .painting {
-    max-height: 78vh;
-    max-width: 78vw;
+    max-height: 70vh;
+    max-width: 70vw;
     border-width: 10px;
   }
 }
