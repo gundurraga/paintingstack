@@ -115,6 +115,7 @@ strong {
   background-color: rgb(238, 238, 238);
   padding: 7px;
   border-radius: 4px;
+  text-align: start;
 }
 
 .info h4 {
@@ -130,10 +131,9 @@ strong {
   padding-bottom: 7px;
 }
 
-/*.fas, .fab icons*/
-.fas, .fab {
+.fas {
   padding: 7px;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 footer {
