@@ -131,6 +131,12 @@ strong {
   padding-bottom: 7px;
 }
 
+
+.info-icons {
+  text-align: center;
+}
+
+
 .fas {
   padding: 7px;
   font-size: 20px;
