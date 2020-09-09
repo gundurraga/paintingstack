@@ -6,6 +6,7 @@ body {
 
 * {
   --logo-color: rgb(22, 22, 63);
+  --frame-width: 7px;
 }
 
 body {
@@ -84,7 +85,7 @@ strong {
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
-  gap: 3rem 5px;
+  gap: 2rem 5px;
 }
 
 .post {
@@ -94,12 +95,22 @@ strong {
   margin: auto;
 }
 
+.date {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: normal;
+  text-align: left;
+  margin-left: var(--frame-width);
+  margin-bottom: 5px;
+  color: rgb(50, 50, 50);
+}
+
 .painting {
   position: relative;
   display: block;
   max-height: 85vh;
   max-width: 85vw;
-  border-width: 7px;
+  border-width: var(--frame-width);
   border-style: solid;
   border-radius: 2px;
   border-color: rgb(238, 238, 238);
@@ -110,12 +121,15 @@ strong {
 
 .info {
   margin: auto;
-  margin-top: 1rem;
-  color: #202124;
+  margin-top: 10px;
+  color: rgb(34, 34, 34);
   background-color: rgb(238, 238, 238);
   padding: 7px;
   border-radius: 4px;
   text-align: start;
+  border-width: 1px;
+  border-color: rgb(230,230,230);
+  border-style: solid;
 }
 
 .info h4 {
@@ -131,15 +145,20 @@ strong {
   padding-bottom: 7px;
 }
 
-
 .info-icons {
   text-align: center;
 }
 
-
 .fas {
-  padding: 7px;
+  padding: 5px;
   font-size: 20px;
+}
+
+hr {
+  margin:0;
+  border-top: 1px solid rgb(242,242,242);
+  width: 100%;
+  margin-top: var(--frame-width);
 }
 
 footer {
@@ -184,7 +203,10 @@ a:active {
   .painting {
     max-height: 70vh;
     max-width: 70vw;
-    border-width: 10px;
+  }
+
+  * {
+    --frame-width: 10px;
   }
 }
 /*end media queries*/
