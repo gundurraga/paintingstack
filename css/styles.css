@@ -95,6 +95,14 @@ strong {
   margin: auto;
 }
 
+hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgb(238, 238, 238);
+  width: calc (100% - 2px);
+  margin-bottom: 5px;
+}
+
 .date {
   margin: 0;
   font-size: 0.7rem;
@@ -152,14 +160,6 @@ strong {
 .fas {
   padding: 5px;
   font-size: 20px;
-}
-
-hr {
-  margin: 0;
-  border: 0;
-  border-top: 1px solid rgb(240, 240, 240);
-  width: calc (100% - 2px);
-  margin-bottom: 5px;
 }
 
 footer {
