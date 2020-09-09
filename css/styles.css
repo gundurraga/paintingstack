@@ -5,7 +5,8 @@ body {
 }
 
 * {
-  --logo-color: rgb(22, 22, 63);
+  --logo-color: rgb(0, 59, 92);
+  --nightMode-logo-color: rgb(255, 184, 28);
   --frame-width: 7px;
 }
 
@@ -81,11 +82,11 @@ strong {
 }
 
 .container {
-  padding-top: 20px;
+  padding-top: 24px;
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
-  gap: 2rem 5px;
+  gap: 24px 5px;
 }
 
 .post {
