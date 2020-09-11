@@ -166,19 +166,33 @@ hr {
 footer {
   position: relative;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   background-color: rgb(238, 238, 238);
   margin-top: 20px;
   height: 56px;
   justify-content: center;
 }
 
-footer p {
-  position: absolute;
-  height: 20px;
-  top: 50%;
-  margin-top: -10px;
+footer > div {
+  margin: auto;
+}
+
+footer div p {
   color: #2a2d33;
   font-size: 0.8rem;
+}
+
+.back-to-top-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #D6E3F0;
 }
 
 /*start links*/
@@ -209,6 +223,13 @@ a:active {
 
   * {
     --frame-width: 10px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
   }
 }
 /*end media queries*/
