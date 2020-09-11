@@ -46,13 +46,26 @@
 </head>
 
 <body>
-  <header>
-    <a class="header-logo" id="Top" href="https://paintingstack.com">
+  <header id="top">
+    <a class="header-logo" href="https://paintingstack.com">
       <div class="logo">
         <div class="inside-logo"></div>
       </div>
       <h1><strong>Painting</strong>stack</h1>
     </a>
+    
+    <div id="menuToggle">
+      <input type="checkbox" />
+        
+      <span></span>
+      <span></span>
+      <span></span>
+   
+      <ul id="menu">
+        <a href="#"><li>Night Mode</li></a>
+      </ul> 
+    </div>
+
   </header>
   <main>
     <div class="container">
@@ -234,14 +247,14 @@
     </div>
   </main>
   <footer>
-    <div>
+    <div class="feedback">
       <p>Send feedback to <strong>hello@paintingstack.com</strong></p>
     </div>
-    <div><a href="#top" class="back-to-top-link">TOP</a></div>
+    <div class="back-to-top">
+      <a href="#top">TOP</a>
+    </div>
   </footer>
   <script src="js/main.js"></script>
-  <script async="async" data-cfasync="false"
-    src="//pl15800030.toprevenuenetwork.com/40f17a11e9230b3cc56a6c9e11050087/invoke.js"></script>
 </body>
 
 </html>
