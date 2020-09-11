@@ -89,7 +89,7 @@ strong {
   gap: 24px 5px;
 }
 
-.post {
+.post, .Ads {
   grid-column: center-start / center-end;
   display: flex;
   flex-direction: column;
