@@ -5,8 +5,7 @@ body {
 }
 
 * {
-  --logo-color: rgb(0, 59, 92);
-  --nightMode-logo-color: rgb(255, 184, 28);
+  --logo-color: #003b5c;
   --frame-width: 7px;
 }
 
@@ -90,11 +89,6 @@ header {
   user-select: none;
 }
 
-#menuToggle a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
 
 #menuToggle input {
   display: block;
@@ -119,8 +113,8 @@ header {
   margin-bottom: 5px;
   position: relative;
 
-  background: rgb(130, 130, 130);
-  border-radius: 2px;
+  background: rgb(180, 180, 180);
+  border-radius: 1px;
 
   z-index: 1;
 
@@ -342,6 +336,96 @@ a:active {
   color: blue;
 }
 /*end links*/
+
+
+.night-mode {
+  background-color: #1e1e27;
+}
+
+.night-mode header {
+  background-color: #181725;
+  box-shadow: inset 0px -20px 20px -20px #121221;
+  -moz-box-shadow: inset 0px -20px 20px -20px #121221;
+  -webkit-box-shadow: inset 0px -20px 20px -20px #121221;
+}
+
+.night-mode .logo {
+  border-color: rgba(255, 183, 28, 0.2);
+  background-color: var(--logo-color);
+}
+
+.night-mode .inside-logo {
+  background-color: #bbaf9e;
+}
+
+.night-mode .header-logo h1 {
+  color: #bbaf9e;
+}
+
+.night-mode #menuToggle span {
+  background: #373643;
+}
+
+.night-mode #menu {
+  background: #181724;
+}
+
+.night-mode hr {
+  border-color: #181724;
+}
+
+
+.night-mode .date {
+  color: #bbaf9e;
+}
+
+.night-mode .painting {
+  border-color: #60574a;
+  box-shadow: 0px 1px 4px 1px #131121;
+  -moz-box-shadow: 0px 1px 4px 1px #131121;
+  -webkit-box-shadow: 0px 1px 4px 1px #131121;
+}
+
+.night-mode .info {
+  color: #bbaf9e;
+  background-color: #373643;
+  border-color: #181724;
+}
+
+.night-mode footer {
+  background-color: #181725;
+}
+
+
+.night-mode .feedback {
+  color: #bbaf9e;
+}
+
+.night-mode .back-to-top {
+  background-color: #373643;
+}
+
+.night-mode .back-to-top a:link, .night-mode .back-to-top a:visited  {
+  color: #bbaf9e;
+}
+
+.night-mode a:link {
+  text-decoration: none;
+  color: #bbaf9e;
+}
+
+.night-mode a:visited {
+  color: #bbaf9e;
+}
+
+.night-mode a:hover {
+  color: #60574a;
+}
+
+.night-mode a:active {
+  color:#60574a;
+}
+
 
 /*start media queries*/
 @media screen and (min-width: 700px) {
