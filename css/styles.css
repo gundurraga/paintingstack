@@ -158,6 +158,8 @@ header {
 }
 
 #menu {
+  visibility: hidden;
+  opacity:0;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -169,8 +171,7 @@ header {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  transform: translate(200px, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: visibility 0s, opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #menu li {
@@ -178,11 +179,21 @@ header {
   font-size: 1rem;
 }
 
-/*
-  * And let's slide it in from the left
-  */
 #menuToggle input:checked ~ ul {
-  transform: none;
+  visibility: visible;
+  opacity:1;
+}
+
+.btn-nightMode {
+  background-color: rgb(200,200,200); /* Green */
+  border: none;
+  padding: 5px 5px;
+  color: var(--logo-color);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 strong {
@@ -371,7 +382,7 @@ a:active {
 }
 
 .night-mode hr {
-  border-color: #181724;
+  border-color: #212030;
 }
 
 
@@ -389,7 +400,7 @@ a:active {
 .night-mode .info {
   color: #bbaf9e;
   background-color: #373643;
-  border-color: #181724;
+  border-color: #212030;
 }
 
 .night-mode footer {
@@ -445,13 +456,6 @@ a:active {
     scroll-behavior: smooth;
   }
 }
-/*
-@media (prefers-color-scheme: dark) { 
-}
-
-@media (prefers-color-scheme: light) {
-}
-*/
 /*end media queries*/
 
 /*start scrollbar*/

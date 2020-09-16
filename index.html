@@ -12,24 +12,11 @@
   <link href="css/styles.css" rel="stylesheet" />
   <link href="css/flag-icon.min.css" rel="stylesheet" />
   <!-- start icons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png" />
   <link rel="icon" type="image/png" href="images/icons/favicon-196x196.png" sizes="196x196" />
   <link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="images/icons/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="Paintingstack" />
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="images/icons/mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="images/icons/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="images/icons/mstile-150x150.png" />
   <!-- end icons -->
   <title>Paintingstack | Museum Blog</title>
   <script src="https://kit.fontawesome.com/1596b1b8e4.js" crossorigin="anonymous"></script>
@@ -62,13 +49,29 @@
       <span></span>
    
       <ul id="menu">
-        <li><button onclick="myFunction()">Toggle Night Mode</button></li>
+        <li><button class="btn-nightMode"onclick="myFunction()">Toggle Night Mode</button></li>
       </ul> 
     </div>
 
   </header>
   <main>
     <div class="container">
+
+    <article class="post" element="post12">
+        <hr>
+        <h5 class="date">September 16, 2020</h5>
+        <img src="images/vanGogh-1890_500p.jpg" class="painting" loading="lazy"
+          srcset="images/vanGogh-1890_500p.jpg 500w, images/vanGogh-1890_800p.jpg 800w"
+          alt="Vincent Van Gogh - The Drinkers (1890)" sizes="78vmax" />
+        <div class="info">
+          <h4><strong>The Drinkers, 1890</strong><br>
+            Vincent Van Gogh ( <span class="flag-icon flag-icon-nl" title="Netherlands"></span>  1853-1890)</h4>
+          <h5>59.4 × 73.4 cm (23 3/8 × 28 7/8 in.)<br>The Art Institute of Chicago</h5>
+          <div class="info-icons"><a href="images/original/vanGogh-1890.jpg"
+              download="vanGogh - The Drinkers, 1890"><i class="fas fa-download"
+                title="Download"></i></a></div>
+        </div>
+      </article>
 
       <article class="post" element="post11">
         <hr>
