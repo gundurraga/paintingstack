@@ -194,6 +194,7 @@ header {
   font-size: 1rem;
   border-radius: 2px;
   cursor: pointer;
+  line-height: 20px;
 }
 
 strong {
@@ -277,7 +278,7 @@ hr {
   text-align: center;
 }
 
-.fas {
+.fas ,.fab {
   padding: 5px;
   font-size: 20px;
 }
@@ -378,7 +379,7 @@ a:active {
 }
 
 .night-mode #menu {
-  background: #181724;
+  background: rgba(25, 24, 37, 0.9);
 }
 
 .night-mode hr {
