@@ -167,7 +167,7 @@ header {
   right: -25px;
   width: 200px;
   border-radius: 2px;
-  background: rgba(230,230,230, 0.9);
+  background: rgba(230,230,230, 0.85);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -279,7 +279,7 @@ hr {
 }
 
 .fas ,.fab {
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 20px;
 }
 
@@ -379,7 +379,7 @@ a:active {
 }
 
 .night-mode #menu {
-  background: rgba(25, 24, 37, 0.9);
+  background: rgba(25, 24, 37, 0.85);
 }
 
 .night-mode hr {
