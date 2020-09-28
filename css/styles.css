@@ -253,7 +253,9 @@ hr {
   -webkit-box-shadow: 0px 1px 4px 1px rgb(180, 180, 180);
 }
 .progressive img.preview {
-  filter: contrast(200%) blur(2px) grayscale(100%);
+  filter: contrast(200%) blur(2px) grayscale(90%);
+  max-height: 85vh;
+  max-width: 85vw;
 }
 .progressive img.reveal {
   position: absolute;
@@ -464,6 +466,10 @@ a:active {
 /*start media queries*/
 @media screen and (min-width: 700px) {
   .progressive img {
+    max-height: 60vh;
+    max-width: 60vw;
+  }
+  .progressive img.preview {
     max-height: 60vh;
     max-width: 60vw;
   }
