@@ -234,7 +234,12 @@ hr {
   color: rgb(50, 50, 50);
 }
 
-.painting {
+.progressive {
+  position: relative;
+  display: block;
+  outline: none;
+}
+.progressive img {
   position: relative;
   display: block;
   max-height: 85vh;
@@ -246,6 +251,23 @@ hr {
   box-shadow: 0px 1px 4px 1px rgb(180, 180, 180);
   -moz-box-shadow: 0px 1px 4px 1px rgb(180, 180, 180);
   -webkit-box-shadow: 0px 1px 4px 1px rgb(180, 180, 180);
+}
+.progressive img.preview {
+  filter: blur(4px);
+}
+.progressive img.reveal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: progressiveReveal 0.3s linear;
+}
+@keyframes progressiveReveal {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .info {
@@ -391,7 +413,7 @@ a:active {
   color: #bbaf9e;
 }
 
-.night-mode .painting {
+.night-mode .progressive img {
   border-color: #60574a;
   box-shadow: 0px 1px 4px 1px #131121;
   -moz-box-shadow: 0px 1px 4px 1px #131121;
@@ -441,9 +463,9 @@ a:active {
 
 /*start media queries*/
 @media screen and (min-width: 700px) {
-  .painting {
-    max-height: 70vh;
-    max-width: 70vw;
+  .progressive img {
+    max-height: 60vh;
+    max-width: 60vw;
   }
 
   * {
