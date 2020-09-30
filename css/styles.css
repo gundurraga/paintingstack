@@ -18,6 +18,10 @@ body {
   --light-line-color:rgb(238, 238, 238);
   --light-font-firstColor: rgb(34, 34, 34);
   --light-font-secondColor: rgb(50, 50, 50);
+  --light-frame-color:rgb(238,238,238);
+  --light-frameShadow-color:rgb(180,180,180);
+  --light-infoBackground-color:rgb(238,238,238);
+  --light-infoBorder-color:rgb(232,232,232);
   --frame-width: 7px;
 }
 
@@ -256,10 +260,10 @@ hr {
   border-width: var(--frame-width);
   border-style: solid;
   border-radius: 2px;
-  border-color: rgb(238, 238, 238);
-  box-shadow: 0px 1px 4px 1px rgb(180, 180, 180);
-  -moz-box-shadow: 0px 1px 4px 1px rgb(180, 180, 180);
-  -webkit-box-shadow: 0px 1px 4px 1px rgb(180, 180, 180);
+  border-color: var(--light-frame-color);
+  box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color);
+  -moz-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color);
+  -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color);
 }
 .progressive img.preview {
   filter: contrast(200%) blur(2px) grayscale(90%);
@@ -285,12 +289,12 @@ hr {
   margin: auto;
   margin-top: 10px;
   color: var(--light-font-firstColor);
-  background-color: rgb(238, 238, 238);
+  background-color: var(--light-infoBackground-color);
   padding: 7px;
   border-radius: 4px;
   text-align: start;
   border-width: 1px;
-  border-color: rgb(232, 232, 232);
+  border-color: var(--light-infoBorder-color);
   border-style: solid;
 }
 
@@ -321,7 +325,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  background-color: rgb(238, 238, 238);
+  background-color: var(--light-header-color);
   margin-top: 20px;
   height: 56px;
   justify-content: start;
@@ -334,7 +338,7 @@ footer > div {
 
 .feedback {
   position: absolute;
-  color: #2a2d33;
+  color: var(--light-font-secondColor);
   font-size: 0.8rem;
   height: 20px;
   top: 50%;
@@ -357,7 +361,7 @@ footer > div {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background-color: #d6e3f0;
+  background-color: var(--light-menuBackground-color);
   top: 50%;
   margin-top: -1rem;
   right: 25px;
