@@ -5,7 +5,19 @@ body {
 }
 
 * {
-  --logo-color: #003b5c;
+  --light-logo-firstColor: #003b5c;
+  --light-logo-secondColor: rgb(255, 255, 255);
+  --light-logoBorder-color: rgb(200, 200, 240);
+  --light-background-color: rgb(245, 245, 245);
+  --light-header-color: rgb(238, 238, 238);
+  --light-headerShadow-color: rgb(200, 200, 200);
+  --light-menuIcon-color: rgb(180, 180, 180);
+  --light-menuCross-color:rgb(255, 184, 28);
+  --light-menuBackground-color:rgb(230,230,230);
+  --light-btnMenu-color:rgb(200,200,200);
+  --light-line-color:rgb(238, 238, 238);
+  --light-font-firstColor: rgb(34, 34, 34);
+  --light-font-secondColor: rgb(50, 50, 50);
   --frame-width: 7px;
 }
 
@@ -13,7 +25,7 @@ body {
   position: relative;
   height: 100%;
   max-width: 100vw;
-  background-color: rgb(245, 245, 245);
+  background-color: var(--light-background-color);
   font-family: "Roboto Condensed", Arial, sans-serif;
   text-align: center;
   overflow-x: hidden;
@@ -24,10 +36,10 @@ header {
   position: relative;
   display: flex;
   height: 56px;
-  background-color: rgb(238, 238, 238);
-  box-shadow: inset 0px -20px 20px -20px rgb(200, 200, 200);
-  -moz-box-shadow: inset 0px -20px 20px -20px rgb(200, 200, 200);
-  -webkit-box-shadow: inset 0px -20px 20px -20px rgb(200, 200, 200);
+  background-color: var(--light-header-color);
+  box-shadow: inset 0px -20px 20px -20px var(--light-headerShadow-color);
+  -moz-box-shadow: inset 0px -20px 20px -20px var(--light-headerShadow-color);
+  -webkit-box-shadow: inset 0px -20px 20px -20px var(--light-headerShadow-color);
   justify-content: start;
 }
 
@@ -45,11 +57,11 @@ header {
   border: solid;
   border-width: 1px;
   border-radius: 2px;
-  border-color: rgb(65, 65, 115, 0.2);
+  border-color: var(--light-logoBorder-color);
   position: relative;
   height: 28px;
   width: 28px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--light-logo-secondColor);
 }
 
 .inside-logo {
@@ -59,7 +71,7 @@ header {
   left: 23%;
   height: 67%;
   width: 67%;
-  background-color: var(--logo-color);
+  background-color: var(--light-logo-firstColor);
   -moz-transform: rotate(11deg);
   -webkit-transform: rotate(11deg);
   -o-transform: rotate(11deg);
@@ -73,7 +85,7 @@ header {
   padding: 5px 0 5px 5px;
   font-weight: 300;
   font-size: 17px;
-  color: var(--logo-color);
+  color: var(--light-logo-firstColor);
   text-transform: uppercase;
 }
 
@@ -112,14 +124,10 @@ header {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-
-  background: rgb(180, 180, 180);
+  background: var(--light-menuIcon-color);
   border-radius: 1px;
-
   z-index: 1;
-
   transform-origin: 4px 0px;
-
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
@@ -139,7 +147,7 @@ header {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(43deg) translate(5px, -3px);
-  background: rgb(255, 184, 28);
+  background:var(--light-menuCross-color);
 }
 
 /*
@@ -167,7 +175,7 @@ header {
   right: -25px;
   width: 200px;
   border-radius: 2px;
-  background: rgba(230,230,230, 0.85);
+  background: var(--light-menuBackground-color);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -181,14 +189,14 @@ header {
 
 #menuToggle input:checked ~ ul {
   visibility: visible;
-  opacity:1;
+  opacity:0.85;
 }
 
 .btn-nightMode {
-  background-color: rgb(200,200,200); /* Green */
+  background-color: var(--light-btnMenu-color);
   border: none;
   padding: 5px 5px;
-  color: var(--logo-color);
+  color: var(--light-logo-firstColor);
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
@@ -219,7 +227,8 @@ strong {
 hr {
   margin: 0;
   border: 0;
-  border-top: 1px solid rgb(238, 238, 238);
+  border-top: 1px solid;
+  border-color: var(--light-line-color);
   width: calc (100% - 2px);
   margin-bottom: 5px;
 }
@@ -231,7 +240,7 @@ hr {
   text-align: left;
   margin-left: var(--frame-width);
   margin-bottom: 5px;
-  color: rgb(50, 50, 50);
+  color: var(--light-font-secondColor);
 }
 
 .progressive {
@@ -275,7 +284,7 @@ hr {
 .info {
   margin: auto;
   margin-top: 10px;
-  color: rgb(34, 34, 34);
+  color: var(--light-font-firstColor);
   background-color: rgb(238, 238, 238);
   padding: 7px;
   border-radius: 4px;
@@ -387,7 +396,7 @@ a:active {
 
 .night-mode .logo {
   border-color: rgba(255, 183, 28, 0.2);
-  background-color: var(--logo-color);
+  background-color: var(--light-logo-firstColor);
 }
 
 .night-mode .inside-logo {
