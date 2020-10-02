@@ -93,6 +93,10 @@ header {
   text-transform: uppercase;
 }
 
+.header-logo h1 strong {
+  font-weight: 400;
+}
+
 #menuToggle {
   display: block;
   position: absolute;
@@ -209,10 +213,6 @@ header {
   line-height: 20px;
 }
 
-strong {
-  font-weight: bold;
-}
-
 .container {
   padding-top: 24px;
   display: grid;
@@ -240,7 +240,7 @@ hr {
 .date {
   margin: 0;
   font-size: 0.7rem;
-  font-weight: normal;
+  font-weight: 300;
   text-align: left;
   margin-left: var(--frame-width);
   margin-bottom: 5px;
@@ -301,13 +301,13 @@ hr {
 .info h4 {
   margin: 0;
   font-size: 0.9rem;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .info h5 {
   margin: 0;
   font-size: 0.75rem;
-  font-weight: normal;
+  font-weight: 300;
   padding-bottom: 7px;
 }
 
@@ -412,7 +412,7 @@ a:active {
 }
 
 .night-mode #menuToggle span {
-  background: #373643;
+  background: #424150;
 }
 
 .night-mode #menu {
@@ -420,7 +420,7 @@ a:active {
 }
 
 .night-mode hr {
-  border-color: #212030;
+  border-color: #373643;
 }
 
 
@@ -474,6 +474,7 @@ a:active {
 .night-mode a:active {
   color:#60574a;
 }
+
 
 
 /*start media queries*/
