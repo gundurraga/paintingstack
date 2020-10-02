@@ -22,7 +22,22 @@ body {
   --light-frameShadow-color:rgb(180,180,180);
   --light-infoBackground-color:rgb(238,238,238);
   --light-infoBorder-color:rgb(232,232,232);
+
+  --night-font-secondColor:#bbaf9e;
+
   --frame-width: 7px;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin:0;
+  margin-top: 16px;
+  color: var(--light-font-secondColor);
+}
+
+.night-mode h4 {
+  color: var(--night-font-secondColor);
 }
 
 body {
