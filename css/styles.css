@@ -4,24 +4,25 @@ body {
   padding: 0;
 }
 
+
 * {
-  --light-logo-firstColor: #003b5c;
+  --light-logo-firstColor: rgb(0, 59, 92);
   --light-logo-secondColor: rgb(255, 255, 255);
   --light-logoBorder-color: rgb(200, 200, 240);
   --light-background-color: rgb(245, 245, 245);
+  --light-postBackground-color:rgb(238, 238, 238);
   --light-header-color: rgb(238, 238, 238);
   --light-headerShadow-color: rgb(200, 200, 200);
-  --light-menuIcon-color: rgb(180, 180, 180);
+  --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color:rgb(255, 184, 28);
   --light-menuBackground-color:rgb(230,230,230);
   --light-btnMenu-color:rgb(200,200,200);
-  --light-line-color:rgb(238, 238, 238);
   --light-font-firstColor: rgb(34, 34, 34);
   --light-font-secondColor: rgb(50, 50, 50);
   --light-frame-color:rgb(238,238,238);
   --light-frameShadow-color:rgb(180,180,180);
-  --light-infoBackground-color:rgb(238,238,238);
-  --light-infoBorder-color:rgb(232,232,232);
+  --light-infoBackground-color:rgb(245, 245, 245);
+  --light-infoBorder-color:rgb(214, 214, 214);
 
   --night-font-secondColor:#bbaf9e;
 
@@ -39,6 +40,27 @@ h4 {
   color: var(--night-font-secondColor);
 }
 
+#loader {
+  visibility: visible;
+  position: fixed;
+  top:25%;
+  left:50%;
+  display: flex;
+  justify-content: center;
+  margin-left: -100px;
+}
+
+#loader .logo {
+  border: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  border-color: var(--light-logoBorder-color);
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: var(--light-logo-secondColor);
+}
+
 body {
   position: relative;
   height: 100%;
@@ -48,6 +70,7 @@ body {
   text-align: center;
   overflow-x: hidden;
   overflow-y: auto;
+  visibility: hidden;
 }
 
 header {
@@ -147,7 +170,7 @@ header {
   margin-bottom: 5px;
   position: relative;
   background: var(--light-menuIcon-color);
-  border-radius: 1px;
+  border-radius: 2px;
   z-index: 1;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -211,7 +234,7 @@ header {
 
 #menuToggle input:checked ~ ul {
   visibility: visible;
-  opacity:0.85;
+  opacity:0.92;
 }
 
 .btn-nightMode {
@@ -240,16 +263,11 @@ header {
   display: flex;
   flex-direction: column;
   margin: auto;
+  background-color:var(--light-postBackground-color);
+  padding: var(--frame-width) calc(2*var(--frame-width));
+  border-radius: 5px;
 }
 
-hr {
-  margin: 0;
-  border: 0;
-  border-top: 1px solid;
-  border-color: var(--light-line-color);
-  width: calc (100% - 2px);
-  margin-bottom: 5px;
-}
 
 .date {
   margin: 0;
@@ -402,7 +420,7 @@ a:active {
 
 
 .night-mode {
-  background-color: #1e1e27;
+  background-color: rgb(30, 30, 39);
 }
 
 .night-mode header {
@@ -410,6 +428,7 @@ a:active {
   box-shadow: inset 0px -20px 20px -20px #121221;
   -moz-box-shadow: inset 0px -20px 20px -20px #121221;
   -webkit-box-shadow: inset 0px -20px 20px -20px #121221;
+  border-bottom: 1px solid rgb(83, 69, 0);
 }
 
 .night-mode .logo {
@@ -426,15 +445,15 @@ a:active {
 }
 
 .night-mode #menuToggle span {
-  background: #424150;
+  background: rgb(85, 84, 105);
 }
 
 .night-mode #menu {
   background: rgba(25, 24, 37, 0.85);
 }
 
-.night-mode hr {
-  border-color: #373643;
+.night-mode .post {
+  background-color: rgb(35, 35, 48);
 }
 
 
@@ -452,11 +471,12 @@ a:active {
 .night-mode .info {
   color: #bbaf9e;
   background-color: #373643;
-  border-color: #212030;
+  border-color: rgb(71, 71, 73);
 }
 
 .night-mode footer {
   background-color: #181725;
+  border-top: 1px solid rgb(83, 69, 0);
 }
 
 
