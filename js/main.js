@@ -31,7 +31,7 @@ btnNightMode.addEventListener("click", function () {
 //Loader
 document.onreadystatechange = function () {
   if (document.readyState === "interactive") {
-    setTimeout(loader, 1000);
+    setTimeout(loader, 1500);
   }
 };
 
