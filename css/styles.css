@@ -6,37 +6,41 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-logo-firstColor: rgb(0, 59, 92);
   --light-logo-secondColor: rgb(255, 255, 255);
   --light-logoBorder-color: rgb(200, 200, 240);
-  --light-background-color: rgb(245, 245, 245);
-  --light-postBackground-color: rgb(238, 238, 238);
-  --light-header-color: rgb(238, 238, 238);
-  --light-headerShadow-color: rgb(200, 200, 200);
+  --light-background-color: rgb(240, 240, 240);
+  --light-postBackground-color: rgb(235, 235, 235);
+  --light-postBorder-color:rgb(209, 209, 209);
+  --light-header-color: rgb(220, 220, 220);
+  --light-headerShadow-color: rgb(180, 180, 180);
   --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color: rgb(255, 184, 28);
   --light-menuBackground-color: rgb(230, 230, 230);
+  --light-menuBorder-color:var(--light-postBorder-color);
   --light-btnMenu-color: rgb(200, 200, 200);
   --light-font-firstColor: rgb(34, 34, 34);
-  --light-font-secondColor: rgb(50, 50, 50);
-  --light-frame-color: rgb(238, 238, 238);
-  --light-frameShadow-color: rgb(180, 180, 180);
-  --light-infoBackground-color: rgb(245, 245, 245);
-  --light-infoBorder-color: rgb(214, 214, 214);
+  --light-font-secondColor: rgb(35, 34, 39);
+  --light-frame-color: rgb(216, 216, 216);
+  --light-frameShadow-color: rgb(131, 131, 131);
+  --light-infoBackground-color: rgb(220, 220, 220);
+  --light-infoBorder-color: rgb(180, 180, 180);
 
   --night-logo-firstColor: rgb(226, 219, 193);
   --night-logo-secondColor: var(--light-logo-firstColor);
   --night-logoBorder-color: rgb(66, 71, 97);
-  --night-background-color: rgb(30, 30, 39);
+  --night-background-color: rgb(27, 27, 40);
   --night-postBackground-color: rgb(35, 35, 48);
+  --night-postBorder-color:rgb(48, 47, 58);
   --night-header-color: rgb(25, 24, 38);
   --night-headerShadow-color: rgb(18, 18, 33);
   --night-lineHeadFoot-color: rgb(83, 69, 0);
   --night-menuIcon-color: rgb(85, 84, 105);
   --night-menuCross-color: var(--light-menuCross-color);
   --night-menuBackground-color: rgb(25, 24, 37);
+  --night-menuBorder-color:var(--night-header-color);
   --night-btnMenu-color: var(--light-btnMenu-color);
   --night-font-firstColor: rgb(187, 175, 158);
   --night-font-secondColor: rgb(187, 175, 158);
   --night-frame-color: rgb(96, 87, 74);
-  --night-frameShadow-color: rgb(19, 17, 33);
+  --night-frameShadow-color: var(--night-header-color);
   --night-infoBackground-color: rgb(55, 54, 67);
   --night-infoBorder-color: rgb(71, 71, 73);
 
@@ -86,7 +90,7 @@ h4 {
   position: fixed;
   display: flex;
   justify-content: center;
-  top: 40%;
+  top: 46%;
   left: 50%;
   margin-top: -33vmin;
   margin-left: -33vmin;
@@ -261,11 +265,12 @@ header {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 35px;
+  top: 39px;
   right: -25px;
   width: 200px;
   border-radius: 2px;
   background: var(--light-menuBackground-color);
+  border: 1px solid var(--light-menuBorder-color);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -274,6 +279,7 @@ header {
 
 .night-mode #menu {
   background: var(--night-menuBackground-color);
+  border-color:var(--night-menuBorder-color);
 }
 
 #menu li {
@@ -314,13 +320,14 @@ header {
   flex-direction: column;
   margin: auto;
   background-color: var(--light-postBackground-color);
-  padding: var(--frame-width) calc(2 * var(--frame-width))
-    calc(2 * var(--frame-width)) calc(2 * var(--frame-width));
+  padding: calc(1.2 * var(--frame-width)) calc(2 * var(--frame-width));
+  border: 1px solid var(--light-postBorder-color);
   border-radius: 5px;
 }
 
 .night-mode .post {
   background-color: var(--night-postBackground-color);
+  border-color: var(--night-postBorder-color);
 }
 
 .date {
