@@ -8,8 +8,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-logoBorder-color: rgb(200, 200, 240);
   --light-background-color: rgb(240, 240, 240);
   --light-postBackground-color: rgb(235, 235, 235);
-  --light-postBorder-color:rgb(209, 209, 209);
-  --light-header-color: rgb(220, 220, 220);
+  --light-postBorder-color:rgb(230, 230, 230);
+  --light-header-color: rgb(225, 225, 225);
   --light-headerShadow-color: rgb(180, 180, 180);
   --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color: rgb(255, 184, 28);
@@ -28,7 +28,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-logoBorder-color: rgb(66, 71, 97);
   --night-background-color: rgb(27, 27, 40);
   --night-postBackground-color: rgb(35, 35, 48);
-  --night-postBorder-color:rgb(48, 47, 58);
+  --night-postBorder-color:rgb(37, 37, 50);;
   --night-header-color: rgb(25, 24, 38);
   --night-headerShadow-color: rgb(18, 18, 33);
   --night-lineHeadFoot-color: rgb(83, 69, 0);
@@ -320,14 +320,20 @@ header {
   flex-direction: column;
   margin: auto;
   background-color: var(--light-postBackground-color);
-  padding: calc(1.2 * var(--frame-width)) calc(2 * var(--frame-width));
+  padding: calc(1.2 * var(--frame-width)) 0;
   border: 1px solid var(--light-postBorder-color);
-  border-radius: 5px;
+  width:100%;
 }
 
 .night-mode .post {
   background-color: var(--night-postBackground-color);
   border-color: var(--night-postBorder-color);
+}
+
+.boxDatePainting {
+  padding:0 calc(2 * var(--frame-width));
+  margin: 0 auto;
+  position:relative;
 }
 
 .date {
@@ -486,7 +492,7 @@ footer > div {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background-color: var(--light-menuBackground-color);
+  background-color: var(--light-background-color);
   top: 50%;
   margin-top: -1rem;
   right: 25px;
