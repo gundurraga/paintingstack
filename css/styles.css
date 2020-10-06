@@ -307,11 +307,11 @@ header {
 
 /* BODY */
 .container {
-  padding-top: 24px;
+  padding-top: calc(2 * var(--frame-width));
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
-  gap: 24px 5px;
+  gap: calc(2*var(--frame-width)) 0;
 }
 
 .post {
@@ -447,7 +447,7 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   background-color: var(--light-header-color);
-  margin-top: 20px;
+  margin-top: calc(2*var(--frame-width));
   height: 56px;
   justify-content: start;
 }
