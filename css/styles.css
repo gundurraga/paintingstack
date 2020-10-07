@@ -45,7 +45,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-infoBackground-color: rgb(55, 54, 67);
   --night-infoBorder-color: rgb(71, 71, 73);
 
-  --frame-widthIn: 5px;
+  --frame-widthIn: 4px;
   --frame-width: 7px;
 }
 
@@ -357,15 +357,26 @@ header {
   border-radius: 2px;
   padding: var(--frame-width);
   box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
-    0px 0px 1px var(--frame-widthIn) var(--light-frame-firstColor) inset,
-    0px 0px 1px var(--frame-width) var(--light-frame-secondColor) inset;
+    0px 0px 3px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
+  -moz-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+    0px 0px 3px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
+  -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+    0px 0px 3px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
 }
 
 .night-mode .frame {
   box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
-    0px 0px 1px 1px var(--night-frame-secondColor) inset,
-    0px 0px 1px var(--frame-widthIn) var(--night-frame-firstColor) inset,
-    0px 0px 1px var(--frame-width) var(--night-frame-secondColor) inset;
+    0px 0px 3px var(--frame-widthIn) var(--night-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
+  -moz-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
+    0px 0px 3px var(--frame-widthIn) var(--night-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
+  -webkit-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
+    0px 0px 3px var(--frame-widthIn) var(--night-frame-firstColor) inset,
+    0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
 }
 
 .progressive {
@@ -554,7 +565,7 @@ a:active {
   }
 
   * {
-    --frame-widthIn: 8px;
+    --frame-widthIn: 7px;
     --frame-width: 10px;
   }
 }
