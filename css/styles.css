@@ -20,8 +20,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-font-secondColor: rgb(35, 34, 39);
   --light-frame-color: rgb(216, 216, 216);
   --light-frameShadow-color: rgb(131, 131, 131);
-  --light-infoBackground-color: rgb(220, 220, 220);
-  --light-infoBorder-color: rgb(180, 180, 180);
+  --light-infoBackground-color: rgb(230, 230, 230);
+  --light-infoBorder-color: rgb(209, 209, 209);
 
   --night-logo-firstColor: rgb(226, 219, 193);
   --night-logo-secondColor: var(--light-logo-firstColor);
@@ -350,16 +350,7 @@ header {
   color: var(--night-font-secondColor);
 }
 
-.progressive {
-  position: relative;
-  display: block;
-  outline: none;
-}
-.progressive img {
-  position: relative;
-  display: block;
-  max-height: 85vh;
-  max-width: 85vw;
+.frame {
   border-width: var(--frame-width);
   border-style: solid;
   border-radius: 2px;
@@ -369,15 +360,29 @@ header {
   -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color);
 }
 
-.night-mode .progressive img {
+.night-mode .frame {
   border-color: var(--night-frame-color);
   box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color);
   -moz-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color);
   -webkit-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color);
 }
 
+.progressive {
+  position: relative;
+  display: block;
+  outline: none;
+  overflow: hidden;
+}
+
+.progressive img {
+  position: relative;
+  display: block;
+  max-height: 85vh;
+  max-width: 85vw;
+}
+
 .progressive img.preview {
-  filter: contrast(200%) blur(2px) grayscale(90%);
+  filter: contrast(200%) blur(2px) saturate(50%) grayscale(80%);
   max-height: 85vh;
   max-width: 85vw;
 }
@@ -454,7 +459,7 @@ footer {
 
 .night-mode footer {
   background-color: var(--night-header-color);
-  border-top: 1px solid rgb(83, 69, 0);
+  border-top: 1px solid rgb(21, 13, 43);
 }
 
 
