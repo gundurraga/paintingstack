@@ -4,7 +4,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 * {
   --light-logo-firstColor: rgb(0, 59, 92);
   --light-logo-secondColor: rgb(255, 255, 255);
-  --light-logoBorder-color: rgb(200, 200, 240);
+  --light-logoBorder-color: var(--light-frame-secondColor);
   --light-background-color: rgb(240, 240, 240);
   --light-postBackground-color: rgb(235, 235, 235);
   --light-postBorder-color: rgb(230, 230, 230);
@@ -17,7 +17,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-btnMenu-color: rgb(200, 200, 200);
   --light-font-firstColor: rgb(34, 34, 34);
   --light-font-secondColor: rgb(35, 34, 39);
-  --light-frame-secondColor: rgb(190, 190, 190);
+  --light-frame-secondColor: rgb(199, 199, 199);
   --light-frame-firstColor: rgb(220, 220, 220);
   --light-frameShadow-color: rgb(130, 130, 130);
   --light-infoBackground-color: rgb(230, 230, 230);
@@ -25,21 +25,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   --night-logo-firstColor: rgb(226, 219, 193);
   --night-logo-secondColor: var(--light-logo-firstColor);
-  --night-logoBorder-color: rgb(66, 71, 97);
+  --night-logoBorder-color: var(--night-frame-firstColor);
   --night-background-color: rgb(27, 27, 40);
   --night-postBackground-color: rgb(35, 35, 48);
   --night-postBorder-color: rgb(37, 37, 50);
   --night-header-color: rgb(25, 24, 38);
   --night-headerShadow-color: rgb(18, 18, 33);
-  --night-lineHeadFoot-color: rgb(83, 69, 0);
-  --night-menuIcon-color: rgb(85, 84, 105);
+  --night-lineHeadFoot-color: rgb(150, 123, 50);
+  --night-menuIcon-color: var(--night-frame-firstColor);
   --night-menuCross-color: var(--light-menuCross-color);
   --night-menuBackground-color: rgb(25, 24, 37);
   --night-menuBorder-color: var(--night-header-color);
   --night-btnMenu-color: var(--light-btnMenu-color);
   --night-font-firstColor: rgb(187, 175, 158);
   --night-font-secondColor: rgb(187, 175, 158);
-  --night-frame-secondColor: rgb(77, 82, 59);
+  --night-frame-secondColor: rgb(90, 81, 68);
   --night-frame-firstColor: rgb(96, 87, 74);
   --night-frameShadow-color: var(--night-header-color);
   --night-infoBackground-color: rgb(55, 54, 67);
@@ -353,32 +353,19 @@ header {
 }
 
 .frame {
+  outset:hidden;
   border-radius: 2px;
   padding: var(--frame-width);
   box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
-    0px 0px 0px var(--frame-widthIn) var(--light-frame-firstColor) inset,
-    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
-  -moz-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
-    0px 0px 0px var(--frame-widthIn) var(--light-frame-firstColor) inset,
-    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
-  -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
-    0px 0px 0px var(--frame-widthIn) var(--light-frame-firstColor) inset,
-    0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
+    0px 0px 1px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 1px var(--frame-width) var(--light-frame-secondColor) inset;
 }
 
 .night-mode .frame {
   box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
-    0px 0px 0px 2px var(--night-frame-secondColor) inset,
-    0px 0px 0px var(--frame-widthIn) var(--night-frame-firstColor) inset,
-    0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
-  -moz-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
-    0px 0px 0px 2px var(--night-frame-secondColor) inset,
-    0px 0px 0px var(--frame-widthIn) var(--night-frame-firstColor) inset,
-    0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
-  -webkit-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
-    0px 0px 0px 2px var(--night-frame-secondColor) inset,
-    0px 0px 0px var(--frame-widthIn) var(--night-frame-firstColor) inset,
-    0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
+    0px 0px 1px 1px var(--night-frame-secondColor) inset,
+    0px 0px 1px var(--frame-widthIn) var(--night-frame-firstColor) inset,
+    0px 0px 1px var(--frame-width) var(--night-frame-secondColor) inset;
 }
 
 .progressive {
@@ -473,7 +460,7 @@ footer {
 
 .night-mode footer {
   background-color: var(--night-header-color);
-  border-top: 1px solid rgb(22, 0, 83);
+  border-top: 1px solid var(--night-lineHeadFoot-color);
 }
 
 footer > div {
