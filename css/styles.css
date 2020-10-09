@@ -7,13 +7,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-logoBorder-color: var(--light-frame-secondColor);
   --light-background-color: rgb(240, 240, 240);
   --light-postBackground-color: rgb(235, 235, 235);
-  --light-postBorder-color: rgb(230, 230, 230);
+  --lightMobile-postBorder-color: rgb(209, 209, 209);
+  --lightDesktop-postBorder-color: rgb(230, 230, 230);
   --light-header-color: rgb(225, 225, 225);
   --light-headerShadow-color: rgb(180, 180, 180);
   --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color: rgb(255, 184, 28);
   --light-menuBackground-color: rgb(230, 230, 230);
-  --light-menuBorder-color: var(--light-postBorder-color);
+  --light-menuBorder-color: rgb(230, 230, 230);
   --light-btnMenu-color: rgb(200, 200, 200);
   --light-font-firstColor: rgb(34, 34, 34);
   --light-font-secondColor: rgb(35, 34, 39);
@@ -28,7 +29,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-logoBorder-color: var(--night-frame-firstColor);
   --night-background-color: rgb(27, 27, 40);
   --night-postBackground-color: rgb(35, 35, 48);
-  --night-postBorder-color: rgb(37, 37, 50);
+  --nightMobile-postBorder-color: rgb(46, 46, 65);
+  --nightDesktop-postBorder-color: rgb(37, 37, 50);
   --night-header-color: rgb(25, 24, 38);
   --night-headerShadow-color: rgb(18, 18, 33);
   --night-lineHeadFoot-color: rgb(150, 123, 50);
@@ -39,9 +41,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-btnMenu-color: var(--light-btnMenu-color);
   --night-font-firstColor: rgb(187, 175, 158);
   --night-font-secondColor: rgb(187, 175, 158);
-  --night-frame-secondColor: rgb(90, 81, 68);
-  --night-frame-firstColor: rgb(96, 87, 74);
-  --night-frameShadow-color: var(--night-header-color);
+  --night-frame-secondColor: rgb(80, 72, 60);
+  --night-frame-firstColor: rgb(85, 78, 65);
+  --night-frameShadow-color: rgb(27, 27, 39);
   --night-infoBackground-color: rgb(55, 54, 67);
   --night-infoBorder-color: rgb(71, 71, 73);
 
@@ -309,11 +311,10 @@ header {
 
 /* BODY */
 .container {
-  padding-top: calc(2 * var(--frame-width));
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
-  gap: calc(2 * var(--frame-width)) 0;
+  gap: 0;
 }
 
 .post {
@@ -322,14 +323,14 @@ header {
   flex-direction: column;
   margin: auto;
   background-color: var(--light-postBackground-color);
-  padding: calc(1.2 * var(--frame-width)) 0;
-  border: 1px solid var(--light-postBorder-color);
-  width: 100%;
+  padding: calc(2.2 * var(--frame-width)) calc(2 * var(--frame-width)) calc(3.2 * var(--frame-width)) calc(2 * var(--frame-width));
+  border-bottom: 1px solid var(--lightMobile-postBorder-color);
+  width: 100vw;
 }
 
 .night-mode .post {
   background-color: var(--night-postBackground-color);
-  border-color: var(--night-postBorder-color);
+  border-bottom: 1px solid var(--nightMobile-postBorder-color);
 }
 
 .boxDatePainting {
@@ -357,25 +358,25 @@ header {
   border-radius: 2px;
   padding: var(--frame-width);
   box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
-    0px 0px 3px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
   -moz-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
-    0px 0px 3px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
   -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
-    0px 0px 3px var(--frame-widthIn) var(--light-frame-firstColor) inset,
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
 }
 
 .night-mode .frame {
   box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
-    0px 0px 3px var(--frame-widthIn) var(--night-frame-firstColor) inset,
+    0px 0px 2px var(--frame-widthIn) var(--night-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
   -moz-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
-    0px 0px 3px var(--frame-widthIn) var(--night-frame-firstColor) inset,
+    0px 0px 2px var(--frame-widthIn) var(--night-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
   -webkit-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
-    0px 0px 3px var(--frame-widthIn) var(--night-frame-firstColor) inset,
+    0px 0px 2px var(--frame-widthIn) var(--night-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
 }
 
@@ -464,7 +465,6 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   background-color: var(--light-header-color);
-  margin-top: calc(2 * var(--frame-width));
   height: 56px;
   justify-content: start;
 }
@@ -555,6 +555,28 @@ a:active {
 
 /*Media queries*/
 @media screen and (min-width: 700px) {
+  * {
+    --frame-widthIn: 7px;
+    --frame-width: 10px;
+  }
+
+  .container {
+    padding-top: calc(2 * var(--frame-width));
+    gap: calc(2 * var(--frame-width)) 0;
+  }
+
+  .post {
+    padding: calc(1.2 * var(--frame-width)) 0;
+    border-bottom: 1px solid var(--lightDesktop-postBorder-color);
+    border: 1px solid var(--lightDesktop-postBorder-color);
+    width: 100%;
+  }
+
+  .night-mode .post {
+    border: 1px solid var(--nightDesktop-postBorder-color);
+    border-bottom: 1px solid var(--nightDesktop-postBorder-color);
+  }
+
   .progressive img {
     max-height: 60vh;
     max-width: 60vw;
@@ -564,10 +586,9 @@ a:active {
     max-width: 60vw;
   }
 
-  * {
-    --frame-widthIn: 7px;
-    --frame-width: 10px;
-  }
+  footer {
+    margin-top: calc(2*var(--frame-width));
+  }  
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
