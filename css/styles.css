@@ -323,7 +323,7 @@ header {
   flex-direction: column;
   margin: auto;
   background-color: var(--light-postBackground-color);
-  padding: calc(2.2 * var(--frame-width)) 0 calc(3.2 * var(--frame-width)) 0;
+  padding: calc(2.2 * var(--frame-width)) calc(2 * var(--frame-width)) calc(3.2 * var(--frame-width)) calc(2 * var(--frame-width));
   border-bottom: 1px solid var(--lightMobile-postBorder-color);
   width: 100vw;
 }
@@ -419,7 +419,7 @@ header {
   margin-top: 10px;
   color: var(--light-font-firstColor);
   background-color: var(--light-infoBackground-color);
-  padding: var(--frame-width) calc(2 * var(--frame-width));
+  padding: 7px;
   border-radius: 4px;
   text-align: start;
   border-width: 1px;
@@ -555,6 +555,11 @@ a:active {
 
 /*Media queries*/
 @media screen and (min-width: 700px) {
+  * {
+    --frame-widthIn: 7px;
+    --frame-width: 10px;
+  }
+
   .container {
     padding-top: calc(2 * var(--frame-width));
     gap: calc(2 * var(--frame-width)) 0;
@@ -581,12 +586,9 @@ a:active {
     max-width: 60vw;
   }
 
-  
-
-  * {
-    --frame-widthIn: 7px;
-    --frame-width: 10px;
-  }
+  footer {
+    margin-top: calc(2*var(--frame-width));
+  }  
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
