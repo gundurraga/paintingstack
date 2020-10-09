@@ -39,7 +39,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-menuBackground-color: rgb(25, 24, 37);
   --night-menuBorder-color: var(--night-header-color);
   --night-btnMenu-color: var(--light-btnMenu-color);
-  --night-font-firstColor: rgb(187, 175, 158);
+  --night-font-firstColor: rgb(212, 199, 179);
   --night-font-secondColor: rgb(187, 175, 158);
   --night-frame-secondColor: rgb(80, 72, 60);
   --night-frame-firstColor: rgb(85, 78, 65);
@@ -448,6 +448,31 @@ header {
   line-height: 1rem;
 }
 
+a.museumTwitter:link, a.museumTwitter:visited  {
+  text-decoration: none;
+  color: rgb(29, 161, 242);
+  font-weight: 400;
+}
+
+a.museumTwitter:hover, a.museumTwitter:active  {
+  text-decoration: underline;
+  color: rgb(29, 161, 242);
+  font-weight: 400;
+}
+
+.night-mode a.museumTwitter:link,.night-mode a.museumTwitter:visited  {
+  text-decoration: none;
+  color: rgb(27, 149, 224);
+  font-weight: 400;
+}
+
+.night-mode a.museumTwitter:hover,.night-mode a.museumTwitter:active  {
+  text-decoration: underline;
+  color: rgb(27, 149, 224);
+  font-weight: 400;
+}
+
+
 .info-icons {
   text-align: center;
 }
@@ -519,38 +544,28 @@ footer > div {
 }
 
 /*links*/
-a:link {
+a:link,a:visited,a:hover,a:active{
+  text-decoration:none;
+}
+
+a:link i, a:visited i {
   text-decoration: none;
-  color: rgb(95, 95, 95);
+  color: var(--light-font-firstColor);
 }
 
-a:visited {
-  color: rgb(95, 95, 95);
+a:hover i, a:active i {
+  text-decoration:none;
+  color: rgb(60, 60, 71);
 }
 
-a:hover {
-  color: rgb(22, 22, 63);
-}
 
-a:active {
-  color: blue;
-}
-
-.night-mode a:link {
+.night-mode a:link i, .night-mode a:visited i {
   text-decoration: none;
-  color: #bbaf9e;
+  color: var(--night-font-firstColor);
 }
 
-.night-mode a:visited {
-  color: #bbaf9e;
-}
-
-.night-mode a:hover {
-  color: #60574a;
-}
-
-.night-mode a:active {
-  color: #60574a;
+.night-mode a:hover i, .night-mode a:active i {
+  color: rgb(204, 173, 130);
 }
 
 /*Media queries*/
