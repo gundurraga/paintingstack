@@ -323,9 +323,9 @@ header {
   flex-direction: column;
   margin: auto;
   background-color: var(--light-postBackground-color);
-  padding: calc(2.2 * var(--frame-width)) calc(2 * var(--frame-width)) calc(3.2 * var(--frame-width)) calc(2 * var(--frame-width));
+  padding: calc(2.2 * var(--frame-width)) 0 calc(3.2 * var(--frame-width)) 0;
   border-bottom: 1px solid var(--lightMobile-postBorder-color);
-  width: 100vw;
+  width: 100%;
 }
 
 .night-mode .post {
@@ -334,7 +334,7 @@ header {
 }
 
 .boxDatePainting {
-  padding: 0 calc(2 * var(--frame-width));
+  padding: 0 calc(7.5vw - var(--frame-width));
   margin: 0 auto;
   position: relative;
 }
@@ -554,22 +554,26 @@ a:active {
 }
 
 /*Media queries*/
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 820px) {
   * {
     --frame-widthIn: 7px;
     --frame-width: 10px;
   }
 
   .container {
+    grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
     padding-top: calc(2 * var(--frame-width));
     gap: calc(2 * var(--frame-width)) 0;
+  }
+
+  .boxDatePainting {
+    padding: 0 calc(2 * var(--frame-width));
   }
 
   .post {
     padding: calc(1.2 * var(--frame-width)) 0;
     border-bottom: 1px solid var(--lightDesktop-postBorder-color);
     border: 1px solid var(--lightDesktop-postBorder-color);
-    width: 100%;
   }
 
   .night-mode .post {
