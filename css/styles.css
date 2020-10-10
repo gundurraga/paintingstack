@@ -34,7 +34,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-header-color: rgb(25, 24, 38);
   --night-headerShadow-color: rgb(18, 18, 33);
   --night-lineHeadFoot-color: rgb(150, 123, 50);
-  --night-menuIcon-color: var(--night-frame-firstColor);
+  --night-menuIcon-color: rgb(212, 196, 149);
   --night-menuCross-color: var(--light-menuCross-color);
   --night-menuBackground-color: rgb(25, 24, 37);
   --night-menuBorder-color: var(--night-header-color);
@@ -539,8 +539,32 @@ footer > div {
   right: 25px;
 }
 
+.back-to-top a:link, .back-to-top a:visited  {
+  text-decoration: none;
+  color: var(--light-font-secondColor);
+  font-weight: 400;
+}
+
+.back-to-top a:hover, .back-to-top a:active  {
+  text-decoration: underline;
+  color: var(--light-logo-firstColor);
+  font-weight: 400;
+}
+
 .night-mode .back-to-top {
   background-color: var(--night-infoBackground-color);
+}
+
+.night-mode .back-to-top a:link, .night-mode .back-to-top a:visited  {
+  text-decoration: none;
+  color: var(--night-font-secondColor);
+  font-weight: 400;
+}
+
+.night-mode .back-to-top a:hover, .night-mode .back-to-top a:active  {
+  text-decoration: underline;
+  color: var(--night-logo-firstColor);
+  font-weight: 400;
 }
 
 /*links*/
