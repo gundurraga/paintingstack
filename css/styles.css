@@ -20,7 +20,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-font-secondColor: rgb(35, 34, 39);
   --light-frame-secondColor: rgb(199, 199, 199);
   --light-frame-firstColor: rgb(220, 220, 220);
-  --light-frameShadow-color: rgb(130, 130, 130);
+  --light-frameShadow-color: rgb(150, 150, 150);
   --light-infoBackground-color: rgb(230, 230, 230);
   --light-infoBorder-color: rgb(209, 209, 209);
 
@@ -34,7 +34,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-header-color: rgb(25, 24, 38);
   --night-headerShadow-color: rgb(18, 18, 33);
   --night-lineHeadFoot-color: rgb(150, 123, 50);
-  --night-menuIcon-color: rgb(212, 196, 149);
+  --night-menuIcon-color: var(--night-logo-firstColor);
   --night-menuCross-color: var(--light-menuCross-color);
   --night-menuBackground-color: rgb(25, 24, 37);
   --night-menuBorder-color: var(--night-header-color);
@@ -96,8 +96,8 @@ h4 {
   justify-content: center;
   top: 46%;
   left: 50%;
-  margin-top: -33vmin;
-  margin-left: -33vmin;
+  margin-top: -22vmin;
+  margin-left: -22vmin;
 }
 
 .loader .logo {
@@ -106,8 +106,8 @@ h4 {
   border-radius: 2px;
   border-color: var(--light-logoBorder-color);
   position: relative;
-  height: 66vmin;
-  width: 66vmin;
+  height: 44vmin;
+  width: 44vmin;
   background-color: var(--light-logo-secondColor);
 }
 
