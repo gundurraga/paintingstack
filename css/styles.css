@@ -336,11 +336,12 @@ header {
   width: 8vw;
   border: 4px solid var(--light-frame-secondColor);
   margin: 8px 0px;
-  opacity: 0.90;
+  opacity: 0.95;
 }
 
 .night-mode .sideBar img {
   border: 3px solid var(--night-frame-secondColor);
+  opacity: 0.85;
 }
 
 .post {
