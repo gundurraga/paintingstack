@@ -312,9 +312,35 @@ header {
 /* BODY */
 .container {
   display: grid;
-  grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
+  grid-template-columns:  1fr [center-start] max-content [center-end] 1fr;
   grid-template-rows: repeat(auto-fit, max-content);
   gap: 0;
+}
+
+.sideBar {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  padding:20px 0px;
+  left: calc(((100vw - 60vw - 6 * var(--frame-width) - 2px ) / 4) - 4vw);
+}
+
+.sideBar.bottom{
+  bottom: 77px;
+}
+
+.sideBar img {
+  position: relative;
+  display: block;
+  max-height: auto;
+  width: 8vw;
+  border: 4px solid var(--light-frame-secondColor);
+  margin: 8px 0px;
+  opacity: 0.90;
+}
+
+.night-mode .sideBar img {
+  border: 3px solid var(--night-frame-secondColor);
 }
 
 .post {
@@ -627,6 +653,10 @@ a:hover i, a:active i {
     grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
     padding-top: calc(2 * var(--frame-width));
     gap: calc(2 * var(--frame-width)) 0;
+  }
+
+  .sideBar {
+    display:flex;
   }
 
   .boxDatePainting {
