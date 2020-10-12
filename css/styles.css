@@ -33,7 +33,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --nightDesktop-postBorder-color: rgb(37, 37, 50);
   --night-header-color: rgb(25, 24, 38);
   --night-headerShadow-color: rgb(18, 18, 33);
-  --night-lineHeadFoot-color: rgb(150, 123, 50);
+  --night-lineHeadFooter-color: rgb(150, 123, 50);
   --night-menuIcon-color: var(--night-logo-firstColor);
   --night-menuCross-color: var(--light-menuCross-color);
   --night-menuBackground-color: rgb(25, 24, 37);
@@ -132,7 +132,7 @@ header {
   box-shadow: inset 0px -20px 20px -20px var(--night-headerShadow-color);
   -moz-box-shadow: inset 0px -20px 20px -20px var(--night-headerShadow-color);
   -webkit-box-shadow: inset 0px -20px 20px -20px var(--night-headerShadow-color);
-  border-bottom: 1px solid var(--night-lineHeadFoot-color);
+  border-bottom: 1px solid var(--night-lineHeadFooter-color);
 }
 /* HEADER*Logo */
 .header-logo {
@@ -496,7 +496,7 @@ footer {
 
 .night-mode footer {
   background-color: var(--night-header-color);
-  border-top: 1px solid var(--night-lineHeadFoot-color);
+  border-top: 1px solid var(--night-lineHeadFooter-color);
 }
 
 footer > div {
@@ -518,9 +518,33 @@ footer > div {
   color: var(--night-font-secondColor);
 }
 
-.feedback p {
+.feedback h5 {
   margin: 0;
   line-height: 20px;
+}
+
+a.footerLink:link, a.footerLink:visited  {
+  text-decoration: none;
+  color: var(--light-logo-firstColor);
+  font-weight: 700;
+}
+
+a.footerLink:hover, a.footerLink:active  {
+  text-decoration: underline;
+  color: var(--light-logo-firstColor);
+  font-weight: 700;
+}
+
+.night-mode a.footerLink:link, .night-mode a.footerLink:visited  {
+  text-decoration: none;
+  color: var(--night-lineHeadFooter-color);
+  font-weight: 700;
+}
+
+.night-mode a.footerLink:hover, .night-mode a.footerLink:active  {
+  text-decoration: underline;
+  color: var(--night-lineHeadFooter-color);
+  font-weight: 700;
 }
 
 .back-to-top {
