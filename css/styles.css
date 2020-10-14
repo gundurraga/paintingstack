@@ -291,6 +291,13 @@ header {
   font-size: 1rem;
 }
 
+#menu li h4{
+  display: inline-block;
+  line-height: 26px;
+  margin:0;
+  padding: 0 5px;
+}
+
 #menuToggle input:checked ~ ul {
   visibility: visible;
   opacity: 0.92;
@@ -328,9 +335,6 @@ header {
   border: 1px solid var(--lightDesktop-postBorder-color);
 }
 
-.sideBar.bottom{
-  bottom: 77px;
-}
 .sideBar a {
   margin: 8px 0px;
 }
