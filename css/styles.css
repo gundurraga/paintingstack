@@ -271,7 +271,7 @@ header {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 39px;
+  top: 40px;
   right: -25px;
   width: 200px;
   border-radius: 2px;
@@ -691,7 +691,7 @@ a:hover i, a:active i {
 }
 
 .night-mode a:hover i, .night-mode a:active i {
-  color: rgb(145, 177, 202);
+  color: rgb(131, 162, 185);
 }
 
 /*Media queries*/
