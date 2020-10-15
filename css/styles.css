@@ -18,6 +18,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-btnMenu-color: rgb(200, 200, 200);
   --light-font-firstColor: rgb(34, 34, 34);
   --light-font-secondColor: rgb(35, 34, 39);
+  --light-font-thirdColor: rgb(63, 60, 77);
   --light-frame-secondColor: rgb(199, 199, 199);
   --light-frame-firstColor: rgb(220, 220, 220);
   --light-frameShadow-color: rgb(150, 150, 150);
@@ -41,6 +42,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-btnMenu-color: var(--light-btnMenu-color);
   --night-font-firstColor: rgb(212, 199, 179);
   --night-font-secondColor: rgb(187, 175, 158);
+  --night-font-thirdColor: rgb(206, 198, 187);
   --night-frame-secondColor: rgb(80, 72, 60);
   --night-frame-firstColor: rgb(85, 78, 65);
   --night-frameShadow-color: rgb(27, 27, 39);
@@ -296,6 +298,7 @@ header {
   line-height: 26px;
   margin:0;
   padding: 0 5px;
+  font-weight:400;
 }
 
 #menuToggle input:checked ~ ul {
@@ -304,16 +307,35 @@ header {
 }
 
 .btn-nightMode {
-  background-color: var(--light-btnMenu-color);
-  border: none;
-  padding: 5px 5px;
-  color: var(--light-logo-firstColor);
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 2px;
-  cursor: pointer;
-  line-height: 20px;
+  width: 35px;
+  height: 16px;
+  background: var(--light-header-color);
+  border-radius: 25px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid var(--light-font-secondColor);
+  top: 4px;
+  cursor:pointer;
+}
+.btn-nightMode .switch {
+  background: white;
+  width: 12px;
+  height: 12px;
+  background: var(--light-logo-firstColor);
+  border-radius: 100%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: visibility 0s, transform 0.5s ease;
+}
+.night-mode .btn-nightMode {
+  background: var(--night-postBackground-color);
+  border: 1px solid var(--night-font-secondColor);
+}
+.night-mode .btn-nightMode .switch {
+  transform: translateX(18px);
+  background: rgb(56, 115, 150);
+  
 }
 
 /* BODY */
@@ -468,10 +490,18 @@ header {
   border-style: solid;
 }
 
+.info i{
+  color: var(--light-font-thirdColor);
+}
+
 .night-mode .info {
   color: var(--night-font-firstColor);
   background-color: var(--night-infoBackground-color);
   border-color: var(--night-infoBorder-color);
+}
+
+.night-mode .info i {
+  color: var(--night-font-thirdColor);
 }
 
 .info h4 {
@@ -513,6 +543,13 @@ a.museumTwitter:hover, a.museumTwitter:active  {
   font-weight: 400;
 }
 
+.copyright {
+  display:inline-block;
+  margin-left: 9px;
+}
+.copyright .fab {
+  margin: 5px 1px;
+}
 
 .info-icons {
   text-align: center;
@@ -520,7 +557,7 @@ a.museumTwitter:hover, a.museumTwitter:active  {
 
 .fas,
 .fab {
-  padding: 5px 10px;
+  margin: 5px 10px;
   font-size: 20px;
 }
 
@@ -639,7 +676,7 @@ a:link,a:visited,a:hover,a:active{
 
 a:link i, a:visited i {
   text-decoration: none;
-  color: var(--light-font-firstColor);
+  color: var(--light-font-thirdColor);
 }
 
 a:hover i, a:active i {
@@ -650,11 +687,11 @@ a:hover i, a:active i {
 
 .night-mode a:link i, .night-mode a:visited i {
   text-decoration: none;
-  color: var(--night-font-firstColor);
+  color: var(--night-font-thirdColor);
 }
 
 .night-mode a:hover i, .night-mode a:active i {
-  color: rgb(204, 173, 130);
+  color: rgb(145, 177, 202);
 }
 
 /*Media queries*/
