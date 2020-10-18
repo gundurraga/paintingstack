@@ -306,6 +306,16 @@ header {
   opacity: 0.92;
 }
 
+.switchTheme {
+  display:inline-block;
+  cursor:pointer;
+  padding:2px 5px 2px 0px;
+}
+
+.menuLink {
+  display:inline-block;
+}
+
 .btn-nightMode {
   width: 35px;
   height: 16px;

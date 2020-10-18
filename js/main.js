@@ -17,7 +17,7 @@ function localTheme() {
 }
 
 //This save the user preference of theme on local storage, in the future should be saved by user
-const btnNightMode = document.querySelector(".btn-nightMode");
+const btnNightMode = document.querySelector(".switchTheme");
 btnNightMode.addEventListener("click", function () {
   document.body.classList.toggle("night-mode");
 
