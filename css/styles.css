@@ -295,10 +295,11 @@ header {
 
 #menu li h4{
   display: inline-block;
-  line-height: 26px;
+  line-height: 30px;
   margin:0;
-  padding: 0 5px;
+  padding: 0 5px 0 0;
   font-weight:400;
+
 }
 
 #menuToggle input:checked ~ ul {
@@ -309,7 +310,7 @@ header {
 .switchTheme {
   display:inline-block;
   cursor:pointer;
-  padding:2px 5px 2px 0px;
+  padding:0 5px;
 }
 
 .menuLink {
