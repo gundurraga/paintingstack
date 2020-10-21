@@ -380,6 +380,11 @@ header {
   border: 1px solid var(--lightDesktop-postBorder-color);
 }
 
+.night-mode .sideBar {
+  background-color:var(--night-postBackground-color);
+  border: 1px solid var(--nightDesktop-postBorder-color);
+
+}
 .sideBar a {
   margin: 8px 0px;
 }
@@ -396,17 +401,12 @@ header {
   box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
 }
 
-.night-mode .sideBar {
-  background-color:var(--night-postBackground-color);
-  border: 1px solid var(--nightDesktop-postBorder-color);
-  -webkit-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
-  -moz-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
-  box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
-}
-
 .night-mode .sideBar img {
   border: 3px solid var(--night-frame-firstColor);
   opacity: 0.85;
+  -webkit-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
+  -moz-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
+  box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
 }
 
 .post {
