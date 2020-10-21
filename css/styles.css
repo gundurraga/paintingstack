@@ -419,7 +419,7 @@ header {
 }
 
 .boxDatePainting {
-  padding: 0 9vw;
+  padding: 0 calc(7.5vw - var(--frame-width));
   margin: 0 auto;
   position: relative;
 }
@@ -595,7 +595,6 @@ a.museumTwitter:hover, a.museumTwitter:active  {
   border-radius: 4px;
   text-align: center;
   border: 1px solid var(--light-infoBorder-color);
-  max-width: 25vw;
 }
 
 .night-mode .downloadClicked,.night-mode .copyrightClicked {
