@@ -8,13 +8,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-background-color: rgb(240, 240, 240);
   --light-postBackground-color: rgb(235, 235, 235);
   --lightMobile-postBorder-color: rgb(209, 209, 209);
-  --lightDesktop-postBorder-color: rgb(230, 230, 230);
+  --lightDesktop-postBorder-color: rgb(221, 221, 221);
   --light-header-color: rgb(230, 230, 230);
   --light-headerShadow-color: rgb(200, 200, 200);
+  --light-lineHeadFooter-color:rgb(173, 176, 212);
   --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color: rgb(255, 184, 28);
   --light-menuBackground-color: rgb(230, 230, 230);
-  --light-menuBorder-color: rgb(230, 230, 230);
+  --light-menuBorder-color: var(--lightDesktop-postBorder-color);
   --light-btnMenu-color: rgb(200, 200, 200);
   --light-font-firstColor: rgb(34, 34, 34);
   --light-font-secondColor: rgb(35, 34, 39);
@@ -23,7 +24,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-frame-firstColor: rgb(220, 220, 220);
   --light-frameShadow-color: rgb(150, 150, 150);
   --light-infoBackground-color: rgb(230, 230, 230);
-  --light-infoBorder-color: rgb(209, 209, 209);
+  --light-infoBorder-color: rgb(199, 199, 199);
 
   --night-logo-firstColor: rgb(226, 219, 193);
   --night-logo-secondColor: var(--light-logo-firstColor);
@@ -133,6 +134,7 @@ header {
   -moz-box-shadow: inset 0px -20px 20px -20px var(--light-headerShadow-color);
   -webkit-box-shadow: inset 0px -20px 20px -20px var(--light-headerShadow-color);
   justify-content: start;
+  border-bottom: 1px solid var(--light-lineHeadFooter-color);
 }
 
 .night-mode header {
@@ -378,6 +380,11 @@ header {
   border: 1px solid var(--lightDesktop-postBorder-color);
 }
 
+.night-mode .sideBar {
+  background-color:var(--night-postBackground-color);
+  border: 1px solid var(--nightDesktop-postBorder-color);
+
+}
 .sideBar a {
   margin: 8px 0px;
 }
@@ -389,16 +396,17 @@ header {
   width: 8vw;
   border: 4px solid var(--light-frame-firstColor);
   opacity: 0.95;
-}
-
-.night-mode .sideBar {
-  background-color:var(--night-postBackground-color);
-  border: 1px solid var(--nightDesktop-postBorder-color);
+  -webkit-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
+  -moz-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
+  box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
 }
 
 .night-mode .sideBar img {
   border: 3px solid var(--night-frame-firstColor);
   opacity: 0.85;
+  -webkit-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
+  -moz-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
+  box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
 }
 
 .post {
@@ -504,7 +512,7 @@ header {
   margin-top: 10px;
   color: var(--light-font-firstColor);
   background-color: var(--light-infoBackground-color);
-  padding: 7px;
+  padding: 10px;
   border-radius: 4px;
   text-align: start;
   border: 1px solid var(--light-infoBorder-color);
@@ -563,26 +571,39 @@ a.museumTwitter:hover, a.museumTwitter:active  {
 }
 
 .copyrightIcon {
-  margin-left: 9px;
+  margin-left: 10px;
+  padding:6px;
 }
+
 .copyrightIcon .fab {
-  margin: 5px 1px;
+  margin: 4px 1px;
+  padding:0;
 }
 
 .info-icons {
   text-align: center;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 .fas,
 .fab {
-  margin: 5px 10px;
+  margin: 10px;
   font-size: 20px;
 }
 
 .downloadIcon, .copyrightIcon {
   cursor:pointer;
   display:inline-block;
+  border-radius:25%;
+  
+}
+
+.downloadIcon:hover, .copyrightIcon:hover {
+  background-color:rgb(200, 200, 200);
+}
+
+.night-mode .downloadIcon:hover, .night-mode .copyrightIcon:hover {
+  background-color:rgb(50, 46, 59);
 }
 
 .downloadClicked, .copyrightClicked {
@@ -590,7 +611,7 @@ a.museumTwitter:hover, a.museumTwitter:active  {
   margin: auto;
   margin-top: 10px;
   color: var(--light-font-firstColor);
-  background-color: var(--light-frame-secondColor);
+  background-color: var(--light-frame-firstColor);
   padding: 7px;
   border-radius: 4px;
   text-align: center;
@@ -639,6 +660,7 @@ footer {
   background-color: var(--light-header-color);
   height: 56px;
   justify-content: start;
+  border-top: 1px solid var(--light-lineHeadFooter-color);
 }
 
 .night-mode footer {
