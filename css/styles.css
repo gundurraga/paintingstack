@@ -9,8 +9,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --light-postBackground-color: rgb(235, 235, 235);
   --lightMobile-postBorder-color: rgb(209, 209, 209);
   --lightDesktop-postBorder-color: rgb(230, 230, 230);
-  --light-header-color: rgb(225, 225, 225);
-  --light-headerShadow-color: rgb(180, 180, 180);
+  --light-header-color: rgb(230, 230, 230);
+  --light-headerShadow-color: rgb(200, 200, 200);
   --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color: rgb(255, 184, 28);
   --light-menuBackground-color: rgb(230, 230, 230);
@@ -45,7 +45,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --night-font-thirdColor: rgb(206, 198, 187);
   --night-frame-secondColor: rgb(80, 72, 60);
   --night-frame-firstColor: rgb(85, 78, 65);
-  --night-frameShadow-color: rgb(27, 27, 39);
+  --night-frameShadow-color: var(--night-header-color);
   --night-infoBackground-color: rgb(55, 54, 67);
   --night-infoBorder-color: rgb(71, 71, 73);
 
@@ -53,6 +53,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --frame-width: 7px;
 }
 
+/* Principal style */
 html,
 body {
   margin: 0;
@@ -68,12 +69,14 @@ body {
   text-align: center;
   overflow-x: hidden;
   overflow-y: auto;
+  /* hidden for the loader */
   visibility: hidden;
 }
 
 body.night-mode {
   background-color: var(--night-background-color);
 }
+
 
 strong {
   font-weight: 700;
@@ -82,7 +85,8 @@ strong {
 h4 {
   font-size: 0.9rem;
   font-weight: 300;
-  margin: 16px 20px 0 20px;
+  margin: 16px 20px;
+  line-height: 1.2rem;
   color: var(--light-font-secondColor);
 }
 
@@ -104,7 +108,7 @@ h4 {
 
 .loader .logo {
   border: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 2px;
   border-color: var(--light-logoBorder-color);
   position: relative;
@@ -115,6 +119,8 @@ h4 {
 
 .loader .inside-logo {
   background-color: var(--light-logo-firstColor);
+  border-radius: 1px;
+  border: 2px solid rgb(1, 52, 82);
 }
 
 /* HEADER */
@@ -136,7 +142,8 @@ header {
   -webkit-box-shadow: inset 0px -20px 20px -20px var(--night-headerShadow-color);
   border-bottom: 1px solid var(--night-lineHeadFooter-color);
 }
-/* HEADER*Logo */
+
+/* HEADER Logo */
 .header-logo {
   position: absolute;
   display: flex;
@@ -199,7 +206,8 @@ header {
   color: var(--night-logo-firstColor);
 }
 
-/* HEADER > Menu */
+/* HEADER Menu */
+
 #menuToggle {
   display: block;
   position: absolute;
@@ -328,6 +336,7 @@ header {
   top: 4px;
   cursor:pointer;
 }
+
 .btn-nightMode .switch {
   background: white;
   width: 12px;
@@ -339,14 +348,15 @@ header {
   left: 2px;
   transition: visibility 0s, transform 0.5s ease;
 }
+
 .night-mode .btn-nightMode {
   background: var(--night-postBackground-color);
   border: 1px solid var(--night-font-secondColor);
 }
+
 .night-mode .btn-nightMode .switch {
   transform: translateX(18px);
   background: rgb(56, 115, 150);
-  
 }
 
 /* BODY */
@@ -362,7 +372,7 @@ header {
   display: none;
   flex-direction: column;
   padding:20px 0px;
-  left: calc(((100vw - 60vw - 6 * var(--frame-width) - 2px ) / 4) - 4vw - 16px);
+  left: 3vw;
   padding: 8px 16px;
   background-color:var(--light-postBackground-color);
   border: 1px solid var(--lightDesktop-postBorder-color);
@@ -377,7 +387,7 @@ header {
   display: block;
   max-height: auto;
   width: 8vw;
-  border: 4px solid var(--light-frame-secondColor);
+  border: 4px solid var(--light-frame-firstColor);
   opacity: 0.95;
 }
 
@@ -387,7 +397,7 @@ header {
 }
 
 .night-mode .sideBar img {
-  border: 3px solid var(--night-frame-secondColor);
+  border: 3px solid var(--night-frame-firstColor);
   opacity: 0.85;
 }
 
@@ -400,6 +410,7 @@ header {
   padding: calc(2.2 * var(--frame-width)) 0 calc(3.2 * var(--frame-width)) 0;
   border-bottom: 1px solid var(--lightMobile-postBorder-color);
   width: 100%;
+  overflow-x: hidden;
 }
 
 .night-mode .post {
@@ -408,7 +419,7 @@ header {
 }
 
 .boxDatePainting {
-  padding: 0 calc(7.5vw - var(--frame-width));
+  padding: 0 9vw;
   margin: 0 auto;
   position: relative;
 }
@@ -496,9 +507,7 @@ header {
   padding: 7px;
   border-radius: 4px;
   text-align: start;
-  border-width: 1px;
-  border-color: var(--light-infoBorder-color);
-  border-style: solid;
+  border: 1px solid var(--light-infoBorder-color);
 }
 
 .info i{
@@ -519,15 +528,14 @@ header {
   margin: 0;
   font-size: 0.9rem;
   font-weight: 300;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .info h5 {
   margin: 0;
   font-size: 0.75rem;
   font-weight: 300;
-  padding-bottom: 7px;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 a.museumTwitter:link, a.museumTwitter:visited  {
@@ -554,22 +562,73 @@ a.museumTwitter:hover, a.museumTwitter:active  {
   font-weight: 400;
 }
 
-.copyright {
-  display:inline-block;
+.copyrightIcon {
   margin-left: 9px;
 }
-.copyright .fab {
+.copyrightIcon .fab {
   margin: 5px 1px;
 }
 
 .info-icons {
   text-align: center;
+  padding-top: 7px;
 }
 
 .fas,
 .fab {
   margin: 5px 10px;
   font-size: 20px;
+}
+
+.downloadIcon, .copyrightIcon {
+  cursor:pointer;
+  display:inline-block;
+}
+
+.downloadClicked, .copyrightClicked {
+  display:none;
+  margin: auto;
+  margin-top: 10px;
+  color: var(--light-font-firstColor);
+  background-color: var(--light-frame-secondColor);
+  padding: 7px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid var(--light-infoBorder-color);
+  max-width: 25vw;
+}
+
+.night-mode .downloadClicked,.night-mode .copyrightClicked {
+  color: var(--night-font-firstColor);
+  background-color: rgb(50, 49, 59);
+  border: 1px solid var(--night-infoBorder-color);
+}
+
+.iconClicked a:link,.iconClicked a:visited  {
+  text-decoration: none;
+  color: var(--light-font-thirdColor);
+}
+
+.iconClicked a:hover ,.iconClicked a:active  {
+  text-decoration:none;
+  color: rgb(60, 60, 71);
+}
+
+.iconClicked .copyrightClicked a:hover ,.iconClicked .copyrightClicked a:active  {
+  text-decoration: underline;
+}
+
+.night-mode .iconClicked a:link , .night-mode .iconClicked a:visited {
+  text-decoration: none;
+  color: var(--night-font-thirdColor);
+}
+
+.night-mode .iconClicked a:hover, .night-mode .iconClicked a:active {
+  color: rgb(131, 162, 185);
+}
+
+.night-mode .iconClicked .copyrightClicked a:hover , .night-mode .iconClicked .copyrightClicked a:active  {
+  text-decoration: underline;
 }
 
 /* FOOTER */
@@ -706,7 +765,7 @@ a:hover i, a:active i {
 }
 
 /*Media queries*/
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 870px) {
   * {
     --frame-widthIn: 7px;
     --frame-width: 10px;
