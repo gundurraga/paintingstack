@@ -1,4 +1,4 @@
-//Night mode
+//Night theme
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 function prefersTheme() {
   if (prefersDarkScheme.matches) {
@@ -42,21 +42,27 @@ function loader() {
   localTheme();
 }
 
-//Click buttons info
+//Click buttons info **Should be one function for every button
 function downloadClicked(clicked_id) {
-  if (document.getElementById(clicked_id).querySelector(".downloadClicked").style.display == "none") {
-    document.getElementById(clicked_id).querySelector(".downloadClicked").style.display = "block";
-    document.getElementById(clicked_id).querySelector(".copyrightClicked").style.display = "none";
+  var downloadClicked = document.getElementById(clicked_id).querySelector(".downloadClicked"),
+      copyrightClicked = document.getElementById(clicked_id).querySelector(".copyrightClicked"),
+      downloadClickedDisplay = window.getComputedStyle(downloadClicked).getPropertyValue("display");
+  if (downloadClickedDisplay == "none") {
+    downloadClicked.style.display = "block";
+    copyrightClicked.style.display = "none";
   } else {
-    document.getElementById(clicked_id).querySelector(".downloadClicked").style.display = "none";
+    downloadClicked.style.display = "none";
   }
 }
 
 function copyrightClicked(clicked_id) {
-  if (document.getElementById(clicked_id).querySelector(".copyrightClicked").style.display == "none") {
-    document.getElementById(clicked_id).querySelector(".copyrightClicked").style.display = "block";
-    document.getElementById(clicked_id).querySelector(".downloadClicked").style.display = "none";
+  var downloadClicked = document.getElementById(clicked_id).querySelector(".downloadClicked"),
+      copyrightClicked = document.getElementById(clicked_id).querySelector(".copyrightClicked"),
+      copyrightClickedDisplay = window.getComputedStyle(copyrightClicked).getPropertyValue("display");
+  if (copyrightClickedDisplay == "none") {
+    copyrightClicked.style.display = "block";
+    downloadClicked.style.display = "none";
   } else {
-    document.getElementById(clicked_id).querySelector(".copyrightClicked").style.display = "none";
+    copyrightClicked.style.display = "none";
   }
 }

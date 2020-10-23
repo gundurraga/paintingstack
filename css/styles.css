@@ -11,7 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --lightDesktop-postBorder-color: rgb(221, 221, 221);
   --light-header-color: rgb(230, 230, 230);
   --light-headerShadow-color: rgb(200, 200, 200);
-  --light-lineHeadFooter-color:rgb(173, 176, 212);
+  --light-lineHeadFooter-color:var(--lightMobile-postBorder-color);
   --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color: rgb(255, 184, 28);
   --light-menuBackground-color: rgb(230, 230, 230);
@@ -200,6 +200,7 @@ header {
   text-transform: uppercase;
 }
 
+
 .header-logo h1 strong {
   font-weight: 400;
 }
@@ -299,7 +300,7 @@ header {
 }
 
 #menu li {
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 1rem;
 }
 
@@ -307,7 +308,7 @@ header {
   display: inline-block;
   line-height: 30px;
   margin:0;
-  padding: 0 5px 0 0;
+  padding: 0 10px 0 0;
   font-weight:400;
 
 }
@@ -320,11 +321,21 @@ header {
 .switchTheme {
   display:inline-block;
   cursor:pointer;
-  padding:0 5px;
+  padding:5px 10px;
+  border-radius: 8px;
+}
+
+.switchTheme:hover, .menuLink:hover {
+  background-color: var(--lightMobile-postBorder-color);
+}
+
+.night-mode .switchTheme:hover,.night-mode .menuLink:hover {
+  background-color: var(--night-infoBackground-color);
 }
 
 .menuLink {
   display:inline-block;
+  border-radius: 8px;
 }
 
 .btn-nightMode {
@@ -335,7 +346,7 @@ header {
   position: relative;
   display: inline-block;
   border: 1px solid var(--light-font-secondColor);
-  top: 4px;
+  top: 5px;
   cursor:pointer;
 }
 
@@ -378,6 +389,7 @@ header {
   padding: 8px 16px;
   background-color:var(--light-postBackground-color);
   border: 1px solid var(--lightDesktop-postBorder-color);
+  border-radius:8px;
 }
 
 .night-mode .sideBar {
@@ -395,7 +407,7 @@ header {
   max-height: auto;
   width: 8vw;
   border: 4px solid var(--light-frame-firstColor);
-  opacity: 0.95;
+  opacity: 0.85;
   -webkit-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   -moz-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
@@ -407,6 +419,10 @@ header {
   -webkit-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
   -moz-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
   box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
+}
+
+.sideBar img:hover {
+  opacity: 1;
 }
 
 .post {
@@ -581,6 +597,9 @@ a.museumTwitter:hover, a.museumTwitter:active  {
 }
 
 .info-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
   padding-top: 10px;
 }
@@ -593,21 +612,21 @@ a.museumTwitter:hover, a.museumTwitter:active  {
 
 .downloadIcon, .copyrightIcon {
   cursor:pointer;
-  display:inline-block;
+  display:block;
   border-radius:25%;
   
 }
 
 .downloadIcon:hover, .copyrightIcon:hover {
-  background-color:rgb(200, 200, 200);
+  background-color:var(--lightMobile-postBorder-color);
 }
 
 .night-mode .downloadIcon:hover, .night-mode .copyrightIcon:hover {
-  background-color:rgb(50, 46, 59);
+  background-color:var(--nightMobile-postBorder-color);
 }
 
 .downloadClicked, .copyrightClicked {
-  display:none;
+  display: none;
   margin: auto;
   margin-top: 10px;
   color: var(--light-font-firstColor);
@@ -618,9 +637,19 @@ a.museumTwitter:hover, a.museumTwitter:active  {
   border: 1px solid var(--light-infoBorder-color);
 }
 
+.downloadClicked:hover{
+  background-color: var(--lightMobile-postBorder-color);
+  border: 1px solid var(--light-infoBorder-color);
+}
+
 .night-mode .downloadClicked,.night-mode .copyrightClicked {
   color: var(--night-font-firstColor);
   background-color: rgb(50, 49, 59);
+  border: 1px solid var(--night-infoBorder-color);
+}
+
+.night-mode .downloadClicked:hover{
+  background-color: var(--nightMobile-postBorder-color);
   border: 1px solid var(--night-infoBorder-color);
 }
 
@@ -810,6 +839,7 @@ a:hover i, a:active i {
     padding: calc(1.2 * var(--frame-width)) 0;
     border-bottom: 1px solid var(--lightDesktop-postBorder-color);
     border: 1px solid var(--lightDesktop-postBorder-color);
+    border-radius:8px;
   }
 
   .night-mode .post {
