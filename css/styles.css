@@ -341,9 +341,10 @@ header {
 #menu li ion-icon {
   display: inline-block;
   margin:0;
-  padding: 8px;
+  padding: 10px;
   vertical-align: middle;
   color: var(--light-font-secondColor);
+  font-size: 20px;
 }
 
 .night-mode #menu li ion-icon {
