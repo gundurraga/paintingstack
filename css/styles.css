@@ -231,69 +231,53 @@ header {
 
 /* HEADER Menu */
 
-#menuToggle {
+.menuHamburguer {
   display: block;
-  position: absolute;
-  height: 22px;
-  top: 50%;
-  margin-top: -11px;
-  right: 25px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input {
-  display: block;
-  width: 32px;
-  height: 22px;
-  position: absolute;
-  margin: auto;
   cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-  -webkit-touch-callout: none;
+  position: absolute;
+  height: 36px;
+  top: 50%;
+  margin-top: -20px;
+  right: 25px;
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
-#menuToggle span {
-  display: block;
+.menuHamburguer:hover {
+  background-color: var(--light-frame-firstColor);
+}
+
+.night-mode .menuHamburguer:hover {
+  background-color: var(--night-infoBackground-color); 
+}
+
+.bar {
   width: 32px;
   height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: var(--light-menuIcon-color);
+  background-color: var(--light-menuIcon-color);
+  margin: 6px 0;
+  transition: 0.4s;
   border-radius: 2px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-.night-mode #menuToggle span {
-  background: var(--night-menuIcon-color);
+
+.night-mode .bar1,.night-mode .bar2,.night-mode .bar3 {
+  background-color: var(--night-menuIcon-color);
 }
 
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
 
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(43deg) translate(5px, -3px);
+.in-view .bar1 {
+  /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+  transform: translate(0,10px) rotate(-45deg) ;
   background: var(--light-menuCross-color);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
+.in-view .bar2 {opacity: 0;}
 
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-43deg) translate(3px, 5px);
+.in-view .bar3 {
+  /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+  transform:  translate(0, -10px) rotate(45deg);
+  background: var(--light-menuCross-color);
 }
 
 #menu {
@@ -302,8 +286,8 @@ header {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 40px;
-  right: -25px;
+  top: 57px;
+  right: 0px;
   width: 200px;
   border-radius: 2px;
   background: var(--light-menuBackground-color);
@@ -322,11 +306,11 @@ header {
 #menu li {
   padding: 5px 10px;
   font-size: 1rem;
-  border-bottom: 1px solid var(--light-menuBorder-color);
+  border-bottom: 1px solid var(--lightMobile-postBorder-color);
 }
 
 .night-mode #menu li {
-  border-bottom: 1px solid var(--night-menuBorder-color);
+  border-bottom: 1px solid var(--night-infoBackground-color);
 }
 
 #menu li h4 {
@@ -351,7 +335,7 @@ header {
   color: var(--night-font-secondColor);
 }
 
-#menuToggle input:checked ~ ul {
+#menu.in-view{
   visibility: visible;
   opacity: 0.92;
 }
