@@ -1,3 +1,8 @@
+function showMenu(x) {
+  x.classList.toggle("in-view");
+  document.querySelector("#menu").classList.toggle("in-view");
+}
+
 //Night theme
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 function prefersTheme() {

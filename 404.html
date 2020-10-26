@@ -47,30 +47,29 @@
       <h1><strong>Painting</strong>stack</h1>
     </a>
 
-    <div id="menuToggle">
-      <input type="checkbox" />
-
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <ul id="menu">
-        <li>
-          <div class="switchTheme">
-            <h4>Night Mode</h4>
-            <div class="btn-nightMode">
-              <div class="switch"></div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="https://twitter.com/paintingstack"><div class="menuLink"><i class="fab fa-twitter"></i><h4>Twitter</h4></div></a>
-        </li>
-        <li>
-          <a href="https://github.com/gundurraga/paintingstack"><div class="menuLink"><i class="fab fa-github"></i><h4>Github</h4></div></a>
-        </li>
-      </ul>
+    <div class="menuHamburguer" onclick="showMenu(this)">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
     </div>
+
+    <ul id="menu">
+      <li>
+        <div class="switchTheme">
+          <h4>Night Mode</h4>
+          <div class="btn-nightMode">
+            <div class="switch"></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="https://twitter.com/paintingstack"><div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div></a>
+      </li>
+      <li>
+        <a href="https://github.com/gundurraga/paintingstack"><div class="menuLink"><ion-icon name="logo-github"></ion-icon><h4>Github</h4></div></a>
+      </li>
+    </ul>
+
   </header>
   <main>
     <h4>Sorry, we can't find the page you're looking for.<br>You might enjoy The Scream.</h4>
@@ -116,4 +115,5 @@
   </main>
   <script src="js/main.js"></script>
   <script src="js/progressive-image.min.js"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
