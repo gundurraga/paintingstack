@@ -1,3 +1,24 @@
+//Hides nav bar
+window.onload = function () {
+  'use strict';
+   var c, currentScrollTop = 0,
+       navbar = document.querySelector("#Top");
+   window.onscroll = function () {
+      var a = window.pageYOffset;
+      var b = 56;
+      currentScrollTop = a;
+      if (c < currentScrollTop && a > b + b) {
+        navbar.classList.add("scrollUp");
+        document.querySelector("#menu").classList.remove("in-view");
+        document.querySelector(".menuHamburguer").classList.remove("in-view");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.classList.remove("scrollUp");
+      }
+      c = currentScrollTop;
+  }; 
+};
+
+//Menu
 function showMenu(x) {
   x.classList.toggle("in-view");
   document.querySelector("#menu").classList.toggle("in-view");
@@ -70,4 +91,9 @@ function copyrightClicked(clicked_id) {
   } else {
     copyrightClicked.style.display = "none";
   }
+}
+
+function backTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
