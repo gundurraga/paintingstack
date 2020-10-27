@@ -17,7 +17,7 @@ window.onload = function () {
       c = currentScrollTop;
   }; 
 };
-
+document.querySelector("#Top").classList.remove("scrollUp");
 //Menu
 function showMenu(x) {
   x.classList.toggle("in-view");
@@ -96,4 +96,5 @@ function copyrightClicked(clicked_id) {
 function backTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.querySelector("#Top").classList.remove("scrollUp");
 }
