@@ -276,11 +276,9 @@ nav.scrollUp {
   border-radius: 2px;
 }
 
-
 .night-mode .bar1,.night-mode .bar2,.night-mode .bar3 {
   background-color: var(--night-menuIcon-color);
 }
-
 
 .in-view .bar1 {
   /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
@@ -354,7 +352,7 @@ nav.scrollUp {
 
 #menu.in-view{
   visibility: visible;
-  opacity: 0.92;
+  opacity: 0.95;
 }
 
 .switchTheme {
