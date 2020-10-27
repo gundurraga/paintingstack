@@ -41,7 +41,6 @@ Mobile first, media queries at the end
   --light-font-firstColor: rgb(34, 34, 34);
   --light-font-secondColor: rgb(35, 34, 39);
   --light-font-thirdColor: rgb(63, 60, 77);
-  --light-fontHover-color:rgb(23, 97, 28);
   --light-frame-secondColor: rgb(199, 199, 199);
   --light-frame-firstColor: rgb(220, 220, 220);
   --light-frameShadow-color: rgb(150, 150, 150);
@@ -67,7 +66,6 @@ Mobile first, media queries at the end
   --night-font-firstColor: rgb(212, 199, 179);
   --night-font-secondColor: rgb(187, 175, 158);
   --night-font-thirdColor: rgb(206, 198, 187);
-  --night-fontHover-color:rgb(125, 166, 241);
   --night-frame-secondColor: rgb(80, 72, 60);
   --night-frame-firstColor: rgb(85, 78, 65);
   --night-frameShadow-color: var(--night-header-color);
@@ -151,27 +149,24 @@ h4 {
 
 /* HEADER */
 nav {
-  display: flex;
-  height: 56px;
-  background-color: var(--light-header-color);
-  box-shadow: 0px 2px 5px 0px rgba(220, 220, 220, 0.1);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(220, 220, 220, 0.1);
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(220, 220, 220, 0.1);
-  justify-content: start;
-  border-bottom: 0px solid var(--light-lineHeadFooter-color);
-}
-
-nav {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9998;
-  transition: transform 0.5s;
+  z-index: 10;
+  transition: transform 1s;
+  display: flex;
+  height: 56px;
+  background-color: var(--light-header-color);
+  box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.1);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.1);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.1);
+  justify-content: start;
+  border-bottom: 1px solid var(--light-lineHeadFooter-color);
 }
+
 nav.scrollUp {
-  transform: translateY(-80px);
+  transform: translateY(-100px);
 }
 
 .night-mode nav {
@@ -253,18 +248,18 @@ nav.scrollUp {
   position: absolute;
   height: 36px;
   top: 50%;
-  margin-top: -20px;
+  margin-top: -24px;
   right: 25px;
-  padding: 2px 8px;
-  border-radius: 4px;
+  padding: 6px 8px;
+  border-radius: 50%;
 }
 
 .menuHamburguer:hover {
-  background-color: var(--light-frame-firstColor);
+  background-color: var(--light-postBackground-color); 
 }
 
 .night-mode .menuHamburguer:hover {
-  background-color: var(--night-infoBackground-color); 
+  background-color: var(--night-postBackground-color); 
 }
 
 .bar {
@@ -358,9 +353,16 @@ nav.scrollUp {
 .switchTheme {
   display: inline-block;
   cursor: pointer;
-  padding: 0 10px;
-  border-radius: 8px;
+  padding: 0 15px;
+  border-radius: 100px;
 }
+
+.menuLink {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 0 5px;
+}
+
 
 .switchTheme:hover,
 .menuLink:hover {
@@ -372,10 +374,6 @@ nav.scrollUp {
   background-color: var(--night-infoBackground-color);
 }
 
-.menuLink {
-  display: inline-block;
-  border-radius: 8px;
-}
 
 .btn-nightMode {
   width: 35px;
@@ -450,10 +448,11 @@ nav.scrollUp {
   -webkit-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   -moz-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
+  transition: all 0.2s;
 }
 
 .night-mode .sideBar img {
-  border: 3px solid var(--night-frame-firstColor);
+  border: 4px solid var(--night-frame-firstColor);
   opacity: 0.85;
   -webkit-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
   -moz-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
@@ -641,6 +640,7 @@ a.museumTwitter:active {
 ion-icon {
   margin: 10px;
   font-size: 24px;
+  pointer-events: none;
 }
 
 .downloadIcon,
@@ -648,19 +648,18 @@ ion-icon {
   margin: 0 5px;
   cursor: pointer;
   display: block;
-  border-radius: 25%;
+  border-radius: 50%;
+  transition: all 0.2s;
 }
 
-.downloadIcon:hover,
+.downloadIcon:hover {
+  background-color: rgba(23,191,99,0.1);
+  color: rgb(23,191,99);
+}
+
 .copyrightIcon:hover {
-  background-color: var(--lightMobile-postBorder-color);
-  color: var(--light-fontHover-color);
-}
-
-.night-mode .downloadIcon:hover,
-.night-mode .copyrightIcon:hover {
-  background-color: var(--nightMobile-postBorder-color);
-  color: var(--night-fontHover-color);
+  background-color: rgba(29,161,242,0.1);
+  color: rgb(29,161,242);
 }
 
 .downloadClicked,
