@@ -22,6 +22,8 @@
   <link rel="icon" type="image/png" href="images/icons/favicon-128.png" sizes="128x128" />
   <!-- end icons -->
   <title>Home | Paintingstack</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172950117-1"></script>
   <script>
@@ -40,7 +42,8 @@
       <div class="inside-logo"></div>
     </div>
   </div>
-  <header id="Top">
+
+  <nav id="Top">
     <a class="header-logo" href="https://paintingstack.com">
       <div class="logo">
         <div class="inside-logo"></div>
@@ -70,8 +73,7 @@
         <a href="https://github.com/gundurraga/paintingstack"><div class="menuLink"><ion-icon name="logo-github"></ion-icon><h4>Github</h4></div></a>
       </li>
     </ul>
-
-  </header>
+  </nav>
   <main>
     <div class="container">
 
@@ -731,13 +733,12 @@
     <div class="feedback">
       <h5>Say hello to <a target="_blank" class="footerLink" href="https://twitter.com/paintingstack">@paintingstack</a></h5>
     </div>
-    <div class="back-to-top">
-      <a href="#Top">TOP</a>
+    <div class="back-to-top" onclick="backTop()">
+      <h5>TOP</h5>
     </div>
   </footer>
   <script src="js/main.js"></script>
   <script src="js/progressive-image.min.js"></script>
-  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 
 </html>
