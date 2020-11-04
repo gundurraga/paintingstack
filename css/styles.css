@@ -65,7 +65,7 @@ Mobile first, media queries at the end
   --night-font-firstColor: rgb(212, 199, 179);
   --night-font-secondColor: rgb(187, 175, 158);
   --night-font-thirdColor: rgb(206, 198, 187);
-  --night-frame-secondColor: rgb(80, 72, 60);
+  --night-frame-secondColor: rgb(75, 68, 55);
   --night-frame-firstColor: rgb(85, 78, 65);
   --night-frameShadow-color: var(--night-header-color);
   --night-infoBackground-color: rgb(55, 54, 67);
@@ -138,11 +138,11 @@ h4 {
   position: relative;
   height: 44vmin;
   width: 44vmin;
-  background-color: rgb(233, 224, 206);
+  background-color: rgb(243, 238, 229);
 }
 
 .loader .inside-logo {
-  background-color: rgb(144, 161, 192);
+  background-color: rgb(168, 182, 207);
   border-radius: 1px;
 }
 
@@ -452,7 +452,7 @@ nav.scrollUp {
   -webkit-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   -moz-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
-  transition: all 0.2s;
+  transition: opacity 0.2s;
 }
 
 .night-mode .sideBar img {
@@ -505,7 +505,6 @@ nav.scrollUp {
 }
 
 /* Painting */
-
 .frame {
   overflow: hidden;
   border-radius: 2px;
@@ -933,3 +932,4 @@ a:active i {
   border: 1px solid rgba(40, 40, 100, 0.65);
   border-radius: 2px;
 }
+

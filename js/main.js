@@ -1,6 +1,6 @@
+'use strict';
 //Hides nav bar
 window.onload = function () {
-  'use strict';
    var c, currentScrollTop = 0,
        navbar = document.querySelector("#Top");
    window.onscroll = function () {
