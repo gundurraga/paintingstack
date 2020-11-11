@@ -1,4 +1,422 @@
 'use strict';
+
+const postData = [
+  {
+    Date: "November 11, 2020",
+    ID: "elGreco-1600",
+    Artist: "El Greco",
+    ArtworkTitle: "View of Toledo",
+    ArtworkYear: 1600,
+    BirthYear: 1541,
+    DeathYear: 1614,
+    ContryId: "gr",
+    Country: "Greece",
+    DimensionCm:"121.3 x 108.6 cm",
+    DimensionIn:"47 3/4 x 42 3/4 in.",
+    Museum: "The Metropolitan Museum of Art",
+    MuseumTwitter: "metmuseum",
+    ImageSize:"3.4",
+    ImageDimension:"3445 x 3882",
+  },
+ 
+{
+    Date: "November 4, 2020",
+    ID: "Sandys-1864",
+    Artist: "Frederick Sandys",
+    ArtworkTitle: "Morgan le Fay",
+    ArtworkYear: 1864,
+    BirthYear: 1829,
+    DeathYear: 1904,
+    ContryId: "gb",
+    Country: "England",
+    DimensionCm:"61.8 × 43.7 cm",
+    DimensionIn:"24.3 x 17.2 in.",
+    Museum: "Birmingham Museum and Art Gallery",
+    MuseumTwitter: "BM_AG",
+    ImageSize:"1.7",
+    ImageDimension:"1779 x 2500",
+  },
+ 
+{
+    Date: "October 28, 2020",
+    ID: "Berlin-1939",
+    Artist: "Benjamin F. Berlin",
+    ArtworkTitle: "Untitled (Surreal Abstraction)",
+    ArtworkYear: 1939,
+    BirthYear: 1887,
+    DeathYear: 1939,
+    ContryId: "us",
+    Country: "United States of America",
+    DimensionCm:"50.8 × 60.96 cm",
+    DimensionIn:"20 × 24 in.",
+    Museum: "Los Angeles County Museum of Art",
+    MuseumTwitter: "LACMA",
+    ImageSize:"1.4",
+    ImageDimension:"2100 x 1881",
+  },
+ 
+{
+    Date: "October 21, 2020",
+    ID: "daVinci-1489",
+    Artist: "Leonardo da Vinci",
+    ArtworkTitle: "The Lady with an Ermine",
+    ArtworkYear: 1489,
+    BirthYear: 1452,
+    DeathYear: 1518,
+    ContryId: "it",
+    Country: "Italy",
+    DimensionCm:"54.8 x 40.3 cm",
+    DimensionIn:"21.5 x 15.8 in.",
+    Museum: "Czartoryski Museum",
+    MuseumTwitter: "MNKrk",
+    ImageSize:"4.0",
+    ImageDimension:"3474 x 4745",
+  },
+ 
+{
+    Date: "October 14, 2020",
+    ID: "Klimt-1913",
+    Artist: "Gustav Klimt",
+    ArtworkTitle: "The Maiden",
+    ArtworkYear: 1913,
+    BirthYear: 1862,
+    DeathYear: 1918,
+    ContryId: "at",
+    Country: "Austria",
+    DimensionCm:"190 × 200 cm",
+    DimensionIn:"74.8 × 78.7 in.",
+    Museum: "National Gallery Prague",
+    MuseumTwitter: "narodnigalerie",
+    ImageSize:"7.6",
+    ImageDimension:"4790 x 4576",
+  },
+ 
+{
+    Date: "October 7, 2020",
+    ID: "Cassatt-1873",
+    Artist: "Mary Cassatt",
+    ArtworkTitle: "After the Bullfight",
+    ArtworkYear: 1873,
+    BirthYear: 1844,
+    DeathYear: 1926,
+    ContryId: "us",
+    Country: "United States of America",
+    DimensionCm:"82.5 × 64 cm",
+    DimensionIn:"32 1/8 × 25 3/16 in.",
+    Museum: "The Metropolitan Museum of Art",
+    MuseumTwitter: "metmuseum",
+    ImageSize:"1.8",
+    ImageDimension:"2343 x 3000",
+  },
+ 
+{
+    Date: "September 30, 2020",
+    ID: "Zahrtmann-1891",
+    Artist: "Kristian Zahrtmann",
+    ArtworkTitle: "Bird's Eye View from Ravello towards Torello",
+    ArtworkYear: 1891,
+    BirthYear: 1843,
+    DeathYear: 1917,
+    ContryId: "dk",
+    Country: "Denmark",
+    DimensionCm:"42.5 x 54.5 cm",
+    DimensionIn:"16 3/4 x 21 1/4 in.",
+    Museum: "National Gallery of Denmark",
+    MuseumTwitter: "smkmuseum",
+    ImageSize:"1.5",
+    ImageDimension:"1200 x 935",
+  },
+ 
+{
+    Date: "September 23, 2020",
+    ID: "Waugh-1924",
+    Artist: "Frederick Judd Waugh",
+    ArtworkTitle: "The Next Wave",
+    ArtworkYear: 1924,
+    BirthYear: 1861,
+    DeathYear: 1940,
+    ContryId: "us",
+    Country: "United States of America",
+    DimensionCm:"92.1 x 96.8 cm",
+    DimensionIn:"36 1/4 x 38 1/8 in.",
+    Museum: "Indianapolis Museum of Art",
+    MuseumTwitter: "NewfieldsToday",
+    ImageSize:"4.7",
+    ImageDimension:"3000 x 2842",
+  },
+ 
+{
+    Date: "September 16, 2020",
+    ID: "vanGogh-1890",
+    Artist: "Vincent van Gogh",
+    ArtworkTitle: "The Drinkers",
+    ArtworkYear: 1890,
+    BirthYear: 1853,
+    DeathYear: 1890,
+    ContryId: "nl",
+    Country: "Netherlands",
+    DimensionCm:"59.4 × 73.4 cm",
+    DimensionIn:"23 3/8 × 28 7/8 in.",
+    Museum: "The Art Institute of Chicago",
+    MuseumTwitter: "artinstitutechi",
+    ImageSize:"3.0",
+    ImageDimension:"3000 x 2413",
+  },
+ 
+{
+    Date: "September 9, 2020",
+    ID: "Kandinsky-1914",
+    Artist: "Wassily Kandinsky",
+    ArtworkTitle: "Painting with a Red Stain",
+    ArtworkYear: 1914,
+    BirthYear: 1866,
+    DeathYear: 1944,
+    ContryId: "ru",
+    Country: "Russia",
+    DimensionCm:"130 x 130 cm",
+    DimensionIn:"51 3/16 x 51 3/16 in.",
+    Museum: "National Museum of Modern Art",
+    MuseumTwitter: "CentrePompidou",
+    ImageSize:"3.1",
+    ImageDimension:"3283 x 3263",
+  },
+ 
+{
+    Date: "September 2, 2020",
+    ID: "Rembrandt-1653",
+    Artist: "Rembrandt van Rijn",
+    ArtworkTitle: "Aristotle with a Bust of Homer",
+    ArtworkYear: 1653,
+    BirthYear: 1606,
+    DeathYear: 1669,
+    ContryId: "nl",
+    Country: "Netherlands",
+    DimensionCm:"143.5 x 136.5 cm",
+    DimensionIn:"55 1/2 x 53 3/4 in.",
+    Museum: "The Metropolitan Museum of Art",
+    MuseumTwitter: "metmuseum",
+    ImageSize:"1.6",
+    ImageDimension:"3538 x 3734",
+  },
+ 
+{
+    Date: "August 26, 2020",
+    ID: "vanHonthorst-1622",
+    Artist: "Gerrit van Honthorst",
+    ArtworkTitle: "Musical Group on a Balcony",
+    ArtworkYear: 1622,
+    BirthYear: 1590,
+    DeathYear: 1656,
+    ContryId: "nl",
+    Country: "Netherlands",
+    DimensionCm:"309.9 × 216.4 cm",
+    DimensionIn:"122 × 85 3/16 in.",
+    Museum: "J. Paul Getty Museum",
+    MuseumTwitter: "GettyMuseum",
+    ImageSize:"1.2",
+    ImageDimension:"2009 x 2891",
+  },
+ 
+{
+    Date: "August 19, 2020",
+    ID: "Bellows-1909",
+    Artist: "George Bellows",
+    ArtworkTitle: "Stag at Sharkey's",
+    ArtworkYear: 1909,
+    BirthYear: 1882,
+    DeathYear: 1925,
+    ContryId: "us",
+    Country: "United States of America",
+    DimensionCm:"92 x 122.6 cm",
+    DimensionIn:"36 1/4 x 48 1/4 in.",
+    Museum: "The Cleveland Museum of Art",
+    MuseumTwitter: "ClevelandArt",
+    ImageSize:"1.6",
+    ImageDimension:"3326 x 2488",
+  },
+ 
+{
+    Date: "August 12, 2020",
+    ID: "Gauguin-1891",
+    Artist: "Paul Gauguin",
+    ArtworkTitle: "The Big Tree",
+    ArtworkYear: 1891,
+    BirthYear: 1848,
+    DeathYear: 1903,
+    ContryId: "fr",
+    Country: "France",
+    DimensionCm:"72.5 × 91.5 cm",
+    DimensionIn:"28 9/16 × 36 in.",
+    Museum: "The Art Institute of Chicago",
+    MuseumTwitter: "artinstitutechi",
+    ImageSize:"4.5",
+    ImageDimension:"3000 x 2367",
+  },
+ 
+{
+    Date: "August 5, 2020",
+    ID: "Modigliani-1918",
+    Artist: "Amedeo Modigliani",
+    ArtworkTitle: "Portrait of a Woman",
+    ArtworkYear: 1918,
+    BirthYear: 1884,
+    DeathYear: 1920,
+    ContryId: "it",
+    Country: "Italy",
+    DimensionCm:"65 x 48.3 cm",
+    DimensionIn:"25 9/16 x 19 in.",
+    Museum: "The Cleveland Museum of Art",
+    MuseumTwitter: "ClevelandArt",
+    ImageSize:"6.8",
+    ImageDimension:"2523 x 3400",
+  },
+ 
+{
+    Date: "July 29, 2020",
+    ID: "Bouguereau-1880",
+    Artist: "William-Adolphe Bouguereau",
+    ArtworkTitle: "A Young Girl Defending Herself against Eros",
+    ArtworkYear: 1880,
+    BirthYear: 1825,
+    DeathYear: 1905,
+    ContryId: "fr",
+    Country: "France",
+    DimensionCm:"81.6 × 57.8 cm",
+    DimensionIn:"32 1/8 × 22 3/4 in.",
+    Museum: "J. Paul Getty Museum",
+    MuseumTwitter: "GettyMuseum",
+    ImageSize:"1.4",
+    ImageDimension:"2101 x 3000",
+  },
+ 
+{
+    Date: "July 22, 2020",
+    ID: "Hopper-1939",
+    Artist: "Edward Hopper",
+    ArtworkTitle: "Cape Cod Evening",
+    ArtworkYear: 1939,
+    BirthYear: 1882,
+    DeathYear: 1968,
+    ContryId: "us",
+    Country: "United States of America",
+    DimensionCm:"76.2 × 101.6 cm",
+    DimensionIn:"30 × 40 in.",
+    Museum: "National Gallery of Art",
+    MuseumTwitter: "ngadc",
+    ImageSize:"3.0",
+    ImageDimension:"3000 x 2250",
+  },
+ 
+{
+    Date: "July 15, 2020",
+    ID: "Bompiani-189X",
+    Artist: "Roberto Bompiani",
+    ArtworkTitle: "A Roman Feast",
+    ArtworkYear: "189X",
+    BirthYear: 1821,
+    DeathYear: 1908,
+    ContryId: "it",
+    Country: "Italy",
+    DimensionCm:"127 × 163.8 cm",
+    DimensionIn:"50 × 64 1/2 in.",
+    Museum: "J. Paul Getty Museum",
+    MuseumTwitter: "GettyMuseum",
+    ImageSize:"3.6",
+    ImageDimension:"3000 x 2384",
+  },
+ 
+{
+    Date: "July 8, 2020",
+    ID: "Vermeer-1672",
+    Artist: "Johannes Vermeer",
+    ArtworkTitle: "Allegory of the Catholic Faith",
+    ArtworkYear: 1672,
+    BirthYear: 1632,
+    DeathYear: 1675,
+    ContryId: "nl",
+    Country: "Netherlands",
+    DimensionCm:"114.3 x 88.9 cm",
+    DimensionIn:"45 x 35 in.",
+    Museum: "The Metropolitan Museum of Art",
+    MuseumTwitter: "metmuseum",
+    ImageSize:"2.4",
+    ImageDimension:"2818 x 3628",
+  },
+ 
+{
+    Date: "July 1, 2020",
+    ID: "Cezanne-1900",
+    Artist: "Paul Cézanne",
+    ArtworkTitle: "Still Life with Milk Jug and Fruit",
+    ArtworkYear: 1900,
+    BirthYear: 1839,
+    DeathYear: 1906,
+    ContryId: "fr",
+    Country: "France",
+    DimensionCm:"45.8 x 54.9 cm",
+    DimensionIn:"18 1/16 x 21 5/8 in.",
+    Museum: "National Gallery of Art",
+    MuseumTwitter: "ngadc",
+    ImageSize:"4.1",
+    ImageDimension:"4096 x 3436",
+  }
+
+];
+
+// javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
+function postTemplate(post) {
+  return `
+  <article class="post" id="${post.ID}">
+    <div class="boxDatePainting">
+      <h5 class="date">${post.Date}</h5>
+      <div class="frame">
+        <a href="images/500p/${post.ID}.jpg"
+          data-srcset=" images/500p/${post.ID}.jpg 500w,  images/600p/${post.ID}.jpg 600w, images/700p/${post.ID}.jpg 700w" 
+          data-sizes="85vw" class="progressive replace">
+          <img src="images/preview/${post.ID}.jpg" class="preview"
+            alt="${post.Artist} - ${post.ArtworkTitle} (${post.ArtworkYear})" />
+        </a>
+      </div>
+    </div>
+    <div class="info">
+      <h4>
+        <strong>${post.ArtworkTitle}, ${post.ArtworkYear}</strong><br />${post.Artist} (
+        <span class="flag-icon flag-icon-${post.ContryId}" title="${post.Country}"></span> ${post.BirthYear}-${post.DeathYear})
+      </h4>
+      <h5>
+      ${post.DimensionCm} (${post.DimensionIn})<br />${post.Museum}
+        <a target="_blank" class="museumTwitter" href="https://twitter.com/${post.MuseumTwitter}">@${post.MuseumTwitter}</a>
+      </h5>
+      <div class="info-icons">
+        <div class="downloadIcon" id="${post.ID}" onclick="downloadClicked(this.id)"><ion-icon name="download-outline"></ion-icon></div>
+        <div class="copyrightIcon" id="${post.ID}" onclick="copyrightClicked(this.id)"><ion-icon name="information-circle-outline"></ion-icon></div>
+      </div>
+      <div class="iconClicked">
+        <div class="downloadClicked" >
+          <a href="images/download/${post.ID}.jpg"
+          download="${post.Artist} - ${post.ArtworkTitle}, ${post.ArtworkYear}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
+        </div>
+        <div class="copyrightClicked">
+          <h4>The painting is in the <br>Public Domain, <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/"><strong>learn more</strong></a>.</h4>
+        </div>
+      </div>
+    </div>
+  </article>
+  `
+}
+
+document.getElementById("container").innerHTML = `
+<div id ="sidebar" class="sideBar left"></div>
+${postData.map(postTemplate).join('')}
+`
+
+document.getElementById("sidebar").innerHTML = `
+${postData.map(function (post) {
+  return `
+  <a href="#${post.ID}" class="sideBarPainting"><img src="images/150p/${post.ID}.jpg"></a>
+  `
+}).join('')}
+`
 //Hides nav bar
 window.onload = function () {
    var c, currentScrollTop = 0,
