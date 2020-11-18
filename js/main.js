@@ -2,6 +2,24 @@
 
 const postData = [
   {
+    Date: "November 18, 2020",
+    ID: "Sorolla-1910",
+    Artist: "Joaquín Sorolla y Bastida",
+    ArtworkTitle: "Corner of the Garden, Alcazar, Sevilla",
+    ArtworkYear: 1910,
+    BirthYear: 1863,
+    DeathYear: 1923,
+    ContryId: "es",
+    Country: "Spain",
+    DimensionCm:"95.3 × 63.5 cm",
+    DimensionIn:"37 1/2 × 25 in.",
+    Museum: "J. Paul Getty Museum",
+    MuseumTwitter: "GettyMuseum",
+    ImageSize:"2.4",
+    ImageDimension:"1988 x 3000",
+  },
+
+  {
     Date: "November 11, 2020",
     ID: "elGreco-1600",
     Artist: "El Greco",
@@ -18,7 +36,7 @@ const postData = [
     ImageSize:"3.4",
     ImageDimension:"3445 x 3882",
   },
- 
+
 {
     Date: "November 4, 2020",
     ID: "Sandys-1864",
