@@ -2,25 +2,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <!-- HTML Meta Tags -->
+  <title>Paintingstack</title>
   <meta name="robots" content="noindex">
-  <meta name="description" content="painting museum" />
-  <meta name="keywords" content="painting, stack, art, museum, social" />
+  <meta name="description" content="We’re building the best way to share and promote art around the world.">
+  <meta charset="utf-8" />
+  <meta name="keywords" content="painting, painter, art, museum, social" />
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="distribution" content="global"/>
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Home | Paintingstack">
+  <meta itemprop="description" content="We’re building the best way to share and promote art around the world.">
+  <meta itemprop="image" content="https://paintingstack.com/images/700p/Klimt-1913.jpg">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://paintingstack.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home | Paintingstack">
+  <meta property="og:description" content="We’re building the best way to share and promote art around the world.">
+  <meta property="og:image" content="https://paintingstack.com/images/700p/Klimt-1913.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home | Paintingstack">
+  <meta name="twitter:description" content="We’re building the best way to share and promote art around the world.">
+  <meta name="twitter:image" content="https://paintingstack.com/images/700p/Berlin-1939.jpg">
+  
+  <!-- Links -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
     rel="stylesheet" />
   <link href="css/styles.css" rel="stylesheet" />
   <link href="css/flag-icon.min.css" rel="stylesheet" />
-  <!-- start icons -->
-  <link rel="icon" type="image/png" href="images/icons/favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="images/icons/favicon-128.png" sizes="128x128" />
-  <!-- end icons -->
-  <title>Paintingstack</title>
-  <script src="https://kit.fontawesome.com/1596b1b8e4.js" crossorigin="anonymous"></script>
+  <link rel="canonical" href="https://paintingstack.com" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172950117-1"></script>
   <script>
@@ -34,85 +73,18 @@
 </head>
 
 <body>
-  <div class="loader">
-    <div class="logo">
-      <div class="inside-logo"></div>
-    </div>
-  </div>
-  <nav id="Top">
-    <a class="header-logo" href="https://paintingstack.com">
-      <div class="logo">
-        <div class="inside-logo"></div>
-      </div>
-      <h1><strong>Painting</strong>stack</h1>
-    </a>
 
-    <div class="menuHamburguer" onclick="showMenu(this)">
-      <div class="bar bar1"></div>
-      <div class="bar bar2"></div>
-      <div class="bar bar3"></div>
-    </div>
+  <div class="loader"></div>
 
-    <ul id="menu">
-      <li>
-        <div class="switchTheme">
-          <h4>Night Mode</h4>
-          <div class="btn-nightMode">
-            <div class="switch"></div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <a href="https://twitter.com/paintingstack"><div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div></a>
-      </li>
-      <li>
-        <a href="https://github.com/gundurraga/paintingstack"><div class="menuLink"><ion-icon name="logo-github"></ion-icon><h4>Github</h4></div></a>
-      </li>
-    </ul>
-  </nav>
+  <nav id="header"></nav>
+
   <main>
-    <h4>Sorry, we can't find the page you're looking for.<br>You might enjoy The Scream.</h4>
-    <div class="container">
-      <article class="post" id="Munch-1910">
-        <div class="boxDatePainting">
-          <h5 class="date"></h5>
-          <div class="frame">
-            <a href="images/500p/Munch-1910.jpg"
-              data-srcset=" images/500p/Munch-1910.jpg 500w,  images/600p/Munch-1910.jpg 600w, images/700p/Munch-1910.jpg 700w" 
-              data-sizes="85vw" class="progressive replace">
-              <img src="images/preview/Munch-1910.jpg" class="preview"
-                alt="Edvard Munch - The Scream (1910)" />
-            </a>
-          </div>
-        </div>
-        <div class="info">
-          <h4>
-            <strong>The Scream, 1910</strong><br />Edvard Munch (
-            <span class="flag-icon flag-icon-no" title="Norway"></span> 1863-1944)
-          </h4>
-          <h5>
-            83 x 66 cm (32 5/8 x 25 7/8 in.)<br />Munch Museum
-            <a target="_blank" class="museumTwitter" href="https://twitter.com/munchmuseet">@munchmuseet</a>
-          </h5>
-          <div class="info-icons">
-            <div class="downloadIcon" id="Munch-1910" onclick="downloadClicked(this.id)"><ion-icon name="download-outline"></ion-icon></div>
-            <div class="copyrightIcon" id="Munch-1910" onclick="copyrightClicked(this.id)"><ion-icon name="information-circle-outline"></ion-icon></div>
-          </div>
-          <div class="iconClicked">
-            <div class="downloadClicked" >
-              <a href="images/download/Munch-1910.jpg"
-              download="Edvard Munch - The Scream, 1910"><h4>Download (1.2 MB)<br><strong>1705 x 2160 px</strong> </h4></a>
-            </div>
-            <div class="copyrightClicked">
-              <h4>Artwork is in the <br>Public Domain, <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/"><strong>learn more</strong></a>.</h4>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-    <br><br><br>
+    <div class="container"></div>
   </main>
+
+  <footer></footer>
+
   <script src="js/main.js"></script>
   <script src="js/progressive-image.min.js"></script>
-  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
 </body>

@@ -423,7 +423,48 @@ function postTemplate(post) {
   `
 }
 
-document.getElementById("container").innerHTML = `
+
+document.querySelector(".loader").innerHTML = `
+<div class="frame">
+  <div class="logo noisy">
+    <div class="inside-logo noisy"></div>
+  </div>
+</div>
+`
+
+document.querySelector("#header").innerHTML = `
+    <a class="header-logo" href="https://paintingstack.com">
+      <div class="logo">
+        <div class="inside-logo noisy"></div>
+      </div>
+      <h1><strong>Painting</strong>stack</h1>
+    </a>
+
+    <div class="menuHamburguer" onclick="showMenu(this)">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+    </div>
+
+    <ul id="menu">
+      <li>
+        <div class="switchTheme">
+          <h4>Night Mode</h4>
+          <div class="btn-nightMode">
+            <div class="switch"></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="https://twitter.com/paintingstack" target="_blank"><div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div></a>
+      </li>
+      <li>
+        <a href="https://github.com/gundurraga/paintingstack" target="_blank"><div class="menuLink"><ion-icon name="logo-github"></ion-icon><h4>Github</h4></div></a>
+      </li>
+    </ul>
+`
+
+document.querySelector(".container").innerHTML = `
 <div id ="sidebar" class="sideBar left"></div>
 ${postData.map(postTemplate).join('')}
 `
@@ -435,10 +476,20 @@ ${postData.map(function (post) {
   `
 }).join('')}
 `
+
+document.querySelector("footer").innerHTML = `
+<div class="feedback">
+  <h5>Say hello to <a target="_blank" class="footerLink" href="https://twitter.com/paintingstack">@paintingstack</a></h5>
+</div>
+<div class="back-to-top" onclick="backTop()">
+  <h5>TOP</h5>
+</div>
+`
+
 //Hides nav bar
 window.onload = function () {
    var c, currentScrollTop = 0,
-       navbar = document.querySelector("#Top");
+       navbar = document.querySelector("#header");
    window.onscroll = function () {
       var a = window.pageYOffset;
       var b = 56;
@@ -453,7 +504,7 @@ window.onload = function () {
       c = currentScrollTop;
   }; 
 };
-document.querySelector("#Top").classList.remove("scrollUp");
+document.querySelector("#header").classList.remove("scrollUp");
 //Menu
 function showMenu(x) {
   x.classList.toggle("in-view");
@@ -504,7 +555,7 @@ function loader() {
   localTheme();
 }
 
-//Click buttons info **Should be one function for every button
+//Click buttons info **Should be one function for all the buttons
 function downloadClicked(clicked_id) {
   var downloadClicked = document.getElementById(clicked_id).querySelector(".downloadClicked"),
       copyrightClicked = document.getElementById(clicked_id).querySelector(".copyrightClicked"),
@@ -532,5 +583,5 @@ function copyrightClicked(clicked_id) {
 function backTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  document.querySelector("#Top").classList.remove("scrollUp");
+  document.querySelector("#header").classList.remove("scrollUp");
 }
