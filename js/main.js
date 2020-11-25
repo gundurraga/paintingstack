@@ -463,7 +463,7 @@ function postTemplate(post) {
           download="${post.Artist} - ${post.ArtworkTitle}, ${post.ArtworkYear}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
         </div>
         <div class="copyrightClicked">
-          <h4>This Painting is shared under the <br> ${post.License} License, <a target="_blank" href="${post.LicenseLink}"><strong>learn more</strong></a>.</h4>
+          <h4>This Painting is shared under the <br><a target="_blank" href="${post.LicenseLink}"><strong>${post.License} License</strong></a>.</h4>
         </div>
       </div>
     </div>
