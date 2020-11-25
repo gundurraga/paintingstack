@@ -2,6 +2,25 @@
 
 const postData = [
   {
+    Date: "November 25, 2020",
+    ID: "Strathmann-1913",
+    Artist: "Carl Strathmann",
+    ArtworkTitle: "Carnival Parade",
+    ArtworkYear: 1913,
+    BirthYear: 1866,
+    DeathYear: 1930,
+    ContryId: "de",
+    Country: "Germany",
+    DimensionCm:"105 cm x 171,5 cm",
+    DimensionIn:"41.3 × 67.5 in.",
+    Museum: "Lenbachhaus",
+    MuseumTwitter: "Lenbachhaus",
+    ImageSize:"2.5",
+    ImageDimension:"2000 x 1206",
+    License: "CC BY-SA 4.0",
+    LicenseLink: "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  },
+  {
     Date: "November 18, 2020",
     ID: "Sorolla-1910",
     Artist: "Joaquín Sorolla y Bastida",
@@ -17,8 +36,9 @@ const postData = [
     MuseumTwitter: "GettyMuseum",
     ImageSize:"2.4",
     ImageDimension:"1988 x 3000",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
-
   {
     Date: "November 11, 2020",
     ID: "elGreco-1600",
@@ -35,8 +55,9 @@ const postData = [
     MuseumTwitter: "metmuseum",
     ImageSize:"3.4",
     ImageDimension:"3445 x 3882",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
-
 {
     Date: "November 4, 2020",
     ID: "Sandys-1864",
@@ -53,8 +74,9 @@ const postData = [
     MuseumTwitter: "BM_AG",
     ImageSize:"1.7",
     ImageDimension:"1779 x 2500",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "October 28, 2020",
     ID: "Berlin-1939",
@@ -71,8 +93,9 @@ const postData = [
     MuseumTwitter: "LACMA",
     ImageSize:"1.4",
     ImageDimension:"2100 x 1881",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "October 21, 2020",
     ID: "daVinci-1489",
@@ -89,8 +112,9 @@ const postData = [
     MuseumTwitter: "MNKrk",
     ImageSize:"4.0",
     ImageDimension:"3474 x 4745",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "October 14, 2020",
     ID: "Klimt-1913",
@@ -107,8 +131,9 @@ const postData = [
     MuseumTwitter: "narodnigalerie",
     ImageSize:"7.6",
     ImageDimension:"4790 x 4576",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "October 7, 2020",
     ID: "Cassatt-1873",
@@ -125,8 +150,9 @@ const postData = [
     MuseumTwitter: "metmuseum",
     ImageSize:"1.8",
     ImageDimension:"2343 x 3000",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "September 30, 2020",
     ID: "Zahrtmann-1891",
@@ -143,8 +169,9 @@ const postData = [
     MuseumTwitter: "smkmuseum",
     ImageSize:"1.5",
     ImageDimension:"1200 x 935",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "September 23, 2020",
     ID: "Waugh-1924",
@@ -161,8 +188,9 @@ const postData = [
     MuseumTwitter: "NewfieldsToday",
     ImageSize:"4.7",
     ImageDimension:"3000 x 2842",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "September 16, 2020",
     ID: "vanGogh-1890",
@@ -179,8 +207,9 @@ const postData = [
     MuseumTwitter: "artinstitutechi",
     ImageSize:"3.0",
     ImageDimension:"3000 x 2413",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "September 9, 2020",
     ID: "Kandinsky-1914",
@@ -197,8 +226,9 @@ const postData = [
     MuseumTwitter: "CentrePompidou",
     ImageSize:"3.1",
     ImageDimension:"3283 x 3263",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "September 2, 2020",
     ID: "Rembrandt-1653",
@@ -215,8 +245,9 @@ const postData = [
     MuseumTwitter: "metmuseum",
     ImageSize:"1.6",
     ImageDimension:"3538 x 3734",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "August 26, 2020",
     ID: "vanHonthorst-1622",
@@ -233,8 +264,9 @@ const postData = [
     MuseumTwitter: "GettyMuseum",
     ImageSize:"1.2",
     ImageDimension:"2009 x 2891",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "August 19, 2020",
     ID: "Bellows-1909",
@@ -251,8 +283,9 @@ const postData = [
     MuseumTwitter: "ClevelandArt",
     ImageSize:"1.6",
     ImageDimension:"3326 x 2488",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "August 12, 2020",
     ID: "Gauguin-1891",
@@ -269,8 +302,9 @@ const postData = [
     MuseumTwitter: "artinstitutechi",
     ImageSize:"4.5",
     ImageDimension:"3000 x 2367",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
- 
 {
     Date: "August 5, 2020",
     ID: "Modigliani-1918",
@@ -287,6 +321,8 @@ const postData = [
     MuseumTwitter: "ClevelandArt",
     ImageSize:"6.8",
     ImageDimension:"2523 x 3400",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
  
 {
@@ -305,6 +341,8 @@ const postData = [
     MuseumTwitter: "GettyMuseum",
     ImageSize:"1.4",
     ImageDimension:"2101 x 3000",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
  
 {
@@ -323,6 +361,8 @@ const postData = [
     MuseumTwitter: "ngadc",
     ImageSize:"3.0",
     ImageDimension:"3000 x 2250",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
  
 {
@@ -341,6 +381,8 @@ const postData = [
     MuseumTwitter: "GettyMuseum",
     ImageSize:"3.6",
     ImageDimension:"3000 x 2384",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
  
 {
@@ -359,6 +401,8 @@ const postData = [
     MuseumTwitter: "metmuseum",
     ImageSize:"2.4",
     ImageDimension:"2818 x 3628",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
  
 {
@@ -377,6 +421,8 @@ const postData = [
     MuseumTwitter: "ngadc",
     ImageSize:"4.1",
     ImageDimension:"4096 x 3436",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   }
 
 ];
@@ -397,14 +443,16 @@ function postTemplate(post) {
       </div>
     </div>
     <div class="info">
-      <h4>
-        <strong>${post.ArtworkTitle}, ${post.ArtworkYear}</strong><br />${post.Artist} (
-        <span class="flag-icon flag-icon-${post.ContryId}" title="${post.Country}"></span> ${post.BirthYear}-${post.DeathYear})
-      </h4>
-      <h5>
-      ${post.DimensionCm} (${post.DimensionIn})<br />${post.Museum}
-        <a target="_blank" class="museumTwitter" href="https://twitter.com/${post.MuseumTwitter}">@${post.MuseumTwitter}</a>
-      </h5>
+      <div class="info-text">
+        <h4>
+          <strong>${post.ArtworkTitle}, ${post.ArtworkYear}</strong><br />${post.Artist} (
+          <span class="flag-icon flag-icon-${post.ContryId}" title="${post.Country}"></span> ${post.BirthYear}-${post.DeathYear})
+        </h4>
+        <h5>
+        ${post.DimensionCm} (${post.DimensionIn})<br />${post.Museum}
+          <a target="_blank" class="museumTwitter" href="https://twitter.com/${post.MuseumTwitter}">@${post.MuseumTwitter}</a>
+        </h5>
+      </div>
       <div class="info-icons">
         <div class="downloadIcon" id="${post.ID}" onclick="downloadClicked(this.id)"><ion-icon name="download-outline"></ion-icon></div>
         <div class="copyrightIcon" id="${post.ID}" onclick="copyrightClicked(this.id)"><ion-icon name="information-circle-outline"></ion-icon></div>
@@ -415,7 +463,7 @@ function postTemplate(post) {
           download="${post.Artist} - ${post.ArtworkTitle}, ${post.ArtworkYear}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
         </div>
         <div class="copyrightClicked">
-          <h4>The painting is in the <br>Public Domain, <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/"><strong>learn more</strong></a>.</h4>
+          <h4>This Painting is shared under the <br><a target="_blank" href="${post.LicenseLink}"><strong>${post.License} License</strong></a>.</h4>
         </div>
       </div>
     </div>
