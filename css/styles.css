@@ -608,6 +608,11 @@ nav.scrollUp {
   width: max-content;
 }
 
+.artworkYear:hover { 
+  text-decoration: underline;
+  cursor:default;
+}
+
 .iconClicked h4 {
   width: auto;
 }
