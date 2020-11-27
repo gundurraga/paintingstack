@@ -11,7 +11,7 @@ const postData = [
     DeathYear: 1930,
     ContryId: "de",
     Country: "Germany",
-    DimensionCm:"105 cm x 171,5 cm",
+    DimensionCm:"105 cm x 171.5 cm",
     DimensionIn:"41.3 × 67.5 in.",
     Museum: "Lenbachhaus",
     MuseumTwitter: "Lenbachhaus",
@@ -367,10 +367,10 @@ const postData = [
  
 {
     Date: "July 15, 2020",
-    ID: "Bompiani-189X",
+    ID: "Bompiani-1899",
     Artist: "Roberto Bompiani",
     ArtworkTitle: "A Roman Feast",
-    ArtworkYear: "189X",
+    ArtworkYear: 1899,
     BirthYear: 1821,
     DeathYear: 1908,
     ContryId: "it",
@@ -445,7 +445,7 @@ function postTemplate(post) {
     <div class="info">
       <div class="info-text">
         <h4>
-          <strong>${post.ArtworkTitle}, ${post.ArtworkYear}</strong><br />${post.Artist} (
+          <strong >${post.ArtworkTitle}, <span class="artworkYear" title="${post.Artist} was ${post.ArtworkYear-post.BirthYear} years old.">${post.ArtworkYear}</span></strong><br />${post.Artist} (
           <span class="flag-icon flag-icon-${post.ContryId}" title="${post.Country}"></span> ${post.BirthYear}-${post.DeathYear})
         </h4>
         <h5>
@@ -463,7 +463,7 @@ function postTemplate(post) {
           download="${post.Artist} - ${post.ArtworkTitle}, ${post.ArtworkYear}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
         </div>
         <div class="copyrightClicked">
-          <h4>This Painting is shared under the <br><a target="_blank" href="${post.LicenseLink}"><strong>${post.License} License</strong></a>.</h4>
+          <h4>This painting is shared under the <br><a target="_blank" href="${post.LicenseLink}"><strong>${post.License} License</strong></a>.</h4>
         </div>
       </div>
     </div>
