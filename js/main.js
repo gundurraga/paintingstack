@@ -2,6 +2,25 @@
 
 const postData = [
   {
+    Date: "December 2, 2020",
+    ID: "Saenredam-1641",
+    Artist: "Pieter Jansz Saenredam",
+    ArtworkTitle: "The Nave and Choir of the Mariakerk in Utrecht",
+    ArtworkYear: 1641,
+    BirthYear: 1597,
+    DeathYear: 1665,
+    ContryId: "nl",
+    Country: "Netherlands",
+    DimensionCm:"121.5 cm x 95 cm",
+    DimensionIn:"47.8 × 37.4 in.",
+    Museum: "Rijksmuseum",
+    MuseumTwitter: "rijksmuseum",
+    ImageSize:"0.4",
+    ImageDimension:"1944 x 2502",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "November 25, 2020",
     ID: "Strathmann-1913",
     Artist: "Carl Strathmann",
@@ -470,7 +489,6 @@ function postTemplate(post) {
   </article>
   `
 }
-
 
 document.querySelector(".loader").innerHTML = `
 <div class="frame">
