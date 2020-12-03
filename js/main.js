@@ -531,14 +531,14 @@ document.querySelector("#header").innerHTML = `
 `
 
 document.querySelector(".container").innerHTML = `
-<div id ="sidebar" class="sideBar left"></div>
+<div class="slider"><div class="sliderIn"></div></div>
 ${postData.map(postTemplate).join('')}
 `
 
-document.getElementById("sidebar").innerHTML = `
+document.querySelector(".sliderIn").innerHTML = `
 ${postData.map(function (post) {
   return `
-  <a href="#${post.ID}" class="sideBarPainting"><img src="images/150p/${post.ID}.jpg"></a>
+  <a href="#${post.ID}" ><img src="images/150p/${post.ID}.jpg"></a>
   `
 }).join('')}
 `
