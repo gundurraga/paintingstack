@@ -422,33 +422,51 @@ nav.scrollUp {
   grid-template-rows: repeat(auto-fit, max-content);
   gap: 0;
 }
+ .slider {
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3;
+  background-color: var(--lightDesktop-postBorder-color);
+  border-bottom: 1px solid var(--lightMobile-postBorder-color);
+}
+.night-mode .slider {
+  background-color: var(--night-header-color);
+  border-bottom: 1px solid var(--nightMobile-postBorder-color);
+}
 
-.sideBar {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  padding: 20px 0px;
-  left: 3vw;
-  padding: 8px 16px;
+.sliderIn {
+  margin: 10px 0px;
+  display: flex;
+  max-width: 100vw;
+  flex-direction: row;
   background-color: var(--light-postBackground-color);
-  border: 1px solid var(--lightDesktop-postBorder-color);
-  border-radius: 8px;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  border-top:1px solid var(--lightMobile-postBorder-color);
+  border-bottom:1px solid var(--lightMobile-postBorder-color);
 }
 
-.night-mode .sideBar {
+.night-mode .sliderIn {
   background-color: var(--night-postBackground-color);
-  border: 1px solid var(--nightDesktop-postBorder-color);
+  border-top:1px solid var(--nightMobile-postBorder-color);
+  border-bottom:1px solid var(--nightMobile-postBorder-color);
 }
 
-.sideBar a {
-  margin: 8px 0px;
+.sliderIn::-webkit-scrollbar {
+  display: none;
 }
 
-.sideBar img {
+.slider a {
+  display: inline-block;
+  margin:auto ;
+}
+
+ .slider img {
+  margin: 20px;
   position: relative;
   display: inline-block;
-  height: auto;
-  width: 8vw;
+  max-height: 12vh;
+  width: auto;
   border: 4px solid var(--light-frame-firstColor);
   opacity: 0.85;
   -webkit-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
@@ -457,15 +475,14 @@ nav.scrollUp {
   transition: opacity 0.2s;
 }
 
-.night-mode .sideBar img {
+.night-mode .slider img {
   border: 4px solid var(--night-frame-firstColor);
   opacity: 0.85;
   -webkit-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
   -moz-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
   box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
 }
-
-.sideBar img:hover {
+ .slider img:hover {
   opacity: 1;
 }
 
@@ -883,14 +900,20 @@ a:active i {
     --frame-width: 10px;
   }
 
+  .slider {
+    max-width: calc(60vw + 6 * var(--frame-width));
+    border-radius: 8px;
+    border: 1px solid var(--lightDesktop-postBorder-color);
+  }
+
+  .night-mode .slider {
+    border: 1px solid var(--nightDesktop-postBorder-color);
+  }
+
   .container {
     grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
     padding-top: calc(2 * var(--frame-width));
     gap: calc(2 * var(--frame-width)) 0;
-  }
-
-  .sideBar {
-    display: flex;
   }
 
   .boxDatePainting {
@@ -899,14 +922,12 @@ a:active i {
 
   .post {
     padding: calc(1.2 * var(--frame-width)) 0;
-    border-bottom: 1px solid var(--lightDesktop-postBorder-color);
-    border: 1px solid var(--lightDesktop-postBorder-color);
+    border: 1px solid var(--lightDesktop-postBorder-color)!important;
     border-radius: 8px;
   }
 
   .night-mode .post {
-    border: 1px solid var(--nightDesktop-postBorder-color);
-    border-bottom: 1px solid var(--nightDesktop-postBorder-color);
+    border: 1px solid var(--nightDesktop-postBorder-color)!important;
   }
 
   .progressive img {
@@ -917,6 +938,8 @@ a:active i {
     max-height: 60vh;
     max-width: 60vw;
   }
+
+
 
   footer {
     margin-top: calc(2 * var(--frame-width));
