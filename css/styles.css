@@ -88,6 +88,7 @@ body {
   padding: 0;
   width:100%; 
   height:100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -427,6 +428,7 @@ nav.scrollUp {
   grid-row: 2 / 3;
   background-color: var(--lightDesktop-postBorder-color);
   border-bottom: 1px solid var(--lightMobile-postBorder-color);
+  display: flex;
 }
 .night-mode .slider {
   background-color: var(--night-header-color);
@@ -469,7 +471,7 @@ nav.scrollUp {
 
 .slider .sliderPainting:last-child {
   padding-right: 20px;
-  }
+}
 
 .slider img {
   position: relative;
@@ -477,7 +479,6 @@ nav.scrollUp {
   max-height: 16vh;
   width: auto;
   border: 4px solid var(--light-frame-firstColor);
-  opacity: 0.85;
   -webkit-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   -moz-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
@@ -507,9 +508,17 @@ nav.scrollUp {
   overflow-x: hidden;
 }
 
+.post:nth-child(2), .post:last-child {
+  border:0;
+}
+
 .night-mode .post {
   background-color: var(--night-postBackground-color);
   border-bottom: 1px solid var(--nightMobile-postBorder-color);
+}
+
+.night-mode .post:nth-child(2),.night-mode .post:last-child{
+  border: 0px;
 }
 
 .boxDatePainting {
@@ -602,6 +611,7 @@ nav.scrollUp {
   color: var(--light-font-firstColor);
   background-color: var(--light-infoBackground-color);
   padding: 10px;
+  padding-bottom: 5px;
   border-radius: 4px;
   text-align: start;
   border: 1px solid var(--light-infoBorder-color);
@@ -676,7 +686,7 @@ a.museumTwitter:active {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
   color: var(--light-font-thirdColor);
 }
 
@@ -909,10 +919,19 @@ a:active i {
     --frame-width: 10px;
   }
 
-  .slider {
-    max-width: calc(60vw + 6 * var(--frame-width));
-    border-radius: 8px;
-    border: 1px solid var(--lightDesktop-postBorder-color);
+  .post:nth-child(2) {
+    border-radius: 8px 8px 0 0;
+  }
+  .post:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .slider img {
+    opacity: 0.85;
+  }
+
+  .slider img:hover {
+    opacity: 1;
   }
 
   .night-mode .slider {
@@ -922,43 +941,33 @@ a:active i {
   .container {
     grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
     padding-top: calc(2 * var(--frame-width));
-    gap: calc(2 * var(--frame-width)) 0;
   }
 
   .boxDatePainting {
     padding: 0 calc(2 * var(--frame-width));
   }
 
-  .post {
-    padding: calc(1.2 * var(--frame-width)) 0;
-    border: 1px solid var(--lightDesktop-postBorder-color)!important;
-    border-radius: 8px;
-  }
-
-  .night-mode .post {
-    border: 1px solid var(--nightDesktop-postBorder-color)!important;
-  }
-
   .progressive img {
     max-height: 60vh;
     max-width: 60vw;
   }
+
   .progressive img.preview {
     max-height: 60vh;
     max-width: 60vw;
   }
 
+  .slider {
+    border: 1px solid var(--lightDesktop-postBorder-color);
+    margin: 0px;
+  }
 
+  .sliderIn {
+    width: calc(60vw + 62px);
+  }
 
   footer {
     margin-top: calc(2 * var(--frame-width));
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  html,
-  body {
-    scroll-behavior: smooth;
   }
 }
 
