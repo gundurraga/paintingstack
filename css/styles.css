@@ -456,16 +456,25 @@ nav.scrollUp {
   display: none;
 }
 
-.slider a {
-  display: inline-block;
-  margin:auto ;
+.slider .sliderPainting {
+  display: block;
+  margin:auto;
+  padding: 20px 8px;
+  display: flex;
 }
 
- .slider img {
-  margin: 20px;
+.slider .sliderPainting:first-child {
+  padding-left: 20px;
+}
+
+.slider .sliderPainting:last-child {
+  padding-right: 20px;
+  }
+
+.slider img {
   position: relative;
-  display: inline-block;
-  max-height: 12vh;
+  display: block;
+  max-height: 16vh;
   width: auto;
   border: 4px solid var(--light-frame-firstColor);
   opacity: 0.85;

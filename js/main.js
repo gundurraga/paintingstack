@@ -537,9 +537,9 @@ ${postData.map(postTemplate).join('')}
 
 document.querySelector(".sliderIn").innerHTML = `
 ${postData.map(function (post) {
-  return `
+  return `<div class="sliderPainting">
   <a href="#${post.ID}" ><img src="images/150p/${post.ID}.jpg"></a>
-  `
+  </div>`
 }).join('')}
 `
 
