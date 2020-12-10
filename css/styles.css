@@ -62,9 +62,9 @@ Mobile first, media queries at the end
   --night-menuBackground-color: rgb(25, 24, 37);
   --night-menuBorder-color: var(--nightDesktop-postBorder-color);
   --night-btnMenu-color: var(--light-btnMenu-color);
-  --night-font-firstColor: rgb(212, 199, 179);
-  --night-font-secondColor: rgb(187, 175, 158);
-  --night-font-thirdColor: rgb(206, 198, 187);
+  --night-font-firstColor: rgb(242, 230, 210);
+  --night-font-secondColor: rgb(217, 205, 188);
+  --night-font-thirdColor: rgb(236, 228, 220);
   --night-frame-secondColor: rgb(75, 68, 55);
   --night-frame-firstColor: rgb(85, 78, 65);
   --night-frameShadow-color: var(--night-header-color);
