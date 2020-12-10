@@ -2,6 +2,25 @@
 
 const postData = [
   {
+    Date: "December 9, 2020",
+    ID: "Chase-1883",
+    Artist: "William Merritt Chase",
+    ArtworkTitle: "Portrait of Dora Wheeler",
+    ArtworkYear: 1883,
+    BirthYear: 1849,
+    DeathYear: 1916,
+    ContryId: "us",
+    Country: "United States of America",
+    DimensionCm:"159.8 x 166.4 cm",
+    DimensionIn:"62 15/16 x 65 1/2 in.",
+    Museum: "The Cleveland Museum of Art",
+    MuseumTwitter: "ClevelandArt",
+    ImageSize:"7.8",
+    ImageDimension:"3400 x 3254",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "December 2, 2020",
     ID: "Saenredam-1641",
     Artist: "Pieter Jansz Saenredam",
