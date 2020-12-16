@@ -440,7 +440,7 @@ nav.scrollUp {
 .sliderIn {
   margin: 10px 0px;
   display: flex;
-  min-width: 100vw;
+  max-width: 100vw;
   flex-direction: row;
   background-color: var(--light-postBackground-color);
   overflow-x: auto;
@@ -960,8 +960,6 @@ a:active i {
   }
 
   .sliderIn {
-    min-width: 0;
-    max-width:100vw;
     width: calc(60vw + 62px);
   }
 
