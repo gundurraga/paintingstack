@@ -62,7 +62,7 @@ function postUserTemplate(post) {
         </h4>
         <h5>
         ${post.DimensionCm} (${post.DimensionIn})<br />
-        <ion-icon class="location-icon" name="location-outline"></ion-icon>${post.ArtworkLocation}
+        <ion-icon class="location-icon" name="earth-outline"></ion-icon>${post.ArtworkLocation}
         </h5>
       </div>
       <div class="info-icons">

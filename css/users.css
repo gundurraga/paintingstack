@@ -1,4 +1,7 @@
 .location-icon {
+    font-size: 1rem;
     margin-right: 0.2rem;
     display: inline-block;
+    vertical-align: middle;
+    pointer-events: none;
 }
