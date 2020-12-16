@@ -427,18 +427,20 @@ nav.scrollUp {
   grid-column: center-start / center-end;
   grid-row: 2 / 3;
   background-color: var(--lightDesktop-postBorder-color);
+  border-top: 1px solid var(--lightMobile-postBorder-color);
   border-bottom: 1px solid var(--lightMobile-postBorder-color);
   display: flex;
 }
 .night-mode .slider {
   background-color: var(--night-header-color);
+  border-top: 1px solid var(--nightMobile-postBorder-color);
   border-bottom: 1px solid var(--nightMobile-postBorder-color);
 }
 
 .sliderIn {
   margin: 10px 0px;
   display: flex;
-  max-width: 100vw;
+  min-width: 100vw;
   flex-direction: row;
   background-color: var(--light-postBackground-color);
   overflow-x: auto;
@@ -694,7 +696,7 @@ a.museumTwitter:active {
   color: var(--night-font-thirdColor);
 }
 
-ion-icon {
+.info-icons ion-icon {
   margin: 10px;
   font-size: 24px;
   pointer-events: none;
@@ -934,10 +936,6 @@ a:active i {
     opacity: 1;
   }
 
-  .night-mode .slider {
-    border: 1px solid var(--nightDesktop-postBorder-color);
-  }
-
   .container {
     grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
     padding-top: calc(2 * var(--frame-width));
@@ -958,11 +956,12 @@ a:active i {
   }
 
   .slider {
-    border: 1px solid var(--lightDesktop-postBorder-color);
     margin: 0px;
   }
 
   .sliderIn {
+    min-width: 0;
+    max-width:100vw;
     width: calc(60vw + 62px);
   }
 
