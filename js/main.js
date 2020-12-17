@@ -1,6 +1,25 @@
 'use strict';
 
 const postData = [
+    {
+    Date: "December 16, 2020",
+    ID: "deMonfreid-1889",
+    Artist: "George-Daniel de Monfreid",
+    ArtworkTitle: "Landscape",
+    ArtworkYear: 1889,
+    BirthYear: 1856,
+    DeathYear: 1929,
+    ContryId: "fr",
+    Country: "France",
+    DimensionCm:"72.9 x 99.9 cm",
+    DimensionIn:"28 11/16 x 39 5/16 in.",
+    Museum: "Indianapolis Museum of Art",
+    MuseumTwitter: "NewfieldsToday",
+    ImageSize:"1.2",
+    ImageDimension:"1050 x 753",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
   {
     Date: "December 9, 2020",
     ID: "Chase-1883",
