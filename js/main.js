@@ -1,6 +1,25 @@
 'use strict';
 
 const postData = [
+  {
+    Date: "December 23, 2020",
+    ID: "Boccioni-1913",
+    Artist: "Umberto Boccioni",
+    ArtworkTitle: "Dynamism of a Cyclist",
+    ArtworkYear: 1913,
+    BirthYear: 1882,
+    DeathYear: 1916,
+    ContryId: "it",
+    Country: "Italy",
+    DimensionCm:"70 x 95 cm",
+    DimensionIn:"27.6 x 37.4 in.",
+    Museum: "Guggenheim Museum",
+    MuseumTwitter: "Guggenheim",
+    ImageSize:"0.6",
+    ImageDimension:"3477 x 2520",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
     {
     Date: "December 16, 2020",
     ID: "deMonfreid-1889",

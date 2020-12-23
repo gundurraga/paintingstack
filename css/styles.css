@@ -65,7 +65,7 @@ Mobile first, media queries at the end
   --night-font-firstColor: rgb(242, 230, 210);
   --night-font-secondColor: rgb(217, 205, 188);
   --night-font-thirdColor: rgb(236, 228, 220);
-  --night-frame-secondColor: rgb(75, 68, 55);
+  --night-frame-secondColor: rgb(95, 88, 75);
   --night-frame-firstColor: rgb(85, 78, 65);
   --night-frameShadow-color: var(--night-header-color);
   --night-infoBackground-color: rgb(55, 54, 67);
@@ -726,12 +726,24 @@ a.museumTwitter:active {
   display: none;
   margin: auto;
   margin-top: 10px;
-  color: var(--light-font-firstColor);
-  background-color: var(--light-frame-firstColor);
-  padding: 7px;
   border-radius: 4px;
   text-align: center;
   border: 1px solid var(--light-infoBorder-color);
+}
+
+.downloadClicked h4,
+.copyrightClicked h4 {
+  margin: 7px;
+}
+
+.downloadClicked {
+  background-color: rgba(23,191,99,0.1);
+  color: rgb(23,191,99);
+}
+
+.copyrightClicked {
+  background-color: rgba(29,161,242,0.1);
+  color: rgb(29,161,242);
 }
 
 .night-mode .downloadClicked,
@@ -741,8 +753,9 @@ a.museumTwitter:active {
   border: 1px solid var(--night-infoBorder-color);
 }
 
+
 .downloadClicked:hover {
-  background-color: var(--lightMobile-postBorder-color);
+  background-color: rgba(23,191,99,0.15);
   border: 1px solid var(--light-infoBorder-color);
 }
 .night-mode .downloadClicked:hover {
