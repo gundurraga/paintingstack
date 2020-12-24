@@ -14,8 +14,8 @@ const gundurraga = [
     Country: "Chile",
     DimensionCm:"50 x 60 cm",
     DimensionIn:"19.7 x 23.6 in.",
-    ImageSize:"2.1",
-    ImageDimension:"3637 x 3026",
+    ImageSize:"3.0",
+    ImageDimension:"3481 x 2904",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
@@ -93,7 +93,7 @@ function postUserTemplate(post) {
           download="${post.ArtworkTitle}, ${post.ArtworkYear} - ${post.Artist}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
         </div>
         <div class="copyrightClicked">
-          <h4>This painting is shared under the <br><a target="_blank" href="${post.LicenseLink}"><strong>${post.License} License</strong></a>.</h4>
+          <h4>This painting is in the <br><a target="_blank" href="${post.LicenseLink}"><strong>Public Domain</strong></a>.</h4>
         </div>
       </div>
     </div>
