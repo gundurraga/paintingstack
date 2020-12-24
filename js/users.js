@@ -2,8 +2,26 @@
 
 const gundurraga = [
   {
+    Date: "December 23, 2020",
+    ID: "scarlet-macaws-2020",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: "Scarlet Macaws",
+    ArtworkYear: 2020,
+    ArtworkLocation: "Montezuma, Costa Rica",
+    BirthYear: 1993,
+    ContryId: "cl",
+    Country: "Chile",
+    DimensionCm:"50 x 60 cm",
+    DimensionIn:"19.7 x 23.6 in.",
+    ImageSize:"2.1",
+    ImageDimension:"3637 x 3026",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "December 15, 2020",
-    ID: "gundurraga-2020-2",
+    ID: "three-motorcycles-2020",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
     ArtworkTitle: "Three Motorcycles",
@@ -21,7 +39,7 @@ const gundurraga = [
   },
   {
     Date: "December 15, 2020",
-    ID: "gundurraga-2020-1",
+    ID: "aloe-vera-2020",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
     ArtworkTitle: "Aloe Vera",
@@ -71,8 +89,8 @@ function postUserTemplate(post) {
       </div>
       <div class="iconClicked">
         <div class="downloadClicked" >
-          <a href="images/${post.UserID}/download/${post.ID}.jpg"
-          download="${post.Artist} - ${post.ArtworkTitle}, ${post.ArtworkYear}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
+          <a href="images/users/${post.UserID}/download/${post.ID}.jpg"
+          download="${post.ArtworkTitle}, ${post.ArtworkYear} - ${post.Artist}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
         </div>
         <div class="copyrightClicked">
           <h4>This painting is shared under the <br><a target="_blank" href="${post.LicenseLink}"><strong>${post.License} License</strong></a>.</h4>
@@ -131,7 +149,7 @@ ${gundurraga.map(postUserTemplate).join('')}
 document.querySelector(".sliderIn").innerHTML = `
 ${gundurraga.map(function (post) {
   return `<div class="sliderPainting">
-  <a href="#${post.ID}" ><img src="images/users/${post.UserID}/150p/${post.ID}.jpg"></a>
+  <a href="#${post.ID}" ><img src="images/users/${post.UserID}/180p/${post.ID}.jpg"></a>
   </div>`
 }).join('')}
 `
