@@ -503,6 +503,9 @@ const postData = [
 
 ];
 
+var first12postData = postData.slice(0,12);
+
+
 // javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
 function postTemplate(post) {
   return `
@@ -589,11 +592,11 @@ document.querySelector("#header").innerHTML = `
 
 document.querySelector(".container").innerHTML = `
 <div class="slider"><div class="sliderIn"></div></div>
-${postData.map(postTemplate).join('')}
+${first12postData.map(postTemplate).join('')}
 `
 
 document.querySelector(".sliderIn").innerHTML = `
-${postData.map(function (post) {
+${first12postData.map(function (post) {
   return `<div class="sliderPainting">
   <a href="#${post.ID}" ><img src="images/150p/${post.ID}.jpg"></a>
   </div>`
@@ -623,10 +626,13 @@ window.onload = function () {
         document.querySelector(".menuHamburguer").classList.remove("in-view");
       } else if (c > currentScrollTop && !(a <= b)) {
         navbar.classList.remove("scrollUp");
+      } else if (a === 0) {
+        navbar.classList.remove("scrollUp");
       }
       c = currentScrollTop;
   }; 
 };
+
 document.querySelector("#header").classList.remove("scrollUp");
 //Menu
 function showMenu(x) {

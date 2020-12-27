@@ -14,8 +14,8 @@ const gundurraga = [
     Country: "Chile",
     DimensionCm:"50 x 60 cm",
     DimensionIn:"19.7 x 23.6 in.",
-    ImageSize:"3.0",
-    ImageDimension:"3481 x 2904",
+    ImageSize:"2.9",
+    ImageDimension:"3458 x 2850",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
@@ -93,7 +93,7 @@ function postUserTemplate(post) {
           download="${post.ArtworkTitle}, ${post.ArtworkYear} - ${post.Artist}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
         </div>
         <div class="copyrightClicked">
-          <h4>This painting is in the <br><a target="_blank" href="${post.LicenseLink}"><strong>Public Domain</strong></a>.</h4>
+          <h4>The painting is in the <br><a target="_blank" href="${post.LicenseLink}"><strong>Public Domain</strong></a>.</h4>
         </div>
       </div>
     </div>
@@ -177,10 +177,13 @@ window.onload = function () {
         document.querySelector(".menuHamburguer").classList.remove("in-view");
       } else if (c > currentScrollTop && !(a <= b)) {
         navbar.classList.remove("scrollUp");
+      } else if (a === 0) {
+        navbar.classList.remove("scrollUp");
       }
       c = currentScrollTop;
   }; 
 };
+
 document.querySelector("#header").classList.remove("scrollUp");
 //Menu
 function showMenu(x) {
