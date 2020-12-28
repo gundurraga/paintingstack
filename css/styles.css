@@ -717,6 +717,7 @@ a.museumTwitter:active {
   color: rgb(23,191,99);
 }
 
+
 .copyrightIcon:hover {
   background-color: rgba(29,161,242,0.1);
   color: rgb(29,161,242);
@@ -726,7 +727,7 @@ a.museumTwitter:active {
 .copyrightClicked {
   display: none;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 5px;
   border-radius: 4px;
   text-align: center;
   border: 1px solid var(--light-infoBorder-color);
