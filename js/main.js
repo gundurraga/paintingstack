@@ -1,6 +1,25 @@
 'use strict';
 
 const postData = [
+   {
+    Date: "December 30, 2020",
+    ID: "Forain-1885",
+    Artist: "Jean Louis Forain",
+    ArtworkTitle: "Tight-Rope Walker",
+    ArtworkYear:  1885,
+    BirthYear: 1852,
+    DeathYear: 1931,
+    ContryId: "fr",
+    Country: "France",
+    DimensionCm:"46.2 × 38.2 cm",
+    DimensionIn:"18 1/8 × 15 in.",
+    Museum: "The Art Institute of Chicago",
+    MuseumTwitter: "artinstitutechi",
+    ImageSize:"1.6",
+    ImageDimension:"2428 x 3000",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
   {
     Date: "December 23, 2020",
     ID: "Boccioni-1913",
@@ -598,7 +617,7 @@ ${first12postData.map(postTemplate).join('')}
 document.querySelector(".sliderIn").innerHTML = `
 ${first12postData.map(function (post) {
   return `<div class="sliderPainting">
-  <a href="#${post.ID}" ><img src="images/150p/${post.ID}.jpg"></a>
+  <a href="#${post.ID}" ><img src="images/180p/${post.ID}.jpg"></a>
   </div>`
 }).join('')}
 `

@@ -465,7 +465,7 @@ nav.scrollUp {
   display: block;
   padding: 20px 8px;
   display: flex;
-  
+  margin: auto;
 }
 
 .slider .sliderPainting:first-child {
