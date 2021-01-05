@@ -1,6 +1,25 @@
 'use strict';
 
-const postData = [
+const post = [
+  {
+    Date: "January 6, 2021",
+    ID: "Degas-1872",
+    Artist: "Edgar Degas",
+    ArtworkTitle: "Orchestra Musicians",
+    ArtworkYear:  1872,
+    BirthYear: 1834,
+    DeathYear: 1917,
+    ContryId: "fr",
+    Country: "France",
+    DimensionCm:"63.6 × 49 cm",
+    DimensionIn:"25 × 19.3 in.",
+    Museum: "Städel Museum",
+    MuseumTwitter: "staedelmuseum",
+    ImageSize:"2.3",
+    ImageDimension:"2501 x 3322",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
    {
     Date: "December 30, 2020",
     ID: "Forain-1885",
@@ -12,7 +31,7 @@ const postData = [
     ContryId: "fr",
     Country: "France",
     DimensionCm:"46.2 × 38.2 cm",
-    DimensionIn:"18 1/8 × 15 in.",
+    DimensionIn:"18.1 × 15 in.",
     Museum: "The Art Institute of Chicago",
     MuseumTwitter: "artinstitutechi",
     ImageSize:"1.6",
@@ -522,7 +541,7 @@ const postData = [
 
 ];
 
-var first12postData = postData.slice(0,12);
+var first12post = post.slice(0,12);
 
 
 // javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
@@ -561,7 +580,7 @@ function postTemplate(post) {
           download="${post.Artist} - ${post.ArtworkTitle}, ${post.ArtworkYear}"><h4>Download (${post.ImageSize} MB)<br><strong>${post.ImageDimension} px</strong> </h4></a>
         </div>
         <div class="copyrightClicked">
-          <h4>This painting is shared under the <br><a target="_blank" href="${post.LicenseLink}"><strong>${post.License} License</strong></a>.</h4>
+          <h4>The painting is shared under the <br><a target="_blank" href="${post.LicenseLink}"><strong>${post.License} License</strong></a>.</h4>
         </div>
       </div>
     </div>
@@ -611,11 +630,11 @@ document.querySelector("#header").innerHTML = `
 
 document.querySelector(".container").innerHTML = `
 <div class="slider"><div class="sliderIn"></div></div>
-${first12postData.map(postTemplate).join('')}
+${first12post.map(postTemplate).join('')}
 `
 
 document.querySelector(".sliderIn").innerHTML = `
-${first12postData.map(function (post) {
+${first12post.map(function (post) {
   return `<div class="sliderPainting">
   <a href="#${post.ID}" ><img src="images/180p/${post.ID}.jpg"></a>
   </div>`
