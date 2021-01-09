@@ -2,6 +2,24 @@
 
 const gundurraga = [
   {
+    Date: "January 9, 2021",
+    ID: "pura-vida-road-2021",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: "Pura Vida Road",
+    ArtworkYear: 2021,
+    ArtworkLocation: "Montezuma, Costa Rica",
+    BirthYear: 1993,
+    ContryId: "cl",
+    Country: "Chile",
+    DimensionCm:"50 x 70 cm",
+    DimensionIn:"19.7 x 27.6 in.",
+    ImageSize:"3.3",
+    ImageDimension:"4026 x 2925",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "December 23, 2020",
     ID: "scarlet-macaws-2020",
     UserID: "gundurraga",
