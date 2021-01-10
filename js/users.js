@@ -15,7 +15,7 @@ const gundurraga = [
     DimensionCm:"50 x 70 cm",
     DimensionIn:"19.7 x 27.6 in.",
     ImageSize:"3.7",
-    ImageDimension:"4160 x 3120",
+    ImageDimension:"4149 x 3108",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
   },
