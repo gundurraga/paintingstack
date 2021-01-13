@@ -2,6 +2,25 @@
 
 const post = [
   {
+    Date: "January 13, 2021",
+    ID: "Rubens-1617",
+    Artist: "Peter Paul Rubens",
+    ArtworkTitle: "The Judgment of Solomon",
+    ArtworkYear:  1617,
+    BirthYear: 1577,
+    DeathYear: 1640,
+    ContryId: "nl",
+    Country: "Netherlands",
+    DimensionCm:"234 x 303 cm",
+    DimensionIn:"92.1 × 119.3 in.",
+    Museum: "National Gallery of Denmark",
+    MuseumTwitter: "smkmuseum",
+    ImageSize:"3.8",
+    ImageDimension:"5000 x 3985",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "January 6, 2021",
     ID: "Degas-1872",
     Artist: "Edgar Degas",
