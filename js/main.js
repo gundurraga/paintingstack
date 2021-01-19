@@ -2,6 +2,25 @@
 
 const post = [
   {
+    Date: "January 20, 2021",
+    ID: "Manigault-1909",
+    Artist: "Middleton Manigault",
+    ArtworkTitle: "The Rocket",
+    ArtworkYear:  1909,
+    BirthYear: 1887,
+    DeathYear: 1922,
+    ContryId: "us",
+    Country: "United States of America",
+    DimensionCm:"50.8 x 60.9 cm",
+    DimensionIn:"20 × 24 in.",
+    Museum: " name	Columbus Museum of Art",
+    MuseumTwitter: "columbusmuseum",
+    ImageSize:"2.8",
+    ImageDimension:"2808 x 2344",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "January 13, 2021",
     ID: "Rubens-1617",
     Artist: "Peter Paul Rubens",
