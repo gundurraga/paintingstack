@@ -13,7 +13,7 @@ const post = [
     Country: "United States of America",
     DimensionCm:"50.8 x 60.9 cm",
     DimensionIn:"20 × 24 in.",
-    Museum: " name	Columbus Museum of Art",
+    Museum: "Columbus Museum of Art",
     MuseumTwitter: "columbusmuseum",
     ImageSize:"2.8",
     ImageDimension:"2808 x 2344",
