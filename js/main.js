@@ -2,6 +2,25 @@
 
 const post = [
   {
+    Date: "January 27, 2021",
+    ID: "Schiele-1918",
+    Artist: "Egon Schiele",
+    ArtworkTitle: "The Family",
+    ArtworkYear:  1918,
+    BirthYear: 1890,
+    DeathYear: 1918,
+    ContryId: "at",
+    Country: "Austria",
+    DimensionCm:"150 x 160.8 cm",
+    DimensionIn:"59 × 63.3 in.",
+    Museum: "Belvedere Museum",
+    MuseumTwitter: "belvederemuseum",
+    ImageSize:"14.7",
+    ImageDimension:"3508 x 3313",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "January 20, 2021",
     ID: "Manigault-1909",
     Artist: "Middleton Manigault",
