@@ -2,6 +2,25 @@
 
 const post = [
   {
+    Date: "February 3, 2021",
+    ID: "Hopper-1942",
+    Artist: "Edward Hopper",
+    ArtworkTitle: "Nighthawks",
+    ArtworkYear:  1942,
+    BirthYear: 1882,
+    DeathYear: 1967,
+    ContryId: "us",
+    Country: "United States of America",
+    DimensionCm:"84.1 x 152.4 cm",
+    DimensionIn:"33.1 × 60 in.",
+    Museum: "The Art Institute of Chicago",
+    MuseumTwitter: "artinstitutechi",
+    ImageSize:"8.1",
+    ImageDimension:"6000 x 3274",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "January 27, 2021",
     ID: "Schiele-1918",
     Artist: "Egon Schiele",
