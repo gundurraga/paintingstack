@@ -1,6 +1,24 @@
 'use strict';
 
 const gundurraga = [
+  {
+    Date: "February 9, 2021",
+    ID: "the-race-2017",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: "The Race",
+    ArtworkYear: 2017,
+    ArtworkLocation: "Santiago, Chile",
+    BirthYear: 1993,
+    ContryId: "cl",
+    Country: "Chile",
+    DimensionCm:"80 x 100 cm",
+    DimensionIn:"31.5 x 39.4 in.",
+    ImageSize:"0.6",
+    ImageDimension:"2374 x 1871",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  }, 
     {
     Date: "January 26, 2021",
     ID: "the-ermine-2021",
