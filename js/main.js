@@ -1,6 +1,25 @@
 'use strict';
 
 const post = [
+        {
+    Date: "February 24, 2021",
+    ID: "Seurat-1888",
+    Artist: "Georges Seurat",
+    ArtworkTitle: "Circus Sideshow",
+    ArtworkYear:  1888,
+    BirthYear: 1859,
+    DeathYear: 1891,
+    ContryId: "fr",
+    Country: "France",
+    DimensionCm:"99.7 x 149.9 cm",
+    DimensionIn:"39.2 × 59 in.",
+    Museum: "The Metropolitan Museum of Art",
+    MuseumTwitter: "metmuseum",
+    ImageSize:"3.7",
+    ImageDimension:"3816 x 2540",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
       {
     Date: "February 17, 2021",
     ID: "Bonheur-1856",
