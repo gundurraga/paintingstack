@@ -1,6 +1,25 @@
 'use strict';
 
 const post = [
+  {
+    Date: "March 3, 2021",
+    ID: "vanLooij-1910",
+    Artist: "Jac van Looij",
+    ArtworkTitle: "Summer Luxuriance",
+    ArtworkYear:  1910,
+    BirthYear: 1855,
+    DeathYear: 1930,
+    ContryId: "nl",
+    Country: "Netherlands",
+    DimensionCm:"120 x 170 cm",
+    DimensionIn:"47.2 × 66.9 in.",
+    Museum: "Rijksmuseum",
+    MuseumTwitter: "rijksmuseum",
+    ImageSize:"0.8",
+    ImageDimension:"2500 x 1756",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
         {
     Date: "February 24, 2021",
     ID: "Seurat-1888",
