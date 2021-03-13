@@ -596,7 +596,10 @@ nav.scrollUp {
   left: 0;
   top: 0;
   animation: progressiveReveal 0.7s linear;
+  max-height: 100%;
+  max-width: 100%;
 }
+
 @keyframes progressiveReveal {
   0% {
     opacity: 0;
