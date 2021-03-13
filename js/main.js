@@ -2,6 +2,25 @@
 
 const post = [
   {
+    Date: "March 10, 2021",
+    ID: "daVinci-1498",
+    Artist: "Leonardo da Vinci",
+    ArtworkTitle: "The Last Supper",
+    ArtworkYear:  1498,
+    BirthYear: 1452,
+    DeathYear: 1519,
+    ContryId: "it",
+    Country: "Italy",
+    DimensionCm:"460 x 880 cm",
+    DimensionIn:"181.1 × 346.5 in.",
+    Museum: "Santa Maria delle Grazie",
+    MuseumTwitter: "",
+    ImageSize:"2.7",
+    ImageDimension:"3840 x 1920",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  },
+  {
     Date: "March 3, 2021",
     ID: "vanLooij-1910",
     Artist: "Jac van Looij",
