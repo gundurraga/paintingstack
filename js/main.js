@@ -750,7 +750,7 @@ const post = [
 
 ];
 
-var first12post = post.slice(0,12);
+var first20post = post.slice(0,20);
 
 
 // javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
@@ -758,7 +758,7 @@ function postTemplate(post) {
   return `
   <article class="post" id="${post.ID}">
     <div class="boxDatePainting">
-      <h5 class="date">${post.Date}</h5>
+      <h5 class="date"></h5>
       <div class="frame">
         <a href="images/500p/${post.ID}.jpg"
           data-srcset=" images/500p/${post.ID}.jpg 500w,  images/600p/${post.ID}.jpg 600w, images/700p/${post.ID}.jpg 700w" 
@@ -839,11 +839,11 @@ document.querySelector("#header").innerHTML = `
 
 document.querySelector(".container").innerHTML = `
 <div class="slider"><div class="sliderIn"></div></div>
-${first12post.map(postTemplate).join('')}
+${first20post.map(postTemplate).join('')}
 `
 
 document.querySelector(".sliderIn").innerHTML = `
-${first12post.map(function (post) {
+${first20post.map(function (post) {
   return `<div class="sliderPainting">
   <a href="#${post.ID}" ><img src="images/180p/${post.ID}.jpg"></a>
   </div>`
