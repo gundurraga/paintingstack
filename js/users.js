@@ -1,24 +1,6 @@
 'use strict';
 
 const gundurraga = [
-  {
-    Date: "February 9, 2021",
-    ID: "the-race-2017",
-    UserID: "gundurraga",
-    Artist: "Gregorio Undurraga",
-    ArtworkTitle: "The Race",
-    ArtworkYear: 2017,
-    ArtworkLocation: "Santiago, Chile",
-    BirthYear: 1993,
-    ContryId: "cl",
-    Country: "Chile",
-    DimensionCm:"80 x 100 cm",
-    DimensionIn:"31.5 x 39.4 in.",
-    ImageSize:"2.2",
-    ImageDimension:"2374 x 1864",
-    License: "CC0 1.0 Universal",
-    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-  }, 
     {
     Date: "January 26, 2021",
     ID: "the-ermine-2021",
@@ -126,7 +108,43 @@ const gundurraga = [
     ImageDimension:"2788 x 3411",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-  }
+  },
+  {  
+    Date: "February 9, 2021",
+    ID: "the-race-2017",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: "The Race",
+    ArtworkYear: 2017,
+    ArtworkLocation: "Santiago, Chile",
+    BirthYear: 1993,
+    ContryId: "cl",
+    Country: "Chile",
+    DimensionCm:"80 x 100 cm",
+    DimensionIn:"31.5 x 39.4 in.",
+    ImageSize:"5.4",
+    ImageDimension:"3644 x 2899",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  }, 
+  {
+    Date: "",
+    ID: "untitled-i-2015",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: "Untitled I",
+    ArtworkYear: 2015,
+    ArtworkLocation: "Santiago, Chile",
+    BirthYear: 1993,
+    ContryId: "cl",
+    Country: "Chile",
+    DimensionCm:"60 x 80 cm",
+    DimensionIn:"23.6 x 31.5 in.",
+    ImageSize:"4.5",
+    ImageDimension:"3786 x 2823",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+  }, 
 ];
 
 // javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
@@ -134,7 +152,7 @@ function postUserTemplate(post) {
   return `
   <article class="post" id="${post.ID}">
     <div class="boxDatePainting">
-      <h5 class="date">${post.Date}</h5>
+      <h5 class="date"></h5>
       <div class="frame">
         <a href="images/users/${post.UserID}/500p/${post.ID}.jpg"
           data-srcset=" images/users/${post.UserID}/500p/${post.ID}.jpg 500w,  images/users/${post.UserID}/600p/${post.ID}.jpg 600w, images/users/${post.UserID}/700p/${post.ID}.jpg 700w" 
