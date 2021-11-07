@@ -373,6 +373,10 @@ div#amzn-native-ad-0 {
   text-align: -webkit-center;
 }
 
+div#amzn-native-ad-0 div.amzn-native-products-list div.amzn-native-product {
+  background-color: #373643;
+}
+
 /* Base style */
 html,
 body {
