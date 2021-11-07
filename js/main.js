@@ -855,6 +855,7 @@ document.querySelector("#header").innerHTML = `
 document.querySelector(".container").innerHTML = `
 <div class="slider"><div class="sliderIn"></div></div>
 ${first20post.map(postTemplate).join("")}
+
 `;
 
 document.querySelector(".sliderIn").innerHTML = `
