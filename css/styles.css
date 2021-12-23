@@ -944,6 +944,7 @@ nav.scrollUp {
 /* Information */
 
 .info {
+  cursor: default;
   margin: auto;
   margin-top: 10px;
   color: var(--light-font-firstColor);

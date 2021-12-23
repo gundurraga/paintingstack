@@ -19,6 +19,8 @@ const gundurraga = [
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
     onSale: true,
+    Price: 290000,
+    PriceCurrency: "CLP",
   },
   {
     Date: "December 6, 2021",
@@ -38,6 +40,8 @@ const gundurraga = [
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
     onSale: true,
+    Price: 290000,
+    PriceCurrency: "CLP",
   },
   {
     Date: "December 6, 2021",
@@ -57,6 +61,8 @@ const gundurraga = [
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
     onSale: true,
+    Price: 290000,
+    PriceCurrency: "CLP",
   },
   {
     Date: "January 26, 2021",
@@ -253,22 +259,20 @@ function postUserTemplate(post) {
         <ion-icon class="location-icon" name="earth-outline"></ion-icon>${
           post.ArtworkLocation
         }
+        <br />
+        ${
+          post.onSale
+            ? `<ion-icon class="location-icon" name="card-outline"></ion-icon>$${new Intl.NumberFormat().format(
+                post.Price
+              )} ${post.PriceCurrency}`
+            : ``
+        }
         </h5>
       </div>
       <div class="info-icons">
         <div class="downloadIcon" id="${
           post.ID
         }" onclick="downloadClicked(this.id)"><ion-icon name="download-outline"></ion-icon></div>
-        ${
-          post.onSale
-            ? `<div
-              class="copyrightIcon"
-              id="${post.ID}"
-              onclick="copyrightClicked(this.id)">
-              <ion-icon name="card-outline"></ion-icon>
-            </div>`
-            : ``
-        }
           </div>
       <div class="iconClicked">
         <div class="downloadClicked" >
@@ -278,9 +282,6 @@ function postUserTemplate(post) {
   }"><h4>Descargar (${post.ImageSize} MB)<br><strong>${
     post.ImageDimension
   } px</strong> </h4></a>
-        </div>
-        <div class="copyrightClicked">
-          <h4>Se vende por <strong>$290.000</strong></h4>
         </div>
       </div>
     </div>
@@ -435,7 +436,6 @@ function downloadClicked(clicked_id) {
       .getPropertyValue("display");
   if (downloadClickedDisplay == "none") {
     downloadClicked.style.display = "block";
-    copyrightClicked.style.display = "none";
   } else {
     downloadClicked.style.display = "none";
   }
