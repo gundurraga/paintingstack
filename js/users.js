@@ -19,8 +19,6 @@ const gundurraga = [
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
     onSale: true,
-    Price: 290000,
-    PriceCurrency: "CLP",
   },
   {
     Date: "December 6, 2021",
@@ -39,9 +37,7 @@ const gundurraga = [
     ImageDimension: "2900 x 3362",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
-    Price: 290000,
-    PriceCurrency: "CLP",
+    onSale: false,
   },
   {
     Date: "December 6, 2021",
@@ -61,8 +57,6 @@ const gundurraga = [
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
     onSale: true,
-    Price: 290000,
-    PriceCurrency: "CLP",
   },
   {
     Date: "January 26, 2021",
@@ -224,7 +218,7 @@ function postUserTemplate(post) {
   <article class="post" id="${post.ID}">
     <div class="boxDatePainting">
       <h5 class="date"></h5>
-      <div class="frame">
+      <div class="frame ${post.onSale ? "on-sale" : ""}">
         <a href="images/users/${post.UserID}/500p/${post.ID}.jpg"
           data-srcset=" images/users/${post.UserID}/500p/${
     post.ID
@@ -260,13 +254,6 @@ function postUserTemplate(post) {
           post.ArtworkLocation
         }
         <br />
-        ${
-          post.onSale
-            ? `<ion-icon class="location-icon" name="card-outline"></ion-icon>$${new Intl.NumberFormat().format(
-                post.Price
-              )} ${post.PriceCurrency}`
-            : ``
-        }
         </h5>
       </div>
       <div class="info-icons">
@@ -335,7 +322,8 @@ document.querySelector(".sliderIn").innerHTML = `
 ${gundurraga
   .map(function (post) {
     return `<div class="sliderPainting">
-  <a href="#${post.ID}" ><img src="images/users/${post.UserID}/180p/${post.ID}.jpg"></a>
+  <a href="#${post.ID}" ><img ${post.onSale ? "class='on-sale'" : ""} 
+  src="images/users/${post.UserID}/180p/${post.ID}.jpg"></a>
   </div>`;
   })
   .join("")}

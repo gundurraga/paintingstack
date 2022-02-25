@@ -346,6 +346,12 @@ Mobile first, media queries at the end
   --night-infoBackground-color: rgb(55, 54, 67);
   --night-infoBorder-color: rgb(71, 71, 73);
 
+  /*frame on sale*/
+  --light-frame-secondColor-onSale: rgb(195 161 13);
+  --light-frame-firstColor-onSale: rgb(229 197 57);
+  --night-frame-secondColor-onSale: rgb(195 161 13);
+  --night-frame-firstColor-onSale: rgb(229 197 57);
+
   /*Dimensions*/
   --frame-widthIn: 4px;
   --frame-width: 7px;
@@ -818,6 +824,10 @@ nav.scrollUp {
   transition: opacity 0.2s;
 }
 
+.slider img.on-sale {
+  border: 4px solid var(--light-frame-firstColor-onSale);
+}
+
 .night-mode .slider img {
   border: 4px solid var(--night-frame-firstColor);
   opacity: 0.85;
@@ -825,6 +835,11 @@ nav.scrollUp {
   -moz-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
   box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
 }
+
+.night-mode .slider img.on-sale {
+  border: 4px solid var(--night-frame-firstColor-onSale);
+}
+
 .slider img:hover {
   opacity: 1;
 }
@@ -902,6 +917,30 @@ nav.scrollUp {
   -webkit-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
     0px 0px 2px var(--frame-widthIn) var(--night-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--night-frame-secondColor) inset;
+}
+
+.on-sale {
+  box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor-onSale) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor-onSale) inset;
+  -moz-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor-onSale) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor-onSale) inset;
+  -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor-onSale) inset,
+    0px 0px 0px var(--frame-width) var(--light-frame-secondColor-onSale) inset;
+}
+
+.night-mode .on-sale {
+  box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--night-frame-firstColor-onSale) inset,
+    0px 0px 0px var(--frame-width) var(--night-frame-secondColor-onSale) inset;
+  -moz-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--night-frame-firstColor-onSale) inset,
+    0px 0px 0px var(--frame-width) var(--night-frame-secondColor-onSale) inset;
+  -webkit-box-shadow: 0px 1px 4px 1px var(--night-frameShadow-color),
+    0px 0px 2px var(--frame-widthIn) var(--night-frame-firstColor-onSale) inset,
+    0px 0px 0px var(--frame-width) var(--night-frame-secondColor-onSale) inset;
 }
 
 .progressive {
