@@ -762,7 +762,7 @@ function postTemplate(post) {
           data-srcset=" images/500p/${post.ID}.jpg 500w,  images/600p/${
     post.ID
   }.jpg 600w, images/700p/${post.ID}.jpg 700w" 
-          data-sizes="85vw" class="progressive replace">
+          data-sizes="90vw" class="progressive replace">
           <img src="images/preview/${post.ID}.jpg" class="preview"
             alt="${post.Artist} - ${post.ArtworkTitle} (${post.ArtworkYear})" />
         </a>

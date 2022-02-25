@@ -2,6 +2,25 @@
 
 const gundurraga = [
   {
+    Date: "February 25, 2022",
+    ID: "margherita-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: "Margherita",
+    ArtworkYear: 2022,
+    ArtworkLocation: "Santiago, Chile",
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "40 x 40 cm",
+    DimensionIn: "15.7 x 15.7 in.",
+    ImageSize: "3.2",
+    ImageDimension: "2807 x 2791",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: false,
+  },
+  {
     Date: "December 6, 2021",
     ID: "the-last-supper-2021",
     UserID: "gundurraga",
@@ -225,7 +244,7 @@ function postUserTemplate(post) {
   }.jpg 500w,  images/users/${post.UserID}/600p/${
     post.ID
   }.jpg 600w, images/users/${post.UserID}/700p/${post.ID}.jpg 700w" 
-          data-sizes="85vw" class="progressive replace">
+          data-sizes="90vw" class="progressive replace">
           <img src="images/users/${post.UserID}/preview/${
     post.ID
   }.jpg" class="preview"
