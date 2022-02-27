@@ -327,7 +327,7 @@ document.querySelector("#header").innerHTML = `
         </div>
       </li>
       <li>
-        <a href="https://twitter.com/paintingstack" target="_blank"><div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div></a>
+        <a href="https://twitter.com/gundurragad" target="_blank"><div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>gundurragad</h4></div></a>
       </li>
     </ul>
 `;
@@ -350,7 +350,7 @@ ${gundurraga
 
 document.querySelector("footer").innerHTML = `
 <div class="feedback">
-  <h5>Say hello to <a target="_blank" class="footerLink" href="https://twitter.com/paintingstack">@paintingstack</a></h5>
+  <h5>Say hello to <a target="_blank" class="footerLink" href="https://twitter.com/gundurragad">@gundurragad</a></h5>
 </div>
 <div class="back-to-top" onclick="backTop()">
   <h5>TOP</h5>
