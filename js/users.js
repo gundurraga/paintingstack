@@ -2,6 +2,25 @@
 
 const gundurraga = [
   {
+    Date: "March 1, 2022",
+    ID: "earth-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: "Tierra",
+    ArtworkYear: 2022,
+    ArtworkLocation: "Santiago, Chile",
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "64 x 110 cm",
+    DimensionIn: "25.2 x 43.3 in.",
+    ImageSize: "2.9",
+    ImageDimension: "3954 x 2324",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: true,
+  },
+  {
     Date: "February 25, 2022",
     ID: "margherita-2022",
     UserID: "gundurraga",
