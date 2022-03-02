@@ -346,7 +346,7 @@ document.querySelector("#header").innerHTML = `
         </div>
       </li>
       <li>
-        <a href="https://twitter.com/gundurragad" target="_blank"><div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>gundurragad</h4></div></a>
+        <a href="https://twitter.com/gundurragad" target="_blank"><div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>@gundurragad</h4></div></a>
       </li>
     </ul>
 `;
