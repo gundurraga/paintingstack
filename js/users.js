@@ -369,7 +369,7 @@ ${gundurraga
 
 document.querySelector("footer").innerHTML = `
 <div class="feedback">
-  <h5>Say hello to <a target="_blank" class="footerLink" href="https://twitter.com/gundurragad">@gundurragad</a></h5>
+  <h5>Saluda a <a target="_blank" class="footerLink" href="https://twitter.com/gundurragad">@gundurragad</a></h5>
 </div>
 <div class="back-to-top" onclick="backTop()">
   <h5>TOP</h5>
