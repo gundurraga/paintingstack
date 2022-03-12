@@ -9,6 +9,7 @@ const gundurraga = [
     ArtworkTitle: "Tierra",
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -28,6 +29,7 @@ const gundurraga = [
     ArtworkTitle: "Margherita",
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -47,6 +49,7 @@ const gundurraga = [
     ArtworkTitle: "La Última Cena",
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -66,6 +69,7 @@ const gundurraga = [
     ArtworkTitle: "Lisboa",
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -85,6 +89,7 @@ const gundurraga = [
     ArtworkTitle: "Estatuas Doradas",
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -104,6 +109,7 @@ const gundurraga = [
     ArtworkTitle: "El Armiño",
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -123,6 +129,7 @@ const gundurraga = [
     ArtworkTitle: "Pieza Mondrian",
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -142,6 +149,7 @@ const gundurraga = [
     ArtworkTitle: "Calle Pura Vida",
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
+    ArtworkMedia: "Acrílico y óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -161,6 +169,7 @@ const gundurraga = [
     ArtworkTitle: "Guacamayas Rojas",
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -180,6 +189,7 @@ const gundurraga = [
     ArtworkTitle: "Tres Motos",
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -199,6 +209,7 @@ const gundurraga = [
     ArtworkTitle: "Aloe Vera",
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -218,6 +229,7 @@ const gundurraga = [
     ArtworkTitle: "La Carrera",
     ArtworkYear: 2017,
     ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -237,6 +249,7 @@ const gundurraga = [
     ArtworkTitle: "Sin Título I",
     ArtworkYear: 2015,
     ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: "Óleo sobre tela",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -274,16 +287,20 @@ function postUserTemplate(post) {
     <div class="info">
       <div class="info-text">
         <h4>
-          <strong >${post.ArtworkTitle}, <span class="artworkYear" title="${
-    post.Artist
-  } tenía ${post.ArtworkYear - post.BirthYear} años.">${
-    post.ArtworkYear
-  }</span></strong><br />${post.Artist} (
+          <strong >${post.ArtworkTitle},
+          <span class="artworkYear" title="${post.Artist} tenía ${
+    post.ArtworkYear - post.BirthYear
+  } años.">${post.ArtworkYear}</span></strong> 
+  <br />${post.Artist} (
           <span class="flag-icon flag-icon-${post.CountryId}" title="${
     post.Country
   }"></span> ${post.BirthYear})
         </h4>
         <h5>
+        <ion-icon class="location-icon" name="color-palette-outline"></ion-icon>${
+          post.ArtworkMedia
+        }
+        <br />
         <ion-icon class="location-icon" name="expand-outline"></ion-icon>${
           post.DimensionCm
         }
