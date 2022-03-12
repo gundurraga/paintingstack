@@ -340,7 +340,7 @@ Mobile first, media queries at the end
   --night-font-firstColor: rgb(242, 230, 210);
   --night-font-secondColor: rgb(217, 205, 188);
   --night-font-thirdColor: rgb(236, 228, 220);
-  --night-frame-secondColor: rgb(95, 88, 75);
+  --night-frame-secondColor: rgb(80 60 21);
   --night-frame-firstColor: rgb(85, 78, 65);
   --night-frameShadow-color: var(--night-header-color);
   --night-infoBackground-color: rgb(55, 54, 67);
@@ -821,7 +821,7 @@ nav.scrollUp {
   -webkit-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   -moz-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
-  transition: opacity 0.2s;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .slider img.on-sale {
@@ -841,7 +841,7 @@ nav.scrollUp {
 }
 
 .slider img:hover {
-  opacity: 1;
+  opacity: 0.85;
 }
 
 .post {
@@ -985,7 +985,7 @@ nav.scrollUp {
 .info {
   cursor: default;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 15px;
   color: var(--light-font-firstColor);
   background-color: var(--light-infoBackground-color);
   padding: 10px;
@@ -993,12 +993,14 @@ nav.scrollUp {
   border-radius: 4px;
   text-align: start;
   border: 1px solid var(--light-infoBorder-color);
+  box-shadow: 0 0 1px var(--light-frameShadow-color);
 }
 
 .night-mode .info {
   color: var(--night-font-firstColor);
   background-color: var(--night-infoBackground-color);
   border-color: var(--night-infoBorder-color);
+  box-shadow: 0 0 1px var(--night-frameShadow-color);
 }
 
 .info-text {
@@ -1016,6 +1018,7 @@ nav.scrollUp {
 
 .info h5 {
   margin: 0;
+  margin-top: 2px;
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.2rem;
@@ -1084,7 +1087,7 @@ a.museumTwitter:active {
   cursor: pointer;
   display: block;
   border-radius: 50%;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .downloadIcon:hover {
