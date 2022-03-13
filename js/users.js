@@ -350,7 +350,7 @@ const gundurraga = [
 // javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
 function postUserTemplate(post) {
   return `
-  <article class="post">
+  <article class="post" id="${post.ID}-post">
     <div class="boxDatePainting">
       <h5 class="date"></h5>
       <div class="frame ${post.onSale ? "on-sale" : ""}">
@@ -476,7 +476,7 @@ document.querySelector(".sliderIn").innerHTML = `
 ${gundurraga
   .map(function (post) {
     return `<div class="sliderPainting">
-  <a href="#${post.ID}" ><img ${post.onSale ? "class='on-sale'" : ""} 
+  <a href="#${post.ID}-post" ><img ${post.onSale ? "class='on-sale'" : ""} 
   src="images/users/${post.UserID}/180p/${post.ID}.jpg"></a>
   </div>`;
   })
