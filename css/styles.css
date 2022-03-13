@@ -386,6 +386,10 @@ div#amzn-native-ad-0 div.amzn-native-products-list div.amzn-native-product {
   border: 1px solid var(--light-infoBorder-color) !important;
 }
 
+span {
+  border: 0;
+}
+
 .night-mode
   div#amzn-native-ad-0
   div.amzn-native-products-list
@@ -664,8 +668,18 @@ nav.scrollUp {
   border-bottom: 1px solid var(--lightMobile-postBorder-color);
 }
 
+#menu .languages {
+  display: none;
+  background-color: var(--light-header-color);
+}
+
 .night-mode #menu li {
   border-bottom: 1px solid var(--night-infoBackground-color);
+}
+
+.night-mode #menu .languages {
+  display: none;
+  background-color: var(--night-background-color);
 }
 
 #menu li h4 {
@@ -677,22 +691,34 @@ nav.scrollUp {
   vertical-align: middle;
 }
 
+#menu #themeSelector {
+  padding: 5px 5px 5px 0;
+}
+
+#menu .languages h4 {
+  padding: 5px 10px;
+}
+
 #menu li ion-icon {
   display: inline-block;
   margin: 0;
-  padding: 10px;
+  padding: 10px 5px 10px 10px;
   vertical-align: middle;
-  color: var(--light-font-secondColor);
+  color: var(--light-logo-firstColor);
   font-size: 20px;
 }
 
 .night-mode #menu li ion-icon {
-  color: var(--night-font-secondColor);
+  color: rgb(56, 115, 150);
 }
 
 #menu.in-view {
   visibility: visible;
   opacity: 1;
+}
+
+#menu .languages.lang-in-view {
+  display: block;
 }
 
 .switchTheme {
@@ -704,6 +730,7 @@ nav.scrollUp {
 
 .menuLink {
   display: inline-block;
+  cursor: pointer;
   border-radius: 100px;
   padding: 0 5px;
 }

@@ -6,10 +6,14 @@ const gundurraga = [
     ID: "earth-2022",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "Tierra",
+    ArtworkTitle: { en: "Earth", es: "Tierra", fr: "Terre" },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -26,10 +30,14 @@ const gundurraga = [
     ID: "margherita-2022",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "Margherita",
+    ArtworkTitle: { en: "Margherita", es: "Margherita", fr: "Margherita" },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -46,10 +54,18 @@ const gundurraga = [
     ID: "the-last-supper-2021",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "La Última Cena",
+    ArtworkTitle: {
+      en: "The Last Supper",
+      es: "La Última Cena",
+      fr: "La Cène",
+    },
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -66,10 +82,18 @@ const gundurraga = [
     ID: "lisbon-2021",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "Lisboa",
+    ArtworkTitle: {
+      en: "Lisbon",
+      es: "Lisboa",
+      fr: "Lisbonne",
+    },
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -87,9 +111,18 @@ const gundurraga = [
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
     ArtworkTitle: "Estatuas Doradas",
+    ArtworkTitle: {
+      en: "Golden Statues",
+      es: "Estatuas Doradas",
+      fr: "Statues Dorées",
+    },
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -106,10 +139,14 @@ const gundurraga = [
     ID: "the-ermine-2021",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "El Armiño",
+    ArtworkTitle: { en: "The Ermine", es: "El Armiño", fr: "L'Hermine" },
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -127,9 +164,18 @@ const gundurraga = [
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
     ArtworkTitle: "Pieza Mondrian",
+    ArtworkTitle: {
+      en: "Mondrian Room",
+      es: "Pieza Mondrian",
+      fr: "Chambre Mondrian",
+    },
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -146,10 +192,18 @@ const gundurraga = [
     ID: "pura-vida-road-2021",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "Calle Pura Vida",
+    ArtworkTitle: {
+      en: "Pura Vida Road",
+      es: "Calle Pura Vida",
+      fr: "Rue Pura Vida",
+    },
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
-    ArtworkMedia: "Acrílico y óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Acrílico y óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -166,10 +220,18 @@ const gundurraga = [
     ID: "scarlet-macaws-2020",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "Guacamayas Rojas",
+    ArtworkTitle: {
+      en: "Scarlet Macaws",
+      es: "Guacamayas Rojas",
+      fr: "Aras Écarlates",
+    },
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -186,10 +248,18 @@ const gundurraga = [
     ID: "three-motorcycles-2020",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "Tres Motos",
+    ArtworkTitle: {
+      en: "Three Motorcycles",
+      es: "Tres Motos",
+      fr: "Trois Motos",
+    },
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -206,10 +276,14 @@ const gundurraga = [
     ID: "aloe-vera-2020",
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
-    ArtworkTitle: "Aloe Vera",
+    ArtworkTitle: { en: "Aloe Vera", es: "Aloe Vera", fr: "Aloe Vera" },
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -227,9 +301,14 @@ const gundurraga = [
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
     ArtworkTitle: "La Carrera",
+    ArtworkTitle: { en: "The Race", es: "La Carrera", fr: "La Course" },
     ArtworkYear: 2017,
     ArtworkLocation: "Santiago, Chile",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -247,9 +326,14 @@ const gundurraga = [
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
     ArtworkTitle: "Sin Título I",
+    ArtworkTitle: { en: "Untitled I", es: "Sin Título I", fr: "Sans Titre I" },
     ArtworkYear: 2015,
     ArtworkLocation: "Santiago, Chile",
-    ArtworkMedia: "Óleo sobre tela",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -266,7 +350,7 @@ const gundurraga = [
 // javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
 function postUserTemplate(post) {
   return `
-  <article class="post" id="${post.ID}">
+  <article class="post">
     <div class="boxDatePainting">
       <h5 class="date"></h5>
       <div class="frame ${post.onSale ? "on-sale" : ""}">
@@ -287,19 +371,18 @@ function postUserTemplate(post) {
     <div class="info">
       <div class="info-text">
         <h4>
-          <strong >${post.ArtworkTitle},
-          <span class="artworkYear" title="${post.Artist} tenía ${
-    post.ArtworkYear - post.BirthYear
-  } años.">${post.ArtworkYear}</span></strong> 
+          <strong><span id="${post.ID}">${post.ArtworkTitle.en}</span>, ${
+    post.ArtworkYear
+  }</strong> 
   <br />${post.Artist} (
           <span class="flag-icon flag-icon-${post.CountryId}" title="${
     post.Country
   }"></span> ${post.BirthYear})
         </h4>
         <h5>
-        <ion-icon class="location-icon" name="color-palette-outline"></ion-icon>${
-          post.ArtworkMedia
-        }
+        <ion-icon class="location-icon" name="color-palette-outline"></ion-icon><span id="${
+          post.ID
+        }-media">${post.ArtworkMedia.en}</span>
         <br />
         <ion-icon class="location-icon" name="expand-outline"></ion-icon>${
           post.DimensionCm
@@ -355,15 +438,31 @@ document.querySelector("#header").innerHTML = `
 
     <ul id="menu">
       <li>
+      <div class="menuLink selectLanguage"><ion-icon name="globe-outline"></ion-icon><h4 id="languageSelector">Language: EN</h4></div>
+      </li>
+      <div class="languages">
+        <li>
+          <div class="menuLink" id="en"><h4>English</h4></div>
+        </li>
+        <li>
+          <div class="menuLink" id="es"><h4>Español</h4></div>
+        </li>
+        <li>
+          <div class="menuLink" id="fr"><h4>Français</h4></div>
+        </li>
+      </div>
+      <li>
         <div class="switchTheme">
-          <h4>Night Mode</h4>
+          <h4 id="themeSelector">Night Mode</h4>
           <div class="btn-nightMode">
             <div class="switch"></div>
           </div>
         </div>
       </li>
       <li>
-        <a href="https://twitter.com/gundurragad" target="_blank"><div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>@gundurragad</h4></div></a>
+        <a href="https://twitter.com/gundurragad" target="_blank">
+        <div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>@gundurragad</h4></div>
+        </a>
       </li>
     </ul>
 `;
@@ -386,7 +485,7 @@ ${gundurraga
 
 document.querySelector("footer").innerHTML = `
 <div class="feedback">
-  <h5>Saluda a <a target="_blank" class="footerLink" href="https://twitter.com/gundurragad">@gundurragad</a></h5>
+  <h5><span id="sayHello">Saluda a</span> <a target="_blank" class="footerLink" href="https://twitter.com/gundurragad">@gundurragad</a></h5>
 </div>
 <div class="back-to-top" onclick="backTop()">
   <h5>TOP</h5>
@@ -406,6 +505,7 @@ window.onload = function () {
       navbar.classList.add("scrollUp");
       document.querySelector("#menu").classList.remove("in-view");
       document.querySelector(".menuHamburguer").classList.remove("in-view");
+      document.querySelector(".languages").classList.remove("lang-in-view");
     } else if (c > currentScrollTop && !(a <= b)) {
       navbar.classList.remove("scrollUp");
     } else if (a === 0) {
@@ -420,6 +520,7 @@ document.querySelector("#header").classList.remove("scrollUp");
 function showMenu(x) {
   x.classList.toggle("in-view");
   document.querySelector("#menu").classList.toggle("in-view");
+  document.querySelector(".languages").classList.remove("lang-in-view");
 }
 
 //Night theme
