@@ -397,16 +397,16 @@ function postUserTemplate(post) {
       <div class="info-icons">
         <div class="downloadIcon" id="${
           post.ID
-        }" onclick="downloadClicked(this.id)"><ion-icon name="download-outline"></ion-icon></div>
+        }-click" onclick="downloadClicked(this.id)"><ion-icon name="download-outline"></ion-icon></div>
           </div>
       <div class="iconClicked">
         <div class="downloadClicked" >
           <a href="images/users/${post.UserID}/download/${post.ID}.jpg"
-          download="${post.ArtworkTitle}, ${post.ArtworkYear} - ${
+          download="${post.ArtworkTitle.en}, ${post.ArtworkYear} - ${
     post.Artist
-  }"><h4>Descargar (${post.ImageSize} MB)<br><strong>${
-    post.ImageDimension
-  } px</strong> </h4></a>
+  }"><h4><span class="download">Descargar</span> (${
+    post.ImageSize
+  } MB)<br><strong>${post.ImageDimension} px</strong></h4></a>
         </div>
       </div>
     </div>
@@ -571,10 +571,9 @@ function loader() {
 function downloadClicked(clicked_id) {
   var downloadClicked = document
       .getElementById(clicked_id)
-      .querySelector(".downloadClicked"),
-    copyrightClicked = document
-      .getElementById(clicked_id)
-      .querySelector(".copyrightClicked"),
+      .parentElement.parentElement.parentElement.querySelector(
+        ".downloadClicked"
+      ),
     downloadClickedDisplay = window
       .getComputedStyle(downloadClicked)
       .getPropertyValue("display");
@@ -582,24 +581,6 @@ function downloadClicked(clicked_id) {
     downloadClicked.style.display = "block";
   } else {
     downloadClicked.style.display = "none";
-  }
-}
-
-function copyrightClicked(clicked_id) {
-  var downloadClicked = document
-      .getElementById(clicked_id)
-      .querySelector(".downloadClicked"),
-    copyrightClicked = document
-      .getElementById(clicked_id)
-      .querySelector(".copyrightClicked"),
-    copyrightClickedDisplay = window
-      .getComputedStyle(copyrightClicked)
-      .getPropertyValue("display");
-  if (copyrightClickedDisplay == "none") {
-    copyrightClicked.style.display = "block";
-    downloadClicked.style.display = "none";
-  } else {
-    copyrightClicked.style.display = "none";
   }
 }
 

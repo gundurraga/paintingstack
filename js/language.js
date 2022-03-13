@@ -2,6 +2,7 @@ let en = {
   languageSelector: "Language: EN",
   themeSelector: "Night Mode",
   sayHello: "Say Hello to",
+  download: "Download",
 
   earth: "Earth",
   earth_media: "Oil on canvas",
@@ -35,6 +36,8 @@ let es = {
   languageSelector: "Idioma: ES",
   themeSelector: "Modo Oscuro",
   sayHello: "Saluda a",
+  download: "Descargar",
+
   earth: "Tierra",
   earth_media: "Óleo sobre tela",
   margherita: "Margherita",
@@ -67,6 +70,8 @@ let fr = {
   languageSelector: "Langue: FR",
   themeSelector: "Mode Nuit",
   sayHello: "Dire salut à",
+  download: "Télécharger",
+
   earth: "Terre",
   earth_media: "Huile sur toile",
   margherita: "Margherita",
@@ -146,6 +151,11 @@ function translate(lang) {
   document.getElementById("untitled-i-2015").innerHTML = lang.untitled_i;
   document.getElementById("untitled-i-2015-media").innerHTML =
     lang.untitled_i_media;
+
+  let downloads = document.querySelectorAll(".download");
+  downloads.forEach((download) => {
+    download.innerHTML = lang.download;
+  });
 }
 
 document.getElementsByClassName("selectLanguage");
