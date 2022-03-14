@@ -476,7 +476,8 @@ document.querySelector(".sliderIn").innerHTML = `
 ${gundurraga
   .map(function (post) {
     return `<div class="sliderPainting">
-  <a href="#${post.ID}-post" ><img ${post.onSale ? "class='on-sale'" : ""} 
+  <a onclick="scrollSmoothTo('${post.ID}-post')">
+  <img ${post.onSale ? "class='on-sale'" : ""}
   src="images/users/${post.UserID}/180p/${post.ID}.jpg"></a>
   </div>`;
   })
@@ -588,4 +589,12 @@ function backTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   document.querySelector("#header").classList.remove("scrollUp");
+}
+
+function scrollSmoothTo(elementId) {
+  var element = document.getElementById(elementId);
+  element.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 }
