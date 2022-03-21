@@ -304,12 +304,12 @@ Mobile first, media queries at the end
   --light-postBackground-color: rgb(235, 235, 235);
   --lightMobile-postBorder-color: rgb(209, 209, 209);
   --lightDesktop-postBorder-color: rgb(221, 221, 221);
-  --light-header-color: rgb(245, 245, 245);
+  --light-header-color: rgb(245, 245, 245, 0.65);
   --light-headerShadow-color: rgb(200, 200, 200);
   --light-lineHeadFooter-color: var(--lightMobile-postBorder-color);
   --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color: rgb(255, 184, 28);
-  --light-menuBackground-color: rgb(230, 230, 230);
+  --light-menuBackground-color: rgb(230, 230, 230, 0.95);
   --light-menuBorder-color: var(--lightDesktop-postBorder-color);
   --light-btnMenu-color: rgb(200, 200, 200);
   --light-font-firstColor: rgb(34, 34, 34);
@@ -329,12 +329,12 @@ Mobile first, media queries at the end
   --night-postBackground-color: rgb(35, 35, 48);
   --nightMobile-postBorder-color: rgb(46, 46, 65);
   --nightDesktop-postBorder-color: rgb(37, 37, 50);
-  --night-header-color: rgb(25, 24, 38);
+  --night-header-color: rgb(25, 24, 38, 0.65);
   --night-headerShadow-color: rgb(18, 18, 33);
   --night-lineHeadFooter-color: rgb(150, 123, 50);
   --night-menuIcon-color: var(--night-logo-firstColor);
   --night-menuCross-color: var(--light-menuCross-color);
-  --night-menuBackground-color: rgb(25, 24, 37);
+  --night-menuBackground-color: rgb(25, 24, 37, 0.95);
   --night-menuBorder-color: var(--nightDesktop-postBorder-color);
   --night-btnMenu-color: var(--light-btnMenu-color);
   --night-font-firstColor: rgb(242, 230, 210);
@@ -348,9 +348,9 @@ Mobile first, media queries at the end
 
   /*frame on sale*/
   --light-frame-secondColor-onSale: rgb(195 161 13);
-  --light-frame-firstColor-onSale: rgb(229 197 57);
+  --light-frame-firstColor-onSale: rgb(224, 202, 100);
   --night-frame-secondColor-onSale: rgb(195 161 13);
-  --night-frame-firstColor-onSale: rgb(229 197 57);
+  --night-frame-firstColor-onSale: rgb(224, 202, 100);
 
   /*Dimensions*/
   --frame-widthIn: 4px;
@@ -501,11 +501,9 @@ nav {
   display: flex;
   height: 56px;
   background-color: var(--light-header-color);
-  box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.1);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.1);
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.1);
-  justify-content: start;
   border-bottom: 1px solid var(--light-lineHeadFooter-color);
+  justify-content: start;
+  backdrop-filter: blur(12px);
 }
 
 nav.scrollUp {
@@ -514,9 +512,6 @@ nav.scrollUp {
 
 .night-mode nav {
   background-color: var(--night-header-color);
-  box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.5);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.5);
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.5);
   border-bottom: 1px solid var(--night-lineHeadFooter-color);
 }
 
@@ -647,17 +642,13 @@ nav.scrollUp {
   top: 57px;
   right: 0px;
   width: 200px;
-  border-radius: 2px;
   background: var(--light-menuBackground-color);
-  border: 1px solid var(--light-menuBorder-color);
   list-style-type: none;
-  box-shadow: 0px 2px 5px 0px rgb(18 18 33 / 10%);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(18, 18, 33, 0.1);
-  -webkit-box-shadow: 0px 2px 5px 0px rgb(18 18 33 / 10%);
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   transition: visibility 0s, opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   z-index: 3;
+  border-left: 1px solid var(--lightMobile-postBorder-color);
 }
 
 .night-mode #menu {
@@ -682,7 +673,7 @@ nav.scrollUp {
 
 .night-mode #menu .languages {
   display: none;
-  background-color: var(--night-background-color);
+  background-color: rgb(27, 27, 40, 0.95);
 }
 
 #menu li h4 {
@@ -740,12 +731,12 @@ nav.scrollUp {
 
 .switchTheme:hover,
 .menuLink:hover {
-  background-color: var(--lightMobile-postBorder-color);
+  background-color: rgb(209, 209, 209, 0.95);
 }
 
 .night-mode .switchTheme:hover,
 .night-mode .menuLink:hover {
-  background-color: var(--night-infoBackground-color);
+  background-color: rgb(55, 54, 67, 0.95);
 }
 
 .btn-nightMode {
@@ -1023,7 +1014,6 @@ nav.scrollUp {
   border-radius: 4px;
   text-align: start;
   border: 1px solid var(--light-infoBorder-color);
-  box-shadow: 0 0 1px var(--light-frameShadow-color);
 }
 
 .night-mode .info {

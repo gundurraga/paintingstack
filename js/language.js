@@ -34,7 +34,7 @@ let en = {
 
 let es = {
   languageSelector: "Idioma: ES",
-  themeSelector: "Modo Oscuro",
+  themeSelector: "Modo Noche",
   sayHello: "Saluda a",
   download: "Descargar",
 
@@ -53,7 +53,7 @@ let es = {
   mondrian_room: "Pieza Mondrian",
   mondrian_room_media: "Óleo sobre tela",
   pura_vida_road: "Calle Pura Vida",
-  pura_vida_road_media: "Acrílico y Óleo sobre tela",
+  pura_vida_road_media: "Acrílico y óleo sobre tela",
   scarlet_macaws: "Guacamayas Rojas",
   scarlet_macaws_media: "Óleo sobre tela",
   three_motorcycles: "Tres Motos",
