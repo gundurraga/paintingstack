@@ -557,13 +557,18 @@ btnNightMode.addEventListener("click", function () {
 //Loader
 document.onreadystatechange = function () {
   if (document.readyState === "interactive") {
-    setTimeout(loader, 1700);
+    setTimeout(loader, 1500);
   }
 };
 
 function loader() {
-  document.querySelector(".loader").style.display = "none";
-  document.querySelector("body").style.visibility = "visible";
+  document.querySelector(".loader").style.opacity = "0";
+  setTimeout(() => {
+    document.querySelector(".loader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  }, 450);
+  // document.querySelector(".loader").style.display = "none";
+  // document.querySelector("body").style.visibility = "visible";
   prefersTheme();
   localTheme();
 }

@@ -362,59 +362,8 @@ Mobile first, media queries at the end
   outline: none !important;
 }
 
-.amzn-native-brand {
-  display: none;
-}
-
-#amzn-native-ad-0 {
-  margin: 30px;
-}
-
-div#amzn-native-ad-0 {
-  font-family: "Roboto Condensed", Helvetica, sans-serif !important;
-}
-
-#amzn_assoc_ad_div_adunit0_0 {
-  text-align: center;
-  text-align: -webkit-center;
-}
-
-div#amzn-native-ad-0 div.amzn-native-products-list div.amzn-native-product {
-  border-radius: 5px;
-  background-color: rgb(230 230 230) !important;
-  padding: 5px;
-  border: 1px solid var(--light-infoBorder-color) !important;
-}
-
 span {
   border: 0;
-}
-
-.night-mode
-  div#amzn-native-ad-0
-  div.amzn-native-products-list
-  div.amzn-native-product {
-  background-color: var(--night-infoBackground-color) !important;
-  border: 1px solid var(--night-infoBorder-color) !important;
-}
-
-div#amzn-native-ad-0 * {
-  color: rgb(29, 161, 242);
-}
-
-div#amzn-native-ad-0
-  div.amzn-native-products-list
-  div.amzn-native-product
-  .amzn-native-product-list-price {
-  color: var(--light-font-secondColor) !important;
-}
-
-.night-mode
-  div#amzn-native-ad-0
-  div.amzn-native-products-list
-  div.amzn-native-product
-  .amzn-native-product-list-price {
-  color: var(--night-font-secondColor) !important;
 }
 
 /* Base style */
@@ -463,6 +412,7 @@ h4 {
 
 /*loading...*/
 .loader {
+  opacity: 1;
   visibility: visible;
   position: fixed;
   display: flex;
@@ -471,6 +421,7 @@ h4 {
   left: 50%;
   margin-top: -22vmin;
   margin-left: -22vmin;
+  transition: opacity 0.5s linear;
 }
 
 .loader .logo {

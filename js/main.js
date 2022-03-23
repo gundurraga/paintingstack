@@ -749,6 +749,28 @@ const post = [
   },
 ];
 
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
+
+shuffle(post);
+
 var first20post = post.slice(0, 20);
 
 // javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
@@ -939,13 +961,16 @@ btnNightMode.addEventListener("click", function () {
 //Loader
 document.onreadystatechange = function () {
   if (document.readyState === "interactive") {
-    setTimeout(loader, 1700);
+    setTimeout(loader, 1500);
   }
 };
 
 function loader() {
-  document.querySelector(".loader").style.display = "none";
-  document.querySelector("body").style.visibility = "visible";
+  document.querySelector(".loader").style.opacity = "0";
+  setTimeout(() => {
+    document.querySelector(".loader").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  }, 450);
   prefersTheme();
   localTheme();
 }
