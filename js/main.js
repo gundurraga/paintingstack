@@ -52,7 +52,7 @@ const post = [
     DimensionCm: "460 x 880 cm",
     DimensionIn: "181.1 × 346.5 in.",
     Museum: "Santa Maria delle Grazie",
-    MuseumTwitter: "",
+    MuseumTwitter: false,
     ImageSize: "2.7",
     ImageDimension: "3840 x 1920",
     License: "CC0 1.0 Universal",
@@ -804,9 +804,18 @@ function postTemplate(post) {
         </h4>
         <h5>
         ${post.DimensionCm} (${post.DimensionIn})<br />${post.Museum}
-          <a target="_blank" class="museumTwitter" href="https://twitter.com/${
-            post.MuseumTwitter
-          }">@${post.MuseumTwitter}</a>
+        ${
+          post.MuseumTwitter
+            ? `
+            <a
+              target="_blank"
+              class="museumTwitter"
+              href="https://twitter.com/${post.MuseumTwitter}">
+              @${post.MuseumTwitter}
+            </a>`
+            : ""
+        }
+          
         </h5>
       </div>
       <div class="info-icons">
