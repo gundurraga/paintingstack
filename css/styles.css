@@ -673,7 +673,7 @@ nav.scrollUp {
 
 .night-mode #menu .languages {
   display: none;
-  background-color: rgb(27, 27, 40, 0.95);
+  background-color: rgba(35, 35, 48, 0.95);
 }
 
 #menu li h4 {
