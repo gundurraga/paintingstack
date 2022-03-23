@@ -317,7 +317,7 @@ Mobile first, media queries at the end
   --light-font-thirdColor: rgb(63, 60, 77);
   --light-frame-secondColor: rgb(199, 199, 199);
   --light-frame-firstColor: rgb(220, 220, 220);
-  --light-frameShadow-color: rgb(180, 180, 180);
+  --light-frameShadow-color: rgb(160, 160, 160);
   --light-infoBackground-color: rgb(230, 230, 230);
   --light-infoBorder-color: rgb(199, 199, 199);
 
@@ -917,13 +917,13 @@ nav.scrollUp {
   overflow: hidden;
   border-radius: 2px;
   padding: var(--frame-width);
-  box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+  box-shadow: 0px 1px 3px 1px var(--light-frameShadow-color),
     0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
-  -moz-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+  -moz-box-shadow: 0px 1px 3px 1px var(--light-frameShadow-color),
     0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
-  -webkit-box-shadow: 0px 1px 4px 1px var(--light-frameShadow-color),
+  -webkit-box-shadow: 0px 1px 3px 1px var(--light-frameShadow-color),
     0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
     0px 0px 0px var(--frame-width) var(--light-frame-secondColor) inset;
 }
