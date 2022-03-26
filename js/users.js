@@ -2,6 +2,62 @@
 
 const gundurraga = [
   {
+    Date: "March 26, 2022",
+    ID: "cat-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: {
+      en: "Cat",
+      es: "Gato",
+      fr: "Chat",
+    },
+    ArtworkYear: 2022,
+    ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "80 x 60 cm",
+    DimensionIn: "31.5 x 23.6 in.",
+    ImageSize: "3.4",
+    ImageDimension: "2816 x 3756",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: true,
+  },
+  {
+    Date: "March 26, 2022",
+    ID: "escher-mosaic-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: {
+      en: "Escher Mosaic",
+      es: "Mosaico Escher",
+      fr: "Mosaïque Escher",
+    },
+    ArtworkYear: 2022,
+    ArtworkLocation: "Santiago, Chile",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "85 x 100 cm",
+    DimensionIn: "39.4 x 33.5 in.",
+    ImageSize: "2.4",
+    ImageDimension: "3336 x 2839",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: true,
+  },
+  {
     Date: "March 1, 2022",
     ID: "earth-2022",
     UserID: "gundurraga",
@@ -567,8 +623,6 @@ function loader() {
     document.querySelector(".loader").style.display = "none";
     document.querySelector("body").style.visibility = "visible";
   }, 450);
-  // document.querySelector(".loader").style.display = "none";
-  // document.querySelector("body").style.visibility = "visible";
   prefersTheme();
   localTheme();
 }

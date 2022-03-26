@@ -4,6 +4,10 @@ let en = {
   sayHello: "Say Hello to",
   download: "Download",
 
+  cat: "Cat",
+  cat_media: "Oil on canvas",
+  mosaic_escher: "Escher Mosaic",
+  mosaic_escher_media: "Oil on canvas",
   earth: "Earth",
   earth_media: "Oil on canvas",
   margherita: "Margherita",
@@ -38,6 +42,10 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
+  cat: "Gato",
+  cat_media: "Óleo sobre tela",
+  mosaic_escher: "Mosaico Escher",
+  mosaic_escher_media: "Óleo sobre tela",
   earth: "Tierra",
   earth_media: "Óleo sobre tela",
   margherita: "Margherita",
@@ -72,6 +80,10 @@ let fr = {
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  cat: "Chat",
+  cat_media: "Huile sur toile",
+  mosaic_escher: "Mosaïque Escher",
+  mosaic_escher_media: "Huile sur toile",
   earth: "Terre",
   earth_media: "Huile sur toile",
   margherita: "Margherita",
@@ -103,12 +115,23 @@ let fr = {
 let lang = navigator.language || navigator.userLanguage;
 language = lang.slice(0, 2);
 
+const localLanguage = localStorage.getItem("lang");
+if (localLanguage) {
+  language = localLanguage;
+} else {
+  language = lang.slice(0, 2);
+}
 // set all the text
 function translate(lang) {
   document.getElementById("languageSelector").innerHTML = lang.languageSelector;
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("cat-2022").innerHTML = lang.cat;
+  document.getElementById("cat-2022-media").innerHTML = lang.cat_media;
+  document.getElementById("escher-mosaic-2022").innerHTML = lang.mosaic_escher;
+  document.getElementById("escher-mosaic-2022-media").innerHTML =
+    lang.mosaic_escher_media;
   document.getElementById("earth-2022").innerHTML = lang.earth;
   document.getElementById("earth-2022-media").innerHTML = lang.earth_media;
   document.getElementById("margherita-2022").innerHTML = lang.margherita;
@@ -168,18 +191,21 @@ btnSelectLanguage.addEventListener("click", function () {
 const selectEN = document.querySelector("#en");
 selectEN.addEventListener("click", () => {
   translate(en);
+  localStorage.setItem("lang", "en");
   document.querySelector(".languages").classList.remove("lang-in-view");
 });
 
 const selectES = document.querySelector("#es");
 selectES.addEventListener("click", () => {
   translate(es);
+  localStorage.setItem("lang", "es");
   document.querySelector(".languages").classList.remove("lang-in-view");
 });
 
 const selectFR = document.querySelector("#fr");
 selectFR.addEventListener("click", () => {
   translate(fr);
+  localStorage.setItem("lang", "fr");
   document.querySelector(".languages").classList.remove("lang-in-view");
 });
 
