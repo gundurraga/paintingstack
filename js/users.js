@@ -403,6 +403,14 @@ const gundurraga = [
   },
 ];
 
+gundurraga.sort(function (a, b) {
+  if (a.onSale === true && b.onSale === true) {
+    return 0;
+  } else if (a.onSale === true && b.onSale === false) {
+    return -1;
+  }
+});
+
 // javascript template literals https://www.youtube.com/watch?v=DG4obitDvUA&ab_channel=LearnWebCode
 function postUserTemplate(post) {
   return `
