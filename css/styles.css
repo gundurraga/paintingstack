@@ -455,6 +455,10 @@ nav {
   border-bottom: 1px solid var(--light-lineHeadFooter-color);
   justify-content: start;
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  -moz-backdrop-filter: blur(12px);
+  -o-backdrop-filter: blur(12px);
+  -ms-backdrop-filter: blur(12px);
 }
 
 nav.scrollUp {
