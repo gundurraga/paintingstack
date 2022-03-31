@@ -1,7 +1,7 @@
 let en = {
   languageSelector: "Language: EN",
   themeSelector: "Night Mode",
-  sayHello: "Say Hello to",
+  sayHello: "Say hello to",
   download: "Download",
 
   cat: "Cat",
