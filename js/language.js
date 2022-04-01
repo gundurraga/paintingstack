@@ -4,6 +4,18 @@ let en = {
   sayHello: "Say hello to",
   download: "Download",
 
+  space_xploration: "Space Xploration",
+  space_xploration_media: "Oil on canvas",
+  modern_curves: "Modern Curves",
+  modern_curves_media: "Oil on canvas",
+  the_city: "The City",
+  the_city_media: "Oil on canvas",
+  fosforos_copihue: "Fósforos Copihue",
+  fosforos_copihue_media: "Oil on canvas",
+  chocolate_on_chocolate: "Chocolate on Chocolate",
+  chocolate_on_chocolate_media: "Oil on canvas",
+  mona_lisa: "Mona Lisa",
+  mona_lisa_media: "Oil on canvas",
   cat: "Cat",
   cat_media: "Oil on canvas",
   mosaic_escher: "Escher Mosaic",
@@ -42,6 +54,18 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
+  space_xploration: "Xploración Espacial",
+  space_xploration_media: "Óleo sobre tela",
+  modern_curves: "Curvas Modernas",
+  modern_curves_media: "Óleo sobre tela",
+  the_city: "La Ciudad",
+  the_city_media: "Óleo sobre tela",
+  fosforos_copihue: "Fósforos Copihue",
+  fosforos_copihue_media: "Óleo sobre tela",
+  chocolate_on_chocolate: "Chocolate sobre Chocolate",
+  chocolate_on_chocolate_media: "Óleo sobre tela",
+  mona_lisa: "Mona Lisa",
+  mona_lisa_media: "Óleo sobre tela",
   cat: "Gato",
   cat_media: "Óleo sobre tela",
   mosaic_escher: "Mosaico Escher",
@@ -80,6 +104,18 @@ let fr = {
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  space_xploration: "Xploration de l'espace",
+  space_xploration_media: "Huile sur toile",
+  modern_curves: "Courbes Modernes",
+  modern_curves_media: "Huile sur toile",
+  the_city: "La Ville",
+  the_city_media: "Huile sur toile",
+  fosforos_copihue: "Fósforos Copihue",
+  fosforos_copihue_media: "Huile sur toile",
+  chocolate_on_chocolate: "Chocolat sur Chocolat",
+  chocolate_on_chocolate_media: "Huile sur toile",
+  mona_lisa: "La Joconde",
+  mona_lisa_media: "Huile sur toile",
   cat: "Chat",
   cat_media: "Huile sur toile",
   mosaic_escher: "Mosaïque Escher",
@@ -127,6 +163,27 @@ function translate(lang) {
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("space-xploration-2022").innerHTML =
+    lang.space_xploration;
+  document.getElementById("space-xploration-2022-media").innerHTML =
+    lang.space_xploration_media;
+  document.getElementById("modern-curves-2022").innerHTML = lang.modern_curves;
+  document.getElementById("modern-curves-2022-media").innerHTML =
+    lang.modern_curves_media;
+  document.getElementById("the-city-2022").innerHTML = lang.the_city;
+  document.getElementById("the-city-2022-media").innerHTML =
+    lang.the_city_media;
+  document.getElementById("fosforos-copihue-2022").innerHTML =
+    lang.fosforos_copihue;
+  document.getElementById("fosforos-copihue-2022-media").innerHTML =
+    lang.fosforos_copihue_media;
+  document.getElementById("chocolate-on-chocolate-2022").innerHTML =
+    lang.chocolate_on_chocolate;
+  document.getElementById("chocolate-on-chocolate-2022-media").innerHTML =
+    lang.chocolate_on_chocolate_media;
+  document.getElementById("mona-lisa-2022").innerHTML = lang.mona_lisa;
+  document.getElementById("mona-lisa-2022-media").innerHTML =
+    lang.mona_lisa_media;
   document.getElementById("cat-2022").innerHTML = lang.cat;
   document.getElementById("cat-2022-media").innerHTML = lang.cat_media;
   document.getElementById("escher-mosaic-2022").innerHTML = lang.mosaic_escher;
