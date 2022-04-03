@@ -247,7 +247,7 @@ const gundurraga = [
     ImageDimension: "3928 x 2330",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     Date: "February 25, 2022",
