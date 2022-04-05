@@ -55,7 +55,7 @@ const gundurraga = [
     ImageDimension: "2922 x 2908",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     Date: "April 1, 2022",
@@ -111,7 +111,7 @@ const gundurraga = [
     ImageDimension: "2980 x 2955",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     Date: "April 1, 2022",
@@ -195,7 +195,7 @@ const gundurraga = [
     ImageDimension: "2874 x 3805",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     Date: "March 26, 2022",
@@ -223,7 +223,7 @@ const gundurraga = [
     ImageDimension: "3476 x 2940",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     Date: "March 1, 2022",
