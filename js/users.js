@@ -2,6 +2,34 @@
 
 const gundurraga = [
   {
+    Date: "August 6, 2022",
+    ID: "studio-escalier-i-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: {
+      en: "Studio Escalier I",
+      es: "Studio Escalier I",
+      fr: "Studio Escalier I",
+    },
+    ArtworkYear: 2022,
+    ArtworkLocation: "Argentonnay, France",
+    ArtworkMedia: {
+      en: "Oil on paper",
+      es: "Óleo sobre papel",
+      fr: "Huile sur papier",
+    },
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "38.5 x 28 cm",
+    DimensionIn: "15.2 x 11 in.",
+    ImageSize: "2.3",
+    ImageDimension: "2895 x 3942",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: true,
+  },
+  {
     Date: "April 1, 2022",
     ID: "space-xploration-2022",
     UserID: "gundurraga",

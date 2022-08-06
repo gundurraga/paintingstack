@@ -4,6 +4,8 @@ let en = {
   sayHello: "Say hello to",
   download: "Download",
 
+  studio_escalier_i: "Studio Escalier I",
+  studio_escalier_i_media: "Oil on paper",
   space_xploration: "Space Xploration",
   space_xploration_media: "Oil on canvas",
   modern_curves: "Modern Curves",
@@ -54,6 +56,8 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
+  studio_escalier_i: "Studio Escalier I",
+  studio_escalier_i_media: "Óleo sobre papel",
   space_xploration: "Xploración Espacial",
   space_xploration_media: "Óleo sobre tela",
   modern_curves: "Curvas Modernas",
@@ -104,6 +108,8 @@ let fr = {
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  studio_escalier_i: "Studio Escalier I",
+  studio_escalier_i_media: "Huile sur papier",
   space_xploration: "Xploration de l'espace",
   space_xploration_media: "Huile sur toile",
   modern_curves: "Courbes Modernes",
@@ -163,6 +169,10 @@ function translate(lang) {
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("studio-escalier-i-2022").innerHTML =
+    lang.studio_escalier_i;
+  document.getElementById("studio-escalier-i-2022-media").innerHTML =
+    lang.studio_escalier_i_media;
   document.getElementById("space-xploration-2022").innerHTML =
     lang.space_xploration;
   document.getElementById("space-xploration-2022-media").innerHTML =
