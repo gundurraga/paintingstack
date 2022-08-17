@@ -4,6 +4,10 @@ let en = {
   sayHello: "Say hello to",
   download: "Download",
 
+  wrath_of_the_gods: "Wrath of the Gods",
+  wrath_of_the_gods_media: "Oil on panel",
+  studio_escalier_ii: "Studio Escalier II",
+  studio_escalier_ii_media: "Oil on canvas",
   studio_escalier_i: "Studio Escalier I",
   studio_escalier_i_media: "Oil on paper",
   space_xploration: "Space Xploration",
@@ -56,6 +60,10 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
+  wrath_of_the_gods: "La Ira de los Dioses",
+  wrath_of_the_gods_media: "Óleo sobre madera",
+  studio_escalier_ii: "Studio Escalier II",
+  studio_escalier_ii_media: "Óleo sobre tela",
   studio_escalier_i: "Studio Escalier I",
   studio_escalier_i_media: "Óleo sobre papel",
   space_xploration: "Xploración Espacial",
@@ -108,6 +116,10 @@ let fr = {
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  wrath_of_the_gods: "La Colère des Dieux",
+  wrath_of_the_gods_media: "Huile sur bois",
+  studio_escalier_ii: "Studio Escalier II",
+  studio_escalier_ii_media: "Huile sur toile",
   studio_escalier_i: "Studio Escalier I",
   studio_escalier_i_media: "Huile sur papier",
   space_xploration: "Xploration de l'espace",
@@ -169,6 +181,14 @@ function translate(lang) {
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("wrath-of-the-gods-2022").innerHTML =
+    lang.wrath_of_the_gods;
+  document.getElementById("wrath-of-the-gods-2022-media").innerHTML =
+    lang.wrath_of_the_gods_media;
+  document.getElementById("studio-escalier-ii-2022").innerHTML =
+    lang.studio_escalier_ii;
+  document.getElementById("studio-escalier-ii-2022-media").innerHTML =
+    lang.studio_escalier_ii_media;
   document.getElementById("studio-escalier-i-2022").innerHTML =
     lang.studio_escalier_i;
   document.getElementById("studio-escalier-i-2022-media").innerHTML =
