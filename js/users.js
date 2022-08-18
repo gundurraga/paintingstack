@@ -40,7 +40,7 @@ const gundurraga = [
       fr: "Studio Escalier II",
     },
     ArtworkYear: 2022,
-    ArtworkLocation: "Santiago, Chile",
+    ArtworkLocation: "Argentonnay, France",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
