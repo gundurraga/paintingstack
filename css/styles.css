@@ -1288,6 +1288,7 @@ a:active i {
 
   .post {
     flex-direction: row;
+    padding: calc(4 * var(--frame-width)) 0 calc(6 * var(--frame-width)) 0;
   }
 
   .post:nth-child(2) {
