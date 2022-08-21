@@ -670,7 +670,7 @@ function postUserTemplate(post) {
     <div class="boxDatePainting">
       <h5 class="date"></h5>
       <div class="frame ${post.onSale ? "on-sale" : ""}">
-        <a href="images/users/${post.UserID}/500p/${post.ID}.jpg"
+        <a href="images/users/${post.UserID}/700p/${post.ID}.jpg"
           data-srcset=" images/users/${post.UserID}/500p/${
     post.ID
   }.jpg 500w,  images/users/${post.UserID}/600p/${

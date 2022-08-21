@@ -1279,11 +1279,15 @@ a:active i {
   color: rgb(131, 162, 185);
 }
 
-/*Media queries*/
+/*Media queries (desktop) */
 @media screen and (min-width: 870px) {
   * {
     --frame-widthIn: 7px;
     --frame-width: 10px;
+  }
+
+  .post {
+    flex-direction: row;
   }
 
   .post:nth-child(2) {
@@ -1311,13 +1315,17 @@ a:active i {
   }
 
   .progressive img {
-    max-height: 60vh;
-    max-width: 60vw;
+    max-height: 85vh;
+    max-width: 85vw;
   }
 
   .progressive img.preview {
-    max-height: 60vh;
-    max-width: 60vw;
+    max-height: 85vh;
+    max-width: 85vw;
+  }
+
+  .info {
+    margin: 15px 60px auto 0;
   }
 
   .slider {
@@ -1325,7 +1333,7 @@ a:active i {
   }
 
   .sliderIn {
-    width: calc(60vw + 62px);
+    width: calc(85vw + 62px);
   }
 
   footer {
