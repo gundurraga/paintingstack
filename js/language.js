@@ -280,6 +280,7 @@ selectEN.addEventListener("click", () => {
   translate(en);
   localStorage.setItem("lang", "en");
   document.querySelector(".languages").classList.remove("lang-in-view");
+  document.documentElement.setAttribute("lang", "en");
 });
 
 const selectES = document.querySelector("#es");
@@ -287,6 +288,7 @@ selectES.addEventListener("click", () => {
   translate(es);
   localStorage.setItem("lang", "es");
   document.querySelector(".languages").classList.remove("lang-in-view");
+  document.documentElement.setAttribute("lang", "es");
 });
 
 const selectFR = document.querySelector("#fr");
@@ -294,12 +296,16 @@ selectFR.addEventListener("click", () => {
   translate(fr);
   localStorage.setItem("lang", "fr");
   document.querySelector(".languages").classList.remove("lang-in-view");
+  document.documentElement.setAttribute("lang", "fr");
 });
 
 if (language === "en") {
   translate(en);
+  document.documentElement.setAttribute("lang", "en");
 } else if (language === "es") {
   translate(es);
+  document.documentElement.setAttribute("lang", "es");
 } else if (language === "fr") {
   translate(fr);
+  document.documentElement.setAttribute("lang", "fr");
 }
