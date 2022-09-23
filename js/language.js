@@ -4,6 +4,16 @@ let en = {
   sayHello: "Say hello to",
   download: "Download",
 
+  good_morning_madame_giraffe: "Good Morning Madame Giraffe",
+  good_morning_madame_giraffe_media: "Oil on canvas",
+  swirl: "Swirl",
+  swirl_media: "Oil on canvas",
+  creme_brulee: "Crème brûlée",
+  creme_brulee_media: "Oil on canvas",
+  spheres: "Spheres",
+  spheres_media: "Oil on canvas",
+  window: "Window",
+  window_media: "Oil on canvas",
   wrath_of_the_gods: "Wrath of the Gods",
   wrath_of_the_gods_media: "Oil on panel",
   studio_escalier_ii: "Studio Escalier II",
@@ -60,6 +70,16 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
+  good_morning_madame_giraffe: "Buenos Días Señora Girafa",
+  good_morning_madame_giraffe_media: "Óleo sobre tela",
+  swirl: "Remolino",
+  swirl_media: "Óleo sobre tela",
+  creme_brulee: "Crème brûlée",
+  creme_brulee_media: "Óleo sobre tela",
+  spheres: "Esferas",
+  spheres_media: "Óleo sobre tela",
+  window: "Ventana",
+  window_media: "Óleo sobre tela",
   wrath_of_the_gods: "La Ira de los Dioses",
   wrath_of_the_gods_media: "Óleo sobre madera",
   studio_escalier_ii: "Studio Escalier II",
@@ -116,6 +136,16 @@ let fr = {
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  good_morning_madame_giraffe: "Bonjour Madame Girafe",
+  good_morning_madame_giraffe_media: "Huile sur toile",
+  swirl: "Tourbillon",
+  swirl_media: "Huile sur toile",
+  creme_brulee: "Crème brûlée",
+  creme_brulee_media: "Huile sur toile",
+  spheres: "Sphères",
+  spheres_media: "Huile sur toile",
+  window: "Fenêtre",
+  window_media: "Huile sur toile",
   wrath_of_the_gods: "La Colère des Dieux",
   wrath_of_the_gods_media: "Huile sur bois",
   studio_escalier_ii: "Studio Escalier II",
@@ -181,6 +211,19 @@ function translate(lang) {
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("good-morning-madame-giraffe-2022").innerHTML =
+    lang.good_morning_madame_giraffe;
+  document.getElementById("good-morning-madame-giraffe-2022-media").innerHTML =
+    lang.good_morning_madame_giraffe_media;
+  document.getElementById("swirl-2022").innerHTML = lang.swirl;
+  document.getElementById("swirl-2022-media").innerHTML = lang.swirl_media;
+  document.getElementById("creme-brulee-2022").innerHTML = lang.creme_brulee;
+  document.getElementById("creme-brulee-2022-media").innerHTML =
+    lang.creme_brulee_media;
+  document.getElementById("spheres-2022").innerHTML = lang.spheres;
+  document.getElementById("spheres-2022-media").innerHTML = lang.spheres_media;
+  document.getElementById("window-2022").innerHTML = lang.window;
+  document.getElementById("window-2022-media").innerHTML = lang.window_media;
   document.getElementById("wrath-of-the-gods-2022").innerHTML =
     lang.wrath_of_the_gods;
   document.getElementById("wrath-of-the-gods-2022-media").innerHTML =
