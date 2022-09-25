@@ -105,7 +105,7 @@ const gundurraga = [
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
-    DimensionCm: "55 x 46 cm",
+    DimensionCm: "41 x 33 cm",
     DimensionIn: "in.",
     ImageSize: "4",
     ImageDimension: "2960 x 3680",
