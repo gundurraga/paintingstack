@@ -70,7 +70,7 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
-  good_morning_madame_giraffe: "Buenos Días Señora Girafa",
+  good_morning_madame_giraffe: "Buenos Días Señora Jirafa",
   good_morning_madame_giraffe_media: "Óleo sobre tela",
   swirl: "Remolino",
   swirl_media: "Óleo sobre tela",

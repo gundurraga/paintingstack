@@ -8,7 +8,7 @@ const gundurraga = [
     Artist: "Gregorio Undurraga",
     ArtworkTitle: {
       en: "Good Morning Madame Giraffe",
-      es: "Buenos Días Señora Girafa",
+      es: "Buenos Días Señora Jirafa",
       fr: "Bonjour Madame girafe",
     },
     ArtworkYear: 2022,
