@@ -63,9 +63,9 @@ const gundurraga = [
     UserID: "gundurraga",
     Artist: "Gregorio Undurraga",
     ArtworkTitle: {
-      en: "Crème brûlée",
-      es: "Crème brûlée",
-      fr: "Crème brûlée",
+      en: "Crème Brûlée",
+      es: "Crème Brûlée",
+      fr: "Crème Brûlée",
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
