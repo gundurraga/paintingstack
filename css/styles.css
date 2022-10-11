@@ -729,6 +729,15 @@ nav.scrollUp {
 }
 
 /*  Main */
+
+.exhibition {
+  padding: 20px 20px 0 20px;
+  color: var(--light-font-secondColor);
+}
+
+.night-mode .exhibition {
+  color: var(--night-font-secondColor);
+}
 .container {
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
