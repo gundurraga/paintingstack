@@ -731,7 +731,7 @@ nav.scrollUp {
 /*  Main */
 
 .exhibition {
-  padding: 20px 20px 0 20px;
+  margin: 20px;
   color: var(--light-font-secondColor);
 }
 
@@ -1293,6 +1293,10 @@ a:active i {
   * {
     --frame-widthIn: 7px;
     --frame-width: 10px;
+  }
+
+  .exhibition {
+    margin: 20px 20px 0 20px;
   }
 
   .post {
