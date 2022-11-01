@@ -1,9 +1,20 @@
 let en = {
   languageSelector: "Language: EN",
   themeSelector: "Night Mode",
+  nfts: "Buy NFTs",
   sayHello: "Say hello to",
   download: "Download",
 
+  the_train_station: "The Train Station",
+  the_train_station_media: "Oil on canvas",
+  wind_cows: "Wind Cows",
+  wind_cows_media: "Oil on canvas",
+  airplane: "Airplane",
+  airplane_media: "Oil on canvas",
+  yellow_submarine: "Yellow Submarine",
+  yellow_submarine_media: "Oil on canvas",
+  pythagoras: "Pythagoras",
+  pythagoras_media: "Oil on canvas",
   good_morning_madame_giraffe: "Good Morning Madame Giraffe",
   good_morning_madame_giraffe_media: "Oil on canvas",
   swirl: "Swirl",
@@ -67,9 +78,20 @@ let en = {
 let es = {
   languageSelector: "Idioma: ES",
   themeSelector: "Modo Noche",
+  nfts: "Comprar NFTs",
   sayHello: "Saluda a",
   download: "Descargar",
 
+  the_train_station: "La Estación de Tren",
+  the_train_station_media: "Óleo sobre tela",
+  wind_cows: "Vacas Eólicas",
+  wind_cows_media: "Óleo sobre tela",
+  airplane: "Avión",
+  airplane_media: "Óleo sobre tela",
+  yellow_submarine: "Submarino Amarillo",
+  yellow_submarine_media: "Óleo sobre tela",
+  pythagoras: "Pitágoras",
+  pythagoras_media: "Óleo sobre tela",
   good_morning_madame_giraffe: "Buenos Días Señora Jirafa",
   good_morning_madame_giraffe_media: "Óleo sobre tela",
   swirl: "Remolino",
@@ -133,9 +155,20 @@ let es = {
 let fr = {
   languageSelector: "Langue: FR",
   themeSelector: "Mode Nuit",
+  nfts: "Acheter NFTs",
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  the_train_station: "La Gare",
+  the_train_station_media: "Huile sur toile",
+  wind_cows: "Vaches Éoliennes",
+  wind_cows_media: "Huile sur toile",
+  airplane: "Avion",
+  airplane_media: "Huile sur toile",
+  yellow_submarine: "Sous-Marin Jaune",
+  yellow_submarine_media: "Huile sur toile",
+  pythagoras: "Pythagore",
+  pythagoras_media: "Huile sur toile",
   good_morning_madame_giraffe: "Bonjour Madame Girafe",
   good_morning_madame_giraffe_media: "Huile sur toile",
   swirl: "Tourbillon",
@@ -209,8 +242,26 @@ if (localLanguage) {
 function translate(lang) {
   document.getElementById("languageSelector").innerHTML = lang.languageSelector;
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
+  document.getElementById("nfts").innerHTML = lang.nfts;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("the-train-station-2022").innerHTML =
+    lang.the_train_station;
+  document.getElementById("the-train-station-2022-media").innerHTML =
+    lang.the_train_station_media;
+  document.getElementById("wind-cows-2022").innerHTML = lang.wind_cows;
+  document.getElementById("wind-cows-2022-media").innerHTML =
+    lang.wind_cows_media;
+  document.getElementById("airplane-2022").innerHTML = lang.airplane;
+  document.getElementById("airplane-2022-media").innerHTML =
+    lang.airplane_media;
+  document.getElementById("yellow-submarine-2022").innerHTML =
+    lang.yellow_submarine;
+  document.getElementById("yellow-submarine-2022-media").innerHTML =
+    lang.yellow_submarine_media;
+  document.getElementById("pythagoras-2022").innerHTML = lang.pythagoras;
+  document.getElementById("pythagoras-2022-media").innerHTML =
+    lang.pythagoras_media;
   document.getElementById("good-morning-madame-giraffe-2022").innerHTML =
     lang.good_morning_madame_giraffe;
   document.getElementById("good-morning-madame-giraffe-2022-media").innerHTML =

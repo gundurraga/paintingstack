@@ -2,6 +2,146 @@
 
 const gundurraga = [
   {
+    Date: "October 31, 2022",
+    ID: "the-train-station-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: {
+      en: "The Train Station",
+      es: "La Estación de tren",
+      fr: "La Gare",
+    },
+    ArtworkYear: 2022,
+    ArtworkLocation: "Arles, France",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "65 x 92 cm",
+    DimensionIn: "in.",
+    ImageSize: "4.1",
+    ImageDimension: "3945 x 2792",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: false,
+  },
+  {
+    Date: "October 31, 2022",
+    ID: "wind-cows-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: {
+      en: "Wind Cows",
+      es: "Vacas Eólicas",
+      fr: "Vaches Éoliennes",
+    },
+    ArtworkYear: 2022,
+    ArtworkLocation: "Arles, France",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "60 x 81 cm",
+    DimensionIn: "in.",
+    ImageSize: "5.2",
+    ImageDimension: "3944 x 2935",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: false,
+  },
+  {
+    Date: "October 31, 2022",
+    ID: "airplane-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: {
+      en: "Airplane",
+      es: "Avión",
+      fr: "Avion",
+    },
+    ArtworkYear: 2022,
+    ArtworkLocation: "Arles, France",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "60 x 81 cm",
+    DimensionIn: "in.",
+    ImageSize: "4.7",
+    ImageDimension: "3886 x 2889",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: false,
+  },
+  {
+    Date: "October 31, 2022",
+    ID: "yellow-submarine-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: {
+      en: "Yellow Submarine",
+      es: "Submarino Amarillo",
+      fr: "Sous-Marin Jaune",
+    },
+    ArtworkYear: 2022,
+    ArtworkLocation: "Arles, France",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "65 x 92 cm",
+    DimensionIn: "in.",
+    ImageSize: "3.7",
+    ImageDimension: "3921 x 2759",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: false,
+  },
+  {
+    Date: "October 31, 2022",
+    ID: "pythagoras-2022",
+    UserID: "gundurraga",
+    Artist: "Gregorio Undurraga",
+    ArtworkTitle: {
+      en: "Pythagoras",
+      es: "Pitágoras",
+      fr: "Pythagore",
+    },
+    ArtworkYear: 2022,
+    ArtworkLocation: "Arles, France",
+    ArtworkMedia: {
+      en: "Oil on canvas",
+      es: "Óleo sobre tela",
+      fr: "Huile sur toile",
+    },
+    BirthYear: 1993,
+    CountryId: "cl",
+    Country: "Chile",
+    DimensionCm: "55 x 46 cm",
+    DimensionIn: "in.",
+    ImageSize: "4",
+    ImageDimension: "2921 x 3491",
+    License: "CC0 1.0 Universal",
+    LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
+    onSale: false,
+  },
+  {
     Date: "September 23, 2022",
     ID: "good-morning-madame-giraffe-2022",
     UserID: "gundurraga",
@@ -894,6 +1034,15 @@ document.querySelector("#header").innerHTML = `
 
     <ul id="menu">
       <li>
+      <div class="switchTheme">
+      <ion-icon name="moon"></ion-icon>
+        <h4 id="themeSelector">Night Mode</h4>
+        <div class="btn-nightMode">
+          <div class="switch"></div>
+        </div>
+      </div>
+      </li>
+      <li>
       <div class="menuLink selectLanguage"><ion-icon name="globe-outline"></ion-icon><h4 id="languageSelector">Language: EN</h4></div>
       </li>
       <div class="languages">
@@ -908,12 +1057,9 @@ document.querySelector("#header").innerHTML = `
         </li>
       </div>
       <li>
-        <div class="switchTheme">
-          <h4 id="themeSelector">Night Mode</h4>
-          <div class="btn-nightMode">
-            <div class="switch"></div>
-          </div>
-        </div>
+        <a href="https://opensea.io/collection/undurraga-oil-paintings" target="_blank">
+        <div class="menuLink"><ion-icon name="boat"></ion-icon><h4 id="nfts">Buy NFTs</h4></div>
+        </a>
       </li>
       <li>
         <a href="https://twitter.com/gundurragad" target="_blank">

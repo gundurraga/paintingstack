@@ -612,6 +612,7 @@ nav.scrollUp {
 }
 
 #menu li {
+  display: flex;
   padding: 5px 10px;
   font-size: 1rem;
   border-bottom: 1px solid var(--lightMobile-postBorder-color);
@@ -644,6 +645,10 @@ nav.scrollUp {
   padding: 5px 5px 5px 0;
 }
 
+#menu .languages li {
+  justify-content: space-around;
+}
+
 #menu .languages h4 {
   padding: 5px 10px;
 }
@@ -673,7 +678,7 @@ nav.scrollUp {
 .switchTheme {
   display: inline-block;
   cursor: pointer;
-  padding: 0 15px;
+  padding: 0 15px 0 5px;
   border-radius: 100px;
 }
 
