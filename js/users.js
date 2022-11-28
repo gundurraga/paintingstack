@@ -1057,15 +1057,15 @@ document.querySelector("#header").innerHTML = `
         </li>
       </div>
       <li>
-        <a href="https://twitter.com/gundurragad" target="_blank">
-        <div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div>
-        </a>
-      </li>
-      <li>
         <a 
         href="https://www.google.com/maps/place/Atelier+Gregorio+Undurraga/@43.6752773,4.6231424,15z/data=!4m5!3m4!1s0x0:0x1a7a770c6eca8a7b!8m2!3d43.6752773!4d4.6231424" 
         target="_blank">
         <div class="menuLink"><ion-icon name="brush-sharp"></ion-icon><h4 id="atelier">Visit Studio</h4></div>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/gundurragad" target="_blank">
+        <div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div>
         </a>
       </li>
     </ul>
