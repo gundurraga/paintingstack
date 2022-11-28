@@ -3,6 +3,7 @@ let en = {
   themeSelector: "Night Mode",
   shop: "Merch Shop",
   nfts: "Buy NFTs",
+  atelier: "Visit Studio",
   sayHello: "Say hello to",
   download: "Download",
 
@@ -81,6 +82,7 @@ let es = {
   themeSelector: "Modo Noche",
   shop: "Tienda",
   nfts: "Comprar NFTs",
+  atelier: "Visitar Taller",
   sayHello: "Saluda a",
   download: "Descargar",
 
@@ -159,6 +161,7 @@ let fr = {
   themeSelector: "Mode Nuit",
   shop: "Boutique",
   nfts: "Acheter NFTs",
+  atelier: "Visiter l'atelier",
   sayHello: "Dire salut à",
   download: "Télécharger",
 
@@ -247,6 +250,7 @@ function translate(lang) {
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("shop").innerHTML = lang.shop;
   document.getElementById("nfts").innerHTML = lang.nfts;
+  document.getElementById("atelier").innerHTML = lang.atelier;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
   document.getElementById("the-train-station-2022").innerHTML =
