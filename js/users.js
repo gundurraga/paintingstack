@@ -1057,16 +1057,6 @@ document.querySelector("#header").innerHTML = `
         </li>
       </div>
       <li>
-        <a href="https://www.redbubble.com/people/undurraga/shop" target="_blank">
-        <div class="menuLink"><ion-icon name="shirt"></ion-icon><h4 id="shop">Merch Shop</h4></div>
-        </a>
-      </li>
-      <li>
-        <a href="https://opensea.io/collection/undurraga-oil-paintings" target="_blank">
-        <div class="menuLink"><ion-icon name="boat"></ion-icon><h4 id="nfts">Buy NFTs</h4></div>
-        </a>
-      </li>
-      <li>
         <a href="https://twitter.com/gundurragad" target="_blank">
         <div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div>
         </a>

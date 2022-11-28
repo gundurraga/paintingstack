@@ -1,8 +1,6 @@
 let en = {
   languageSelector: "Language: EN",
   themeSelector: "Night Mode",
-  shop: "Merch Shop",
-  nfts: "Buy NFTs",
   atelier: "Visit Studio",
   sayHello: "Say hello to",
   download: "Download",
@@ -80,8 +78,6 @@ let en = {
 let es = {
   languageSelector: "Idioma: ES",
   themeSelector: "Modo Noche",
-  shop: "Tienda",
-  nfts: "Comprar NFTs",
   atelier: "Visitar Taller",
   sayHello: "Saluda a",
   download: "Descargar",
@@ -159,8 +155,6 @@ let es = {
 let fr = {
   languageSelector: "Langue: FR",
   themeSelector: "Mode Nuit",
-  shop: "Boutique",
-  nfts: "Acheter NFTs",
   atelier: "Visiter l'atelier",
   sayHello: "Dire salut à",
   download: "Télécharger",
@@ -248,8 +242,6 @@ if (localLanguage) {
 function translate(lang) {
   document.getElementById("languageSelector").innerHTML = lang.languageSelector;
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
-  document.getElementById("shop").innerHTML = lang.shop;
-  document.getElementById("nfts").innerHTML = lang.nfts;
   document.getElementById("atelier").innerHTML = lang.atelier;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
