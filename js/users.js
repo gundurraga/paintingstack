@@ -1019,7 +1019,7 @@ document.querySelector(".loader").innerHTML = `
 `;
 
 document.querySelector("#header").innerHTML = `
-    <a class="header-logo" href="https://paintingstack.com">
+    <a class="header-logo" href="https://paintingstack.com/gundurraga">
       <div class="logo">
         <div class="inside-logo noisy"></div>
       </div>
