@@ -5,6 +5,16 @@ let en = {
   sayHello: "Say hello to",
   download: "Download",
 
+  the_thinker: "The Thinker",
+  the_thinker_media: "Oil on canvas",
+  satoshi_nakamoto: "Satoshi Nakamoto",
+  satoshi_nakamoto_media: "Oil on canvas",
+  public_works: "Public Works",
+  public_works_media: "Oil on canvas",
+  the_sleeping_backhoe: "The Sleeping Backhoe",
+  the_sleeping_backhoe_media: "Oil on canvas",
+  composition_i: "Composition I",
+  composition_i_media: "Oil on canvas",
   the_train_station: "The Train Station",
   the_train_station_media: "Oil on canvas",
   wind_cows: "Wind Cows",
@@ -82,6 +92,16 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
+  the_thinker: "El Pensador",
+  the_thinker_media: "Óleo sobre tela",
+  satoshi_nakamoto: "Satoshi Nakamoto",
+  satoshi_nakamoto_media: "Óleo sobre tela",
+  public_works: "Obras en la Ciudad",
+  public_works_media: "Óleo sobre tela",
+  the_sleeping_backhoe: "La Retroexcavadora Durmiente",
+  the_sleeping_backhoe_media: "Óleo sobre tela",
+  composition_i: "Composición I",
+  composition_i_media: "Óleo sobre tela",
   the_train_station: "La Estación de Tren",
   the_train_station_media: "Óleo sobre tela",
   wind_cows: "Vacas Eólicas",
@@ -159,6 +179,16 @@ let fr = {
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  the_thinker: "Le Penseur",
+  the_thinker_media: "Huile sur toile",
+  satoshi_nakamoto: "Satoshi Nakamoto",
+  satoshi_nakamoto_media: "Huile sur toile",
+  public_works: "Travaux en Ville",
+  public_works_media: "Huile sur toile",
+  the_sleeping_backhoe: "La Tractopelle Dormante",
+  the_sleeping_backhoe_media: "Huile sur toile",
+  composition_i: "Composition I",
+  composition_i_media: "Huile sur toile",
   the_train_station: "La Gare",
   the_train_station_media: "Huile sur toile",
   wind_cows: "Vaches Éoliennes",
@@ -245,6 +275,23 @@ function translate(lang) {
   document.getElementById("atelier").innerHTML = lang.atelier;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("the-thinker-2022").innerHTML = lang.the_thinker;
+  document.getElementById("the-thinker-2022-media").innerHTML =
+    lang.the_thinker_media;
+  document.getElementById("satoshi-nakamoto-2022").innerHTML =
+    lang.satoshi_nakamoto;
+  document.getElementById("satoshi-nakamoto-2022-media").innerHTML =
+    lang.satoshi_nakamoto_media;
+  document.getElementById("the-sleeping-backhoe-2022").innerHTML =
+    lang.the_sleeping_backhoe;
+  document.getElementById("the-sleeping-backhoe-2022-media").innerHTML =
+    lang.the_sleeping_backhoe_media;
+  document.getElementById("public-works-2022").innerHTML = lang.public_works;
+  document.getElementById("public-works-2022-media").innerHTML =
+    lang.public_works_media;
+  document.getElementById("composition-i-2022").innerHTML = lang.composition_i;
+  document.getElementById("composition-i-2022-media").innerHTML =
+    lang.composition_i_media;
   document.getElementById("the-train-station-2022").innerHTML =
     lang.the_train_station;
   document.getElementById("the-train-station-2022-media").innerHTML =
