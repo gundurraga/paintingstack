@@ -5,6 +5,16 @@ let en = {
   sayHello: "Say hello to",
   download: "Download",
 
+  harlequin_and_pierrot: "Harlequin and Pierrot",
+  harlequin_and_pierrot_media: "Oil on canvas",
+  the_jungle: "The Jungle",
+  the_jungle_media: "Oil on canvas",
+  first_steps: "First Steps",
+  first_steps_media: "Oil on canvas",
+  the_football_team: "The Football Team",
+  the_football_team_media: "Oil on canvas",
+  the_elephants: "The Elephants",
+  the_elephants_media: "Oil on canvas",
   the_thinker: "The Thinker",
   the_thinker_media: "Oil on canvas",
   satoshi_nakamoto: "Satoshi Nakamoto",
@@ -92,6 +102,16 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
+  harlequin_and_pierrot: "Arlequín y Pierrot",
+  harlequin_and_pierrot_media: "Óleo sobre tela",
+  the_jungle: "La Jungla",
+  the_jungle_media: "Óleo sobre tela",
+  first_steps: "Primeros Pasos",
+  first_steps_media: "Óleo sobre tela",
+  the_football_team: "El Equipo de Futbol",
+  the_football_team_media: "Óleo sobre tela",
+  the_elephants: "Los Elefantes",
+  the_elephants_media: "Óleo sobre tela",
   the_thinker: "El Pensador",
   the_thinker_media: "Óleo sobre tela",
   satoshi_nakamoto: "Satoshi Nakamoto",
@@ -179,6 +199,16 @@ let fr = {
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  harlequin_and_pierrot: "Arlequin et Pierrot",
+  harlequin_and_pierrot_media: "Huile sur toile",
+  the_jungle: "La Jungle",
+  the_jungle_media: "Huile sur toile",
+  first_steps: "Premiers Pas",
+  first_steps_media: "Huile sur toile",
+  the_football_team: "L'Équipe de Foot",
+  the_football_team_media: "Huile sur toile",
+  the_elephants: "Les Éléphants",
+  the_elephants_media: "Huile sur toile",
   the_thinker: "Le Penseur",
   the_thinker_media: "Huile sur toile",
   satoshi_nakamoto: "Satoshi Nakamoto",
@@ -275,6 +305,23 @@ function translate(lang) {
   document.getElementById("atelier").innerHTML = lang.atelier;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("harlequin-and-pierrot-2023").innerHTML =
+    lang.harlequin_and_pierrot;
+  document.getElementById("harlequin-and-pierrot-2023-media").innerHTML =
+    lang.harlequin_and_pierrot_media;
+  document.getElementById("the-jungle-2023").innerHTML = lang.the_jungle;
+  document.getElementById("the-jungle-2023-media").innerHTML =
+    lang.the_jungle_media;
+  document.getElementById("first-steps-2023").innerHTML = lang.first_steps;
+  document.getElementById("first-steps-2023-media").innerHTML =
+    lang.first_steps_media;
+  document.getElementById("the-football-team-2023").innerHTML =
+    lang.the_football_team;
+  document.getElementById("the-football-team-2023-media").innerHTML =
+    lang.the_football_team_media;
+  document.getElementById("the-elephants-2023").innerHTML = lang.the_elephants;
+  document.getElementById("the-elephants-2023-media").innerHTML =
+    lang.the_elephants_media;
   document.getElementById("the-thinker-2022").innerHTML = lang.the_thinker;
   document.getElementById("the-thinker-2022-media").innerHTML =
     lang.the_thinker_media;
