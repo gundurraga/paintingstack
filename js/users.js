@@ -151,7 +151,7 @@ const gundurraga = [
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
-    DimensionCm: "90 x 90 cm",
+    DimensionCm: "80 x 80 cm",
     DimensionIn: "in.",
     ImageSize: "2.4",
     ImageDimension: "2885 x 2894",
@@ -1328,9 +1328,9 @@ document.querySelector("#header").innerHTML = `
       </div>
       <li>
         <a 
-        href="https://www.google.com/maps/place/Atelier+Gregorio+Undurraga/@43.6752773,4.6231424,15z/data=!4m5!3m4!1s0x0:0x1a7a770c6eca8a7b!8m2!3d43.6752773!4d4.6231424" 
+        href="https://opensea.io/collection/undurraga-oil-paintings" 
         target="_blank">
-        <div class="menuLink"><ion-icon name="brush-sharp"></ion-icon><h4 id="atelier">Visit Studio</h4></div>
+        <div class="menuLink"><ion-icon name="planet-outline"></ion-icon><h4 id="nft">NFTs</h4></div>
         </a>
       </li>
       <li>

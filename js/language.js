@@ -1,7 +1,6 @@
 let en = {
   languageSelector: "Language: EN",
   themeSelector: "Night Mode",
-  atelier: "Visit Studio",
   sayHello: "Say hello to",
   download: "Download",
 
@@ -98,7 +97,6 @@ let en = {
 let es = {
   languageSelector: "Idioma: ES",
   themeSelector: "Modo Noche",
-  atelier: "Visitar Taller",
   sayHello: "Saluda a",
   download: "Descargar",
 
@@ -195,7 +193,6 @@ let es = {
 let fr = {
   languageSelector: "Langue: FR",
   themeSelector: "Mode Nuit",
-  atelier: "Visiter l'atelier",
   sayHello: "Dire salut à",
   download: "Télécharger",
 
@@ -302,7 +299,6 @@ if (localLanguage) {
 function translate(lang) {
   document.getElementById("languageSelector").innerHTML = lang.languageSelector;
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
-  document.getElementById("atelier").innerHTML = lang.atelier;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
   document.getElementById("harlequin-and-pierrot-2023").innerHTML =

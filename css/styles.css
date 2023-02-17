@@ -959,6 +959,9 @@ nav.scrollUp {
   animation: progressiveReveal 0.7s linear;
   max-height: 100%;
   max-width: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 @keyframes progressiveReveal {
@@ -1347,14 +1350,6 @@ a:active i {
     margin: 15px 120px auto 0;
   }
 
-  .slider {
-    margin: 0px;
-  }
-
-  .sliderIn {
-    width: calc(85vw + 62px);
-  }
-
   footer {
     margin-top: calc(2 * var(--frame-width));
   }
@@ -1379,4 +1374,14 @@ a:active i {
   background: rgba(40, 40, 100, 0.4);
   border: 1px solid rgba(40, 40, 100, 0.65);
   border-radius: 2px;
+}
+
+@media screen and (min-width: 1190px) {
+  .slider {
+    margin: 0px;
+  }
+
+  .sliderIn {
+    width: calc(85vw + 62px);
+  }
 }
