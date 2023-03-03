@@ -1313,7 +1313,7 @@ document.querySelector("#header").innerHTML = `
       </div>
       </li>
       <li>
-      <div class="menuLink selectLanguage"><ion-icon name="globe-outline"></ion-icon><h4 id="languageSelector">Language: EN</h4></div>
+      <div class="menuLink selectLanguage"><ion-icon name="language-outline"></ion-icon><h4 id="languageSelector">Language: EN</h4></div>
       </li>
       <div class="languages">
         <li>
@@ -1326,6 +1326,11 @@ document.querySelector("#header").innerHTML = `
           <div class="menuLink" id="fr"><h4>Français</h4></div>
         </li>
       </div>
+      <li>
+        <a href="/cv.pdf" download="Undurraga; Gregorio - Artist Resume">
+        <div class="menuLink"><ion-icon name="document-text-outline"></ion-icon><h4 id="cv">CV</h4></div>
+        </a>
+      </li>
       <li>
         <a 
         href="https://opensea.io/collection/undurraga-oil-paintings" 

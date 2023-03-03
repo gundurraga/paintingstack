@@ -743,6 +743,7 @@ nav.scrollUp {
 .night-mode .exhibition {
   color: var(--night-font-secondColor);
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr [center-start] max-content [center-end] 1fr;
