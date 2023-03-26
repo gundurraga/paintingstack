@@ -430,9 +430,9 @@ const gundurraga = [
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
     ArtworkMedia: {
-      en: "Oil on canvas",
-      es: "Óleo sobre tela",
-      fr: "Huile sur toile",
+      en: "Mixed media",
+      es: "Técnica mixta",
+      fr: "Technique mixte",
     },
     BirthYear: 1993,
     CountryId: "cl",
