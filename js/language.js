@@ -4,6 +4,28 @@ let en = {
   sayHello: "Say hello to",
   download: "Download",
 
+  the_grandmaster: "The Grandmaster",
+  the_grandmaster_media: "Oil on canvas",
+  rhino_park: "Rhino Park",
+  rhino_park_media: "Oil on canvas",
+  the_supermarket: "The Supermarket",
+  the_supermarket_media: "Oil on canvas",
+  patience: "Patience",
+  patience_media: "Oil on canvas",
+  the_space_traveler: "The Space Traveler",
+  the_space_traveler_media: "Oil on canvas",
+  snow_tiger: "Snow Tiger",
+  snow_tiger_media: "Oil on canvas",
+  thats_cool: "That's Cool",
+  thats_cool_media: "Oil on canvas",
+  the_yellow_rider: "The Yellow Rider",
+  the_yellow_rider_media: "Oil on canvas",
+  brown_hen: "Brown Hen",
+  brown_hen_media: "Oil on canvas",
+  rainbow_hen: "Rainbow Hen",
+  rainbow_hen_media: "Oil on canvas",
+  white_hen: "White Hen",
+  white_hen_media: "Oil on canvas",
   harlequin_and_pierrot: "Harlequin and Pierrot",
   harlequin_and_pierrot_media: "Oil on canvas",
   the_jungle: "The Jungle",
@@ -100,6 +122,28 @@ let es = {
   sayHello: "Saluda a",
   download: "Descargar",
 
+  the_grandmaster: "El Gran Maestro",
+  the_grandmaster_media: "Óleo sobre tela",
+  rhino_park: "Parque Rinoceronte",
+  rhino_park_media: "Óleo sobre tela",
+  the_supermarket: "El Supermercado",
+  the_supermarket_media: "Óleo sobre tela",
+  patience: "Paciencia",
+  patience_media: "Óleo sobre tela",
+  the_space_traveler: "El Viajero Espacial",
+  the_space_traveler_media: "Óleo sobre tela",
+  snow_tiger: "Tigre de Nieve",
+  snow_tiger_media: "Óleo sobre tela",
+  thats_cool: "Está Bacán",
+  thats_cool_media: "Óleo sobre tela",
+  the_yellow_rider: "El Jinete Amarillo",
+  the_yellow_rider_media: "Óleo sobre tela",
+  brown_hen: "Gallina Café",
+  brown_hen_media: "Óleo sobre tela",
+  rainbow_hen: "Gallina Arcoíris",
+  rainbow_hen_media: "Óleo sobre tela",
+  white_hen: "Gallina Blanca",
+  white_hen_media: "Óleo sobre tela",
   harlequin_and_pierrot: "Arlequín y Pierrot",
   harlequin_and_pierrot_media: "Óleo sobre tela",
   the_jungle: "La Jungla",
@@ -196,6 +240,28 @@ let fr = {
   sayHello: "Dire salut à",
   download: "Télécharger",
 
+  the_grandmaster: "Le Grand Maître",
+  the_grandmaster_media: "Huile sur toile",
+  rhino_park: "Parc Rinocerós",
+  rhino_park_media: "Huile sur toile",
+  the_supermarket: "Le Supermarché",
+  the_supermarket_media: "Huile sur toile",
+  patience: "Patience",
+  patience_media: "Huile sur toile",
+  the_space_traveler: "Le Voyageur Spatial",
+  the_space_traveler_media: "Huile sur toile",
+  snow_tiger: "Tigre des Neiges",
+  snow_tiger_media: "Huile sur toile",
+  thats_cool: "C'est Chouette",
+  thats_cool_media: "Huile sur toile",
+  the_yellow_rider: "Le Cavalier Jaune",
+  the_yellow_rider_media: "Huile sur toile",
+  brown_hen: "Poulet Brun",
+  brown_hen_media: "Huile sur toile",
+  rainbow_hen: "Poulet Arc-en-ciel",
+  rainbow_hen_media: "Huile sur toile",
+  white_hen: "Poulet Blanc",
+  white_hen_media: "Huile sur toile",
   harlequin_and_pierrot: "Arlequin et Pierrot",
   harlequin_and_pierrot_media: "Huile sur toile",
   the_jungle: "La Jungle",
@@ -301,6 +367,43 @@ function translate(lang) {
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("the-grandmaster-2023").innerHTML =
+    lang.the_grandmaster;
+  document.getElementById("the-grandmaster-2023-media").innerHTML =
+    lang.the_grandmaster_media;
+  document.getElementById("rhino-park-2023").innerHTML = lang.rhino_park;
+  document.getElementById("rhino-park-2023-media").innerHTML =
+    lang.rhino_park_media;
+  document.getElementById("the-supermarket-2023").innerHTML =
+    lang.the_supermarket;
+  document.getElementById("the-supermarket-2023-media").innerHTML =
+    lang.the_supermarket_media;
+  document.getElementById("patience-2023").innerHTML = lang.patience;
+  document.getElementById("patience-2023-media").innerHTML =
+    lang.patience_media;
+  document.getElementById("the-space-traveler-2023").innerHTML =
+    lang.the_space_traveler;
+  document.getElementById("the-space-traveler-2023-media").innerHTML =
+    lang.the_space_traveler_media;
+  document.getElementById("snow-tiger-2023").innerHTML = lang.snow_tiger;
+  document.getElementById("snow-tiger-2023-media").innerHTML =
+    lang.snow_tiger_media;
+  document.getElementById("thats-cool-2023").innerHTML = lang.thats_cool;
+  document.getElementById("thats-cool-2023-media").innerHTML =
+    lang.thats_cool_media;
+  document.getElementById("the-yellow-rider-2023").innerHTML =
+    lang.the_yellow_rider;
+  document.getElementById("the-yellow-rider-2023-media").innerHTML =
+    lang.the_yellow_rider_media;
+  document.getElementById("brown-hen-2023").innerHTML = lang.brown_hen;
+  document.getElementById("brown-hen-2023-media").innerHTML =
+    lang.brown_hen_media;
+  document.getElementById("rainbow-hen-2023").innerHTML = lang.rainbow_hen;
+  document.getElementById("rainbow-hen-2023-media").innerHTML =
+    lang.rainbow_hen_media;
+  document.getElementById("white-hen-2023").innerHTML = lang.white_hen;
+  document.getElementById("white-hen-2023-media").innerHTML =
+    lang.white_hen_media;
   document.getElementById("harlequin-and-pierrot-2023").innerHTML =
     lang.harlequin_and_pierrot;
   document.getElementById("harlequin-and-pierrot-2023-media").innerHTML =
