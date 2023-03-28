@@ -1618,10 +1618,17 @@ document.querySelector("#header").innerHTML = `
         </a>
       </li>
       <li>
+      <a 
+      href="https://opensea.io/collection/undurraga-oil-paintings" 
+      target="_blank">
+      <div class="menuLink"><ion-icon name="planet-outline"></ion-icon><h4 id="nft">NFTs</h4></div>
+      </a>
+      </li>
+      <li>
         <a 
-        href="https://opensea.io/collection/undurraga-oil-paintings" 
+        href="https://undurraga.redbubble.com" 
         target="_blank">
-        <div class="menuLink"><ion-icon name="planet-outline"></ion-icon><h4 id="nft">NFTs</h4></div>
+        <div class="menuLink"><ion-icon name="images-outline"></ion-icon></ion-icon><h4 id="prints">Prints</h4></div>
         </a>
       </li>
       <li>
