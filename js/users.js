@@ -549,7 +549,7 @@ const gundurraga = [
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
-    DimensionCm: "90 x 90 cm",
+    DimensionCm: "80 x 80 cm",
     DimensionIn: "in.",
     ImageSize: "5.2",
     ImageDimension: "2915 x 2934",
@@ -1613,7 +1613,7 @@ document.querySelector("#header").innerHTML = `
         </li>
       </div>
       <li>
-        <a href="/cv.pdf" download="Undurraga; Gregorio - Artist Resume">
+        <a href="/cv.pdf" download="Undurraga_Gregorio_Resume">
         <div class="menuLink"><ion-icon name="document-text-outline"></ion-icon><h4 id="cv">CV</h4></div>
         </a>
       </li>
