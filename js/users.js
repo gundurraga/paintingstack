@@ -1625,13 +1625,6 @@ document.querySelector("#header").innerHTML = `
       </a>
       </li>
       <li>
-        <a 
-        href="https://undurraga.redbubble.com" 
-        target="_blank">
-        <div class="menuLink"><ion-icon name="images-outline"></ion-icon></ion-icon><h4 id="prints">Prints</h4></div>
-        </a>
-      </li>
-      <li>
         <a href="https://twitter.com/gundurragad" target="_blank">
         <div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div>
         </a>
