@@ -1018,6 +1018,18 @@ nav.scrollUp {
   width: max-content;
 }
 
+#available {
+  background-color: var(--light-frame-firstColor-onSale);
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.night-mode #available {
+  color: var(--light-font-firstColor);
+}
+
 .artworkYear:hover {
   text-decoration: underline;
   cursor: default;

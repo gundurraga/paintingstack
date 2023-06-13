@@ -3,6 +3,7 @@ let en = {
   themeSelector: "Night Mode",
   sayHello: "Say hello to",
   download: "Download",
+  available: "Available",
 
   the_grandmaster: "The Grandmaster",
   the_grandmaster_media: "Oil on canvas",
@@ -121,6 +122,7 @@ let es = {
   themeSelector: "Modo Noche",
   sayHello: "Saluda a",
   download: "Descargar",
+  available: "Disponible",
 
   the_grandmaster: "El Gran Maestro",
   the_grandmaster_media: "Óleo sobre tela",
@@ -239,6 +241,7 @@ let fr = {
   themeSelector: "Mode Nuit",
   sayHello: "Dire salut à",
   download: "Télécharger",
+  available: "Disponible",
 
   the_grandmaster: "Le Grand Maître",
   the_grandmaster_media: "Huile sur toile",
@@ -548,6 +551,11 @@ function translate(lang) {
   document.getElementById("untitled-i-2015").innerHTML = lang.untitled_i;
   document.getElementById("untitled-i-2015-media").innerHTML =
     lang.untitled_i_media;
+
+  let availables = document.querySelectorAll(".available-translate");
+  availables.forEach((available) => {
+    available.innerHTML = lang.available;
+  });
 
   let downloads = document.querySelectorAll(".download");
   downloads.forEach((download) => {

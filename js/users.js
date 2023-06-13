@@ -51,7 +51,7 @@ const gundurraga = [
     ImageDimension: "3590 x 2940",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "the-supermarket-2023",
@@ -129,7 +129,7 @@ const gundurraga = [
     ImageDimension: "3579 x 2924",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "snow-tiger-2023",
@@ -311,7 +311,7 @@ const gundurraga = [
     ImageDimension: "2934 x 2930",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "the-jungle-2023",
@@ -389,7 +389,7 @@ const gundurraga = [
     ImageDimension: "3531 x 2920",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "the-elephants-2023",
@@ -443,7 +443,7 @@ const gundurraga = [
     ImageDimension: "2933 x 2930",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "December 6, 2022",
@@ -471,7 +471,7 @@ const gundurraga = [
     ImageDimension: "2904 x 3912",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "December 6, 2022",
@@ -499,7 +499,7 @@ const gundurraga = [
     ImageDimension: "3900 x 2880",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "December 6, 2022",
@@ -527,7 +527,7 @@ const gundurraga = [
     ImageDimension: "3929 x 2894",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "December 6, 2022",
@@ -555,7 +555,7 @@ const gundurraga = [
     ImageDimension: "2915 x 2934",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "October 31, 2022",
@@ -583,7 +583,7 @@ const gundurraga = [
     ImageDimension: "3945 x 2792",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "October 31, 2022",
@@ -611,7 +611,7 @@ const gundurraga = [
     ImageDimension: "3920 x 2907",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "October 31, 2022",
@@ -639,7 +639,7 @@ const gundurraga = [
     ImageDimension: "3886 x 2889",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "October 31, 2022",
@@ -667,7 +667,7 @@ const gundurraga = [
     ImageDimension: "3921 x 2759",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "October 31, 2022",
@@ -751,7 +751,7 @@ const gundurraga = [
     ImageDimension: "2944 x 3496",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "September 23, 2022",
@@ -779,7 +779,7 @@ const gundurraga = [
     ImageDimension: "2904 x 3520",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "September 23, 2022",
@@ -807,7 +807,7 @@ const gundurraga = [
     ImageDimension: "2960 x 3680",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "September 23, 2022",
@@ -835,7 +835,7 @@ const gundurraga = [
     ImageDimension: "3000 x 3770",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     Date: "August 17, 2022",
@@ -1543,8 +1543,14 @@ function postUserTemplate(post) {
         <ion-icon class="location-icon" name="earth-outline"></ion-icon>${
           post.ArtworkLocation
         }
-        <br />
-        </h5>
+        <br />   
+          </h5>
+        ${
+          post.onSale
+            ? `<h5 id="available"><ion-icon class="location-icon" name="checkbox"></ion-icon><span class="available-translate">Available</span><br /></h5>`
+            : ""
+        }
+    
       </div>
       <div class="info-icons">
         <div class="downloadIcon" id="${
