@@ -443,7 +443,7 @@ const gundurraga = [
     ImageDimension: "2933 x 2930",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     Date: "December 6, 2022",
@@ -527,7 +527,7 @@ const gundurraga = [
     ImageDimension: "3929 x 2894",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     Date: "December 6, 2022",
