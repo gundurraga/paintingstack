@@ -233,7 +233,7 @@ const gundurraga = [
     ImageDimension: "2884 x 2868",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "rainbow-hen-2023",
@@ -259,7 +259,7 @@ const gundurraga = [
     ImageDimension: "2884 x 2907",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "white-hen-2023",
