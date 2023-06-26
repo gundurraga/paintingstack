@@ -25,7 +25,7 @@ const gundurraga = [
     ImageDimension: "2944 x 2948",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "rhino-park-2023",
@@ -103,7 +103,7 @@ const gundurraga = [
     ImageDimension: "3663 x 2932",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "the-space-traveler-2023",
@@ -155,7 +155,7 @@ const gundurraga = [
     ImageDimension: "3585 x 2921",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "thats-cool-2023",
@@ -181,7 +181,7 @@ const gundurraga = [
     ImageDimension: "3577 x 2918",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "the-yellow-rider-2023",
