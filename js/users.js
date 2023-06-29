@@ -77,7 +77,7 @@ const gundurraga = [
     ImageDimension: "3617 x 2900",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: false,
+    onSale: true,
   },
   {
     ID: "patience-2023",
@@ -233,7 +233,7 @@ const gundurraga = [
     ImageDimension: "2884 x 2868",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     ID: "rainbow-hen-2023",
@@ -259,7 +259,7 @@ const gundurraga = [
     ImageDimension: "2884 x 2907",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     ID: "white-hen-2023",
@@ -471,7 +471,7 @@ const gundurraga = [
     ImageDimension: "2904 x 3912",
     License: "CC0 1.0 Universal",
     LicenseLink: "https://creativecommons.org/publicdomain/zero/1.0/",
-    onSale: true,
+    onSale: false,
   },
   {
     Date: "December 6, 2022",
