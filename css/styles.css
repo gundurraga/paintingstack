@@ -999,6 +999,7 @@ nav.scrollUp {
 .info-text {
   width: min-content;
   margin: auto;
+  max-width: 11rem;
 }
 
 .info h4 {
@@ -1007,6 +1008,7 @@ nav.scrollUp {
   font-weight: 300;
   line-height: 1.2rem;
   width: max-content;
+  max-width: inherit;
 }
 
 .info h5 {
