@@ -5,6 +5,36 @@ let en = {
   download: "Download",
   available: "Available",
 
+  the_flock: "The Flock",
+  the_flock_media: "Oil on canvas",
+  the_flamingos: "The Flamingos",
+  the_flamingos_media: "Oil on canvas",
+  luma_park: "Luma Park",
+  luma_park_media: "Oil on canvas",
+  underwater_museum_of_conceptual_art: "Underwater Museum of Conceptual Art",
+  underwater_museum_of_conceptual_art_media: "Oil on canvas",
+  the_fruitful_life_of_dogs: "The Fruitful Life of Dogs",
+  the_fruitful_life_of_dogs_media: "Oil on canvas",
+  sunflower_bull: "Sunflower Bull",
+  sunflower_bull_media: "Oil on canvas",
+  electric_dreams: "Electric Dreams",
+  electric_dreams_media: "Oil on canvas",
+  formal_and_polite: "Formal and Polite",
+  formal_and_polite_media: "Oil on canvas",
+  family_holidays_in_the_caribbean: "Family Holidays in the Caribbean",
+  family_holidays_in_the_caribbean_media: "Oil on canvas",
+  the_peace_of_wild_things: "The Peace of Wild Things",
+  the_peace_of_wild_things_media: "Oil on canvas",
+  bears_like_contemporary_art_too: "Bears like contemporary art too",
+  bears_like_contemporary_art_too_media: "Oil on canvas",
+  the_origin_of_species: "The Origin of Species",
+  the_origin_of_species_media: "Oil on canvas",
+  the_sadness_of_the_gods: "The Sadness of the Gods",
+  the_sadness_of_the_gods_media: "Oil on canvas",
+  piggy_bank: "Piggy Bank",
+  piggy_bank_media: "Oil on canvas",
+  the_milkmaid: "The Milkmaid",
+  the_milkmaid_media: "Oil on canvas",
   the_grandmaster: "The Grandmaster",
   the_grandmaster_media: "Oil on canvas",
   rhino_park: "Rhino Park",
@@ -124,6 +154,37 @@ let es = {
   download: "Descargar",
   available: "Disponible",
 
+  the_flock: "El Rebaño",
+  the_flock_media: "Óleo sobre tela",
+  the_flamingos: "Los Flamencos",
+  the_flamingos_media: "Óleo sobre tela",
+  luma_park: "Parque Luma",
+  luma_park_media: "Óleo sobre tela",
+  underwater_museum_of_conceptual_art: "Museo Submarino de Arte Conceptual",
+  underwater_museum_of_conceptual_art_media: "Óleo sobre tela",
+  the_fruitful_life_of_dogs: "La Vida Fructífera de los Perros",
+  the_fruitful_life_of_dogs_media: "Óleo sobre tela",
+  sunflower_bull: "Toro Girasol",
+  sunflower_bull_media: "Óleo sobre tela",
+  electric_dreams: "Sueños Eléctricos",
+  electric_dreams_media: "Óleo sobre tela",
+  formal_and_polite: "Formal y Cortés",
+  formal_and_polite_media: "Óleo sobre tela",
+  family_holidays_in_the_caribbean: "Vacaciones Familiares en el Caribe",
+  family_holidays_in_the_caribbean_media: "Óleo sobre tela",
+  the_peace_of_wild_things: "La Paz de las Cosas Salvajes",
+  the_peace_of_wild_things_media: "Óleo sobre tela",
+  bears_like_contemporary_art_too:
+    "A los Osos También les Gusta el Arte Contemporáneo",
+  bears_like_contemporary_art_too_media: "Óleo sobre tela",
+  the_origin_of_species: "El Origen de las Especies",
+  the_origin_of_species_media: "Óleo sobre tela",
+  the_sadness_of_the_gods: "La Tristeza de los Dioses",
+  the_sadness_of_the_gods_media: "Óleo sobre tela",
+  piggy_bank: "Chanchito Alcancía",
+  piggy_bank_media: "Óleo sobre tela",
+  the_milkmaid: "La Lechera",
+  the_milkmaid_media: "Óleo sobre tela",
   the_grandmaster: "El Gran Maestro",
   the_grandmaster_media: "Óleo sobre tela",
   rhino_park: "Parque Rinoceronte",
@@ -243,6 +304,36 @@ let fr = {
   download: "Télécharger",
   available: "Disponible",
 
+  the_flock: "Le Troupeau",
+  the_flock_media: "Huile sur toile",
+  the_flamingos: "Les Flamants Roses",
+  the_flamingos_media: "Huile sur toile",
+  luma_park: "Parc Luma",
+  luma_park_media: "Huile sur toile",
+  underwater_museum_of_conceptual_art: "Musée Sous-marin d'Art Conceptuel",
+  underwater_museum_of_conceptual_art_media: "Huile sur toile",
+  the_fruitful_life_of_dogs: "La Vie Fructueuse des Chiens",
+  the_fruitful_life_of_dogs_media: "Huile sur toile",
+  sunflower_bull: "Taureau Tournesol",
+  sunflower_bull_media: "Huile sur toile",
+  electric_dreams: "Rêves Électriques",
+  electric_dreams_media: "Huile sur toile",
+  formal_and_polite: "Formel et Poli",
+  formal_and_polite_media: "Huile sur toile",
+  family_holidays_in_the_caribbean: "Vacances en famille dans les Caraïbes",
+  family_holidays_in_the_caribbean_media: "Huile sur toile",
+  the_peace_of_wild_things: "La Paix des Choses Sauvages",
+  the_peace_of_wild_things_media: "Huile sur toile",
+  bears_like_contemporary_art_too: "Les Ours Aiment Aussi l'Art Contemporain",
+  bears_like_contemporary_art_too_media: "Huile sur toile",
+  the_origin_of_species: "L'Origine des Espèces",
+  the_origin_of_species_media: "Huile sur toile",
+  the_sadness_of_the_gods: "La Tristesse des Dieux",
+  the_sadness_of_the_gods_media: "Huile sur toile",
+  piggy_bank: "Tirelire",
+  piggy_bank_media: "Huile sur toile",
+  the_milkmaid: "La Laitière",
+  the_milkmaid_media: "Huile sur toile",
   the_grandmaster: "Le Grand Maître",
   the_grandmaster_media: "Huile sur toile",
   rhino_park: "Parc Rinocerós",
@@ -370,6 +461,65 @@ function translate(lang) {
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
 
+  document.getElementById("the-flock-2023").innerHTML = lang.the_flock;
+  document.getElementById("the-flock-2023-media").innerHTML =
+    lang.the_flock_media;
+  document.getElementById("the-flamingos-2023").innerHTML = lang.the_flamingos;
+  document.getElementById("the-flamingos-2023-media").innerHTML =
+    lang.the_flamingos_media;
+  document.getElementById("luma-park-2023").innerHTML = lang.luma_park;
+  document.getElementById("luma-park-2023-media").innerHTML =
+    lang.luma_park_media;
+  document.getElementById(
+    "underwater-museum-of-conceptual-art-2023"
+  ).innerHTML = lang.underwater_museum_of_conceptual_art;
+  document.getElementById(
+    "underwater-museum-of-conceptual-art-2023-media"
+  ).innerHTML = lang.underwater_museum_of_conceptual_art_media;
+  document.getElementById("the-fruitful-life-of-dogs-2023").innerHTML =
+    lang.the_fruitful_life_of_dogs;
+  document.getElementById("the-fruitful-life-of-dogs-2023-media").innerHTML =
+    lang.the_fruitful_life_of_dogs_media;
+  document.getElementById("sunflower-bull-2023").innerHTML =
+    lang.sunflower_bull;
+  document.getElementById("sunflower-bull-2023-media").innerHTML =
+    lang.sunflower_bull_media;
+  document.getElementById("electric-dreams-2023").innerHTML =
+    lang.electric_dreams;
+  document.getElementById("electric-dreams-2023-media").innerHTML =
+    lang.electric_dreams_media;
+  document.getElementById("formal-and-polite-2023").innerHTML =
+    lang.formal_and_polite;
+  document.getElementById("formal-and-polite-2023-media").innerHTML =
+    lang.formal_and_polite_media;
+  document.getElementById("family-holidays-in-the-caribbean-2023").innerHTML =
+    lang.family_holidays_in_the_caribbean;
+  document.getElementById(
+    "family-holidays-in-the-caribbean-2023-media"
+  ).innerHTML = lang.family_holidays_in_the_caribbean_media;
+  document.getElementById("the-peace-of-wild-things-2023").innerHTML =
+    lang.the_peace_of_wild_things;
+  document.getElementById("the-peace-of-wild-things-2023-media").innerHTML =
+    lang.the_peace_of_wild_things_media;
+  document.getElementById("bears-like-contemporary-art-too-2023").innerHTML =
+    lang.bears_like_contemporary_art_too;
+  document.getElementById(
+    "bears-like-contemporary-art-too-2023-media"
+  ).innerHTML = lang.bears_like_contemporary_art_too_media;
+  document.getElementById("the-origin-of-species-2023").innerHTML =
+    lang.the_origin_of_species;
+  document.getElementById("the-origin-of-species-2023-media").innerHTML =
+    lang.the_origin_of_species_media;
+  document.getElementById("the-sadness-of-the-gods-2023").innerHTML =
+    lang.the_sadness_of_the_gods;
+  document.getElementById("the-sadness-of-the-gods-2023-media").innerHTML =
+    lang.the_sadness_of_the_gods_media;
+  document.getElementById("piggy-bank-2023").innerHTML = lang.piggy_bank;
+  document.getElementById("piggy-bank-2023-media").innerHTML =
+    lang.piggy_bank_media;
+  document.getElementById("the-milkmaid-2023").innerHTML = lang.the_milkmaid;
+  document.getElementById("the-milkmaid-2023-media").innerHTML =
+    lang.the_milkmaid_media;
   document.getElementById("the-grandmaster-2023").innerHTML =
     lang.the_grandmaster;
   document.getElementById("the-grandmaster-2023-media").innerHTML =
