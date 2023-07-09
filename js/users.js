@@ -2037,6 +2037,9 @@ document.querySelector("#header").innerHTML = `
         <li>
           <div class="menuLink" id="fr"><h4>Français</h4></div>
         </li>
+        <li>
+          <div class="menuLink" id="pt"><h4>Português</h4></div>
+        </li>
       </div>
       <li>
         <a href="/cv.pdf" download="Undurraga_Gregorio_Resume">

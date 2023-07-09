@@ -29,8 +29,8 @@ let en = {
   bears_like_contemporary_art_too_media: "Oil on canvas",
   the_origin_of_species: "The Origin of Species",
   the_origin_of_species_media: "Oil on canvas",
-  the_sadness_of_the_gods: "The Sadness of the Gods",
-  the_sadness_of_the_gods_media: "Oil on canvas",
+  the_sadness_of_gods: "The Sadness of the Gods",
+  the_sadness_of_gods_media: "Oil on canvas",
   piggy_bank: "Piggy Bank",
   piggy_bank_media: "Oil on canvas",
   the_milkmaid: "The Milkmaid",
@@ -179,8 +179,8 @@ let es = {
   bears_like_contemporary_art_too_media: "Óleo sobre tela",
   the_origin_of_species: "El Origen de las Especies",
   the_origin_of_species_media: "Óleo sobre tela",
-  the_sadness_of_the_gods: "La Tristeza de los Dioses",
-  the_sadness_of_the_gods_media: "Óleo sobre tela",
+  the_sadness_of_gods: "La Tristeza de los Dioses",
+  the_sadness_of_gods_media: "Óleo sobre tela",
   piggy_bank: "Chanchito Alcancía",
   piggy_bank_media: "Óleo sobre tela",
   the_milkmaid: "La Lechera",
@@ -328,8 +328,8 @@ let fr = {
   bears_like_contemporary_art_too_media: "Huile sur toile",
   the_origin_of_species: "L'Origine des Espèces",
   the_origin_of_species_media: "Huile sur toile",
-  the_sadness_of_the_gods: "La Tristesse des Dieux",
-  the_sadness_of_the_gods_media: "Huile sur toile",
+  the_sadness_of_gods: "La Tristesse des Dieux",
+  the_sadness_of_gods_media: "Huile sur toile",
   piggy_bank: "Tirelire",
   piggy_bank_media: "Huile sur toile",
   the_milkmaid: "La Laitière",
@@ -446,6 +446,156 @@ let fr = {
   untitled_i_media: "Huile sur toile",
 };
 
+let pt = {
+  languageSelector: "Idioma: PT",
+  themeSelector: "Modo Noite",
+  sayHello: "Diga oi para",
+  download: "Baixar",
+  available: "Disponível",
+
+  the_flock: "O Rebanho",
+  the_flock_media: "Óleo sobre tela",
+  the_flamingos: "Os Flamingos",
+  the_flamingos_media: "Óleo sobre tela",
+  luma_park: "Parque Luma",
+  luma_park_media: "Óleo sobre tela",
+  underwater_museum_of_conceptual_art: "Museu Subaquático de Arte Conceitual",
+  underwater_museum_of_conceptual_art_media: "Óleo sobre tela",
+  the_fruitful_life_of_dogs: "A Vida Frutífera dos Cães",
+  the_fruitful_life_of_dogs_media: "Óleo sobre tela",
+  sunflower_bull: "Touro Girassol",
+  sunflower_bull_media: "Óleo sobre tela",
+  electric_dreams: "Sonhos Elétricos",
+  electric_dreams_media: "Óleo sobre tela",
+  formal_and_polite: "Formal e Educado",
+  formal_and_polite_media: "Óleo sobre tela",
+  family_holidays_in_the_caribbean: "Férias em Família no Caribe",
+  family_holidays_in_the_caribbean_media: "Óleo sobre tela",
+  the_peace_of_wild_things: "A Paz das Coisas Selvagens",
+  the_peace_of_wild_things_media: "Óleo sobre tela",
+  bears_like_contemporary_art_too:
+    "Os Ursos Também Gostam de Arte Contemporânea",
+  bears_like_contemporary_art_too_media: "Óleo sobre tela",
+  the_origin_of_species: "A Origem das Espécies",
+  the_origin_of_species_media: "Óleo sobre tela",
+  the_sadness_of_gods: "A Tristeza dos Deuses",
+  the_sadness_of_gods_media: "Óleo sobre tela",
+  piggy_bank: "Cofrinho",
+  piggy_bank_media: "Óleo sobre tela",
+  the_milkmaid: "A Leiteira",
+  the_milkmaid_media: "Óleo sobre tela",
+  the_grandmaster: "O Grande Mestre",
+  the_grandmaster_media: "Óleo sobre tela",
+  rhino_park: "Parque Rinoceronte",
+  rhino_park_media: "Óleo sobre tela",
+  the_supermarket: "O Supermercado",
+  the_supermarket_media: "Óleo sobre tela",
+  patience: "Paciência",
+  patience_media: "Óleo sobre tela",
+  the_space_traveler: "O Viajante Espacial",
+  the_space_traveler_media: "Óleo sobre tela",
+  snow_tiger: "Tigre da Neve",
+  snow_tiger_media: "Óleo sobre tela",
+  thats_cool: "Isso é Legal",
+  thats_cool_media: "Óleo sobre tela",
+  the_yellow_rider: "O Cavaleiro Amarelo",
+  the_yellow_rider_media: "Óleo sobre tela",
+  brown_hen: "Galinha Marrom",
+  brown_hen_media: "Óleo sobre tela",
+  rainbow_hen: "Galinha Arco-Íris",
+  rainbow_hen_media: "Óleo sobre tela",
+  white_hen: "Galinha Branca",
+  white_hen_media: "Óleo sobre tela",
+  harlequin_and_pierrot: "Arlequim e Pierrot",
+  harlequin_and_pierrot_media: "Óleo sobre tela",
+  the_jungle: "A Selva",
+  the_jungle_media: "Óleo sobre tela",
+  first_steps: "Primeiros Passos",
+  first_steps_media: "Óleo sobre tela",
+  the_football_team: "O Time de Futebol",
+  the_football_team_media: "Óleo sobre tela",
+  the_elephants: "Os Elefantes",
+  the_elephants_media: "Óleo sobre tela",
+  the_thinker: "O Pensador",
+  the_thinker_media: "Técnica mista",
+  satoshi_nakamoto: "Satoshi Nakamoto",
+  satoshi_nakamoto_media: "Óleo sobre tela",
+  public_works: "Obras Públicas",
+  public_works_media: "Óleo sobre tela",
+  the_sleeping_backhoe: "A Retroescavadeira Dormindo",
+  the_sleeping_backhoe_media: "Óleo sobre tela",
+  composition_i: "Composição I",
+  composition_i_media: "Óleo sobre tela",
+  the_train_station: "A Estação de Trem",
+  the_train_station_media: "Óleo sobre tela",
+  wind_cows: "Vacas Eólicas",
+  wind_cows_media: "Óleo sobre tela",
+  airplane: "Avião",
+  airplane_media: "Óleo sobre tela",
+  yellow_submarine: "Submarino Amarelo",
+  yellow_submarine_media: "Óleo sobre tela",
+  pythagoras: "Pitágoras",
+  pythagoras_media: "Óleo sobre tela",
+  good_morning_madame_giraffe: "Bom Dia Senhora Girafa",
+  good_morning_madame_giraffe_media: "Óleo sobre tela",
+  swirl: "Redemoinho",
+  swirl_media: "Óleo sobre tela",
+  creme_brulee: "Crème Brûlée",
+  creme_brulee_media: "Óleo sobre tela",
+  spheres: "Esferas",
+  spheres_media: "Óleo sobre tela",
+  window: "Janela",
+  window_media: "Óleo sobre tela",
+  wrath_of_the_gods: "A Ira dos Deuses",
+  wrath_of_the_gods_media: "Óleo sobre madeira",
+  studio_escalier_ii: "Studio Escalier II",
+  studio_escalier_ii_media: "Óleo sobre tela",
+  studio_escalier_i: "Studio Escalier I",
+  studio_escalier_i_media: "Óleo sobre papel",
+  space_xploration: "Xploração do Espaço",
+  space_xploration_media: "Óleo sobre tela",
+  modern_curves: "Curvas Modernas",
+  modern_curves_media: "Óleo sobre tela",
+  the_city: "A Cidade",
+  the_city_media: "Óleo sobre tela",
+  fosforos_copihue: "Fósforos Copihue",
+  fosforos_copihue_media: "Óleo sobre tela",
+  chocolate_on_chocolate: "Chocolate sobre Chocolate",
+  chocolate_on_chocolate_media: "Óleo sobre tela",
+  mona_lisa: "Mona Lisa",
+  mona_lisa_media: "Óleo sobre tela",
+  cat: "Gato",
+  cat_media: "Óleo sobre tela",
+  mosaic_escher: "Mosaico Escher",
+  mosaic_escher_media: "Óleo sobre tela",
+  earth: "Terra",
+  earth_media: "Óleo sobre tela",
+  margherita: "Margherita",
+  margherita_media: "Óleo sobre tela",
+  the_last_supper: "A Última Ceia",
+  the_last_supper_media: "Óleo sobre tela",
+  lisbon: "Lisboa",
+  lisbon_media: "Óleo sobre tela",
+  golden_statues: "Estátuas Douradas",
+  golden_statues_media: "Óleo sobre tela",
+  the_ermine: "A Doninha",
+  the_ermine_media: "Óleo sobre tela",
+  mondrian_room: "Quarto Mondrian",
+  mondrian_room_media: "Óleo sobre tela",
+  pura_vida_road: "Rua Pura Vida",
+  pura_vida_road_media: "Acrílico e óleo sobre tela",
+  scarlet_macaws: "Araras Escarlate",
+  scarlet_macaws_media: "Óleo sobre tela",
+  three_motorcycles: "Três Motos",
+  three_motorcycles_media: "Óleo sobre tela",
+  aloe_vera: "Aloe Vera",
+  aloe_vera_media: "Óleo sobre tela",
+  the_race: "A Corrida",
+  the_race_media: "Óleo sobre tela",
+  untitled_i: "Sem Título I",
+  untitled_i_media: "Óleo sobre tela",
+};
+
 let lang = navigator.language || navigator.userLanguage;
 language = lang.slice(0, 2);
 
@@ -510,10 +660,10 @@ function translate(lang) {
     lang.the_origin_of_species;
   document.getElementById("the-origin-of-species-2023-media").innerHTML =
     lang.the_origin_of_species_media;
-  document.getElementById("the-sadness-of-the-gods-2023").innerHTML =
-    lang.the_sadness_of_the_gods;
-  document.getElementById("the-sadness-of-the-gods-2023-media").innerHTML =
-    lang.the_sadness_of_the_gods_media;
+  document.getElementById("the-sadness-of-gods-2023").innerHTML =
+    lang.the_sadness_of_gods;
+  document.getElementById("the-sadness-of-gods-2023-media").innerHTML =
+    lang.the_sadness_of_gods_media;
   document.getElementById("piggy-bank-2023").innerHTML = lang.piggy_bank;
   document.getElementById("piggy-bank-2023-media").innerHTML =
     lang.piggy_bank_media;
@@ -744,6 +894,14 @@ selectFR.addEventListener("click", () => {
   document.documentElement.setAttribute("lang", "fr");
 });
 
+const selectPT = document.querySelector("#pt");
+selectPT.addEventListener("click", () => {
+  translate(pt);
+  localStorage.setItem("lang", "pt");
+  document.querySelector(".languages").classList.remove("lang-in-view");
+  document.documentElement.setAttribute("lang", "pt");
+});
+
 if (language === "en") {
   translate(en);
   document.documentElement.setAttribute("lang", "en");
@@ -753,4 +911,7 @@ if (language === "en") {
 } else if (language === "fr") {
   translate(fr);
   document.documentElement.setAttribute("lang", "fr");
+} else if (language === "pt") {
+  translate(pt);
+  document.documentElement.setAttribute("lang", "pt");
 }
