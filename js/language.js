@@ -25,7 +25,7 @@ let en = {
   family_holidays_in_the_caribbean_media: "Oil on canvas",
   the_peace_of_wild_things: "The Peace of Wild Things",
   the_peace_of_wild_things_media: "Oil on canvas",
-  bears_like_contemporary_art_too: "Bears like contemporary art too",
+  bears_like_contemporary_art_too: "Bears Like Contemporary Art Too",
   bears_like_contemporary_art_too_media: "Oil on canvas",
   the_origin_of_species: "The Origin of Species",
   the_origin_of_species_media: "Oil on canvas",
