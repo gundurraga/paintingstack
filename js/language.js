@@ -29,7 +29,7 @@ let en = {
   bears_like_contemporary_art_too_media: "Oil on canvas",
   the_origin_of_species: "The Origin of Species",
   the_origin_of_species_media: "Oil on canvas",
-  the_sadness_of_gods: "The Sadness of the Gods",
+  the_sadness_of_gods: "The Sadness of Gods",
   the_sadness_of_gods_media: "Oil on canvas",
   piggy_bank: "Piggy Bank",
   piggy_bank_media: "Oil on canvas",
