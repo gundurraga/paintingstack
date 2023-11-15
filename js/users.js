@@ -13,12 +13,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -41,12 +43,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -69,12 +73,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -97,12 +103,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -125,12 +133,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -153,12 +163,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -181,12 +193,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -209,12 +223,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -237,12 +253,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -265,12 +283,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -293,12 +313,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -321,12 +343,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -349,12 +373,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -377,12 +403,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -405,12 +433,14 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
       pt: "Óleo sobre tela",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -432,11 +462,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -458,11 +490,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -484,11 +518,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -510,11 +546,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -536,11 +574,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -562,11 +602,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -588,11 +630,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -614,11 +658,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -640,11 +686,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -666,11 +714,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -692,11 +742,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -718,11 +770,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -744,11 +798,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -768,8 +824,10 @@ const gundurraga = [
       es: "Primeros Pasos",
       fr: "Premiers Pas",
     },
+    ArtworkMediaID: "oilcanvas",
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
@@ -796,11 +854,13 @@ const gundurraga = [
     },
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -820,13 +880,16 @@ const gundurraga = [
       es: "Los Elefantes",
       fr: "Les Éléphants",
     },
+
     ArtworkYear: 2023,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -849,11 +912,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Mixed media",
       es: "Técnica mixta",
       fr: "Technique mixte",
     },
+    ArtworkMediaID: "mixed",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -877,11 +942,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -905,11 +972,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -933,11 +1002,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -961,11 +1032,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -989,11 +1062,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1017,11 +1092,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1045,11 +1122,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1073,11 +1152,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1101,11 +1182,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1129,11 +1212,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1157,11 +1242,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1185,11 +1272,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1213,11 +1302,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1241,11 +1332,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Arles, France",
+    Location: "arles",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1269,11 +1362,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Argentonnay, France",
+    Location: "argentonnay",
     ArtworkMedia: {
       en: "Oil on panel",
       es: "Óleo sobre madera",
       fr: "Huile sur bois",
     },
+    ArtworkMediaID: "oilpanel",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1297,11 +1392,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Argentonnay, France",
+    Location: "argentonnay",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1325,11 +1422,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Argentonnay, France",
+    Location: "argentonnay",
     ArtworkMedia: {
       en: "Oil on paper",
       es: "Óleo sobre papel",
       fr: "Huile sur papier",
     },
+    ArtworkMediaID: "oilpaper",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1353,11 +1452,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1381,11 +1482,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1409,11 +1512,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1437,11 +1542,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1465,11 +1572,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1493,11 +1602,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1521,11 +1632,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1549,11 +1662,13 @@ const gundurraga = [
     },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1573,11 +1688,13 @@ const gundurraga = [
     ArtworkTitle: { en: "Earth", es: "Tierra", fr: "Terre" },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1597,11 +1714,13 @@ const gundurraga = [
     ArtworkTitle: { en: "Margherita", es: "Margherita", fr: "Margherita" },
     ArtworkYear: 2022,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1625,11 +1744,13 @@ const gundurraga = [
     },
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1653,11 +1774,13 @@ const gundurraga = [
     },
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1682,11 +1805,13 @@ const gundurraga = [
     },
     ArtworkYear: 2021,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1706,11 +1831,13 @@ const gundurraga = [
     ArtworkTitle: { en: "The Ermine", es: "El Armiño", fr: "L'Hermine" },
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
+    Location: "montezuma",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1735,11 +1862,13 @@ const gundurraga = [
     },
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
+    Location: "montezuma",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1763,11 +1892,13 @@ const gundurraga = [
     },
     ArtworkYear: 2021,
     ArtworkLocation: "Montezuma, Costa Rica",
+    Location: "montezuma",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Acrílico y óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1791,11 +1922,13 @@ const gundurraga = [
     },
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
+    Location: "montezuma",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1819,11 +1952,13 @@ const gundurraga = [
     },
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
+    Location: "montezuma",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1843,11 +1978,13 @@ const gundurraga = [
     ArtworkTitle: { en: "Aloe Vera", es: "Aloe Vera", fr: "Aloe Vera" },
     ArtworkYear: 2020,
     ArtworkLocation: "Montezuma, Costa Rica",
+    Location: "montezuma",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1868,11 +2005,13 @@ const gundurraga = [
     ArtworkTitle: { en: "The Race", es: "La Carrera", fr: "La Course" },
     ArtworkYear: 2017,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1893,11 +2032,13 @@ const gundurraga = [
     ArtworkTitle: { en: "Untitled I", es: "Sin Título I", fr: "Sans Titre I" },
     ArtworkYear: 2015,
     ArtworkLocation: "Santiago, Chile",
+    Location: "santiago",
     ArtworkMedia: {
       en: "Oil on canvas",
       es: "Óleo sobre tela",
       fr: "Huile sur toile",
     },
+    ArtworkMediaID: "oilcanvas",
     BirthYear: 1993,
     CountryId: "cl",
     Country: "Chile",
@@ -1952,17 +2093,17 @@ function postUserTemplate(post) {
   }"></span> ${post.BirthYear})
         </h4>
         <h5>
-        <ion-icon class="location-icon" name="color-palette-outline"></ion-icon><span id="${
-          post.ID
-        }-media">${post.ArtworkMedia.en}</span>
+        <ion-icon class="location-icon" name="color-palette-outline"></ion-icon><span class="${
+          post.ArtworkMediaID
+        }">${post.ArtworkMedia.en}</span>
         <br />
         <ion-icon class="location-icon" name="expand-outline"></ion-icon>${
           post.DimensionCm
         }
         <br />
-        <ion-icon class="location-icon" name="earth-outline"></ion-icon>${
-          post.ArtworkLocation
-        }
+        <ion-icon class="location-icon" name="earth-outline"></ion-icon><span class="${
+          post.Location
+        }">${post.ArtworkLocation}</span>
         <br />   
           </h5>
         ${
@@ -2001,64 +2142,87 @@ document.querySelector(".loader").innerHTML = `
 `;
 
 document.querySelector("#header").innerHTML = `
-    <a class="header-logo" href="https://paintingstack.com/gundurraga">
-      <div class="logo">
-        <div class="inside-logo noisy"></div>
-      </div>
-      <h1><strong>Painting</strong>stack</h1>
-    </a>
+<a class="header-logo" href="https://paintingstack.com/gundurraga">
+  <div class="logo">
+    <div class="inside-logo noisy"></div>
+  </div>
+  <h1><strong>Painting</strong>stack</h1>
+</a>
 
-    <div class="menuHamburguer" onclick="showMenu(this)">
-      <div class="bar bar1"></div>
-      <div class="bar bar2"></div>
-      <div class="bar bar3"></div>
-    </div>
+<div class="menuHamburguer" onclick="showMenu(this)">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
 
-    <ul id="menu">
-      <li>
-      <div class="switchTheme">
+<ul id="menu">
+  <li>
+    <div class="switchTheme">
       <ion-icon name="moon"></ion-icon>
-        <h4 id="themeSelector">Night Mode</h4>
-        <div class="btn-nightMode">
-          <div class="switch"></div>
-        </div>
+      <h4 id="themeSelector">Night Mode</h4>
+      <div class="btn-nightMode">
+        <div class="switch"></div>
       </div>
-      </li>
-      <li>
-      <div class="menuLink selectLanguage"><ion-icon name="language-outline"></ion-icon><h4 id="languageSelector">Language: EN</h4></div>
-      </li>
-      <div class="languages">
-        <li>
-          <div class="menuLink" id="en"><h4>English</h4></div>
-        </li>
-        <li>
-          <div class="menuLink" id="es"><h4>Español</h4></div>
-        </li>
-        <li>
-          <div class="menuLink" id="fr"><h4>Français</h4></div>
-        </li>
-        <li>
-          <div class="menuLink" id="pt"><h4>Português</h4></div>
-        </li>
+    </div>
+  </li>
+  <li>
+    <div class="menuLink selectLanguage">
+      <ion-icon name="language-outline"></ion-icon>
+      <h4 id="languageSelector">Language: EN</h4>
+    </div>
+  </li>
+  <div class="languages">
+    <li>
+      <div class="menuLink" id="en"><h4>English</h4></div>
+    </li>
+    <li>
+      <div class="menuLink" id="es"><h4>Español</h4></div>
+    </li>
+    <li>
+      <div class="menuLink" id="fr"><h4>Français</h4></div>
+    </li>
+    <li>
+      <div class="menuLink" id="pt"><h4>Português</h4></div>
+    </li>
+    <li>
+      <div class="menuLink" id="it"><h4>Italiano</h4></div>
+    </li>
+    <li>
+      <div class="menuLink" id="de"><h4>Deutsch</h4></div>
+    </li>
+    <li>
+      <div class="menuLink" id="ja"><h4>日本語</h4></div>
+    </li>
+  </div>
+
+  <li>
+    <a href="/cv.pdf" download="Undurraga_Gregorio_Resume">
+      <div class="menuLink">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <h4 id="cv">CV</h4>
       </div>
-      <li>
-        <a href="/cv.pdf" download="Undurraga_Gregorio_Resume">
-        <div class="menuLink"><ion-icon name="document-text-outline"></ion-icon><h4 id="cv">CV</h4></div>
-        </a>
-      </li>
-      <li>
-      <a 
-      href="https://opensea.io/collection/undurraga-oil-paintings" 
-      target="_blank">
-      <div class="menuLink"><ion-icon name="extension-puzzle-outline"></ion-icon><h4 id="nft">NFTs</h4></div>
-      </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/gundurragad" target="_blank">
-        <div class="menuLink"><ion-icon name="logo-twitter"></ion-icon><h4>Twitter</h4></div>
-        </a>
-      </li>
-    </ul>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://opensea.io/collection/undurraga-oil-paintings"
+      target="_blank"
+    >
+      <div class="menuLink">
+        <ion-icon name="extension-puzzle-outline"></ion-icon>
+        <h4 id="nft">NFTs</h4>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/gundurragad" target="_blank">
+      <div class="menuLink">
+        <ion-icon name="logo-twitter"></ion-icon>
+        <h4>Twitter</h4>
+      </div>
+    </a>
+  </li>
+</ul>
 `;
 
 document.querySelector(".container").innerHTML = `
