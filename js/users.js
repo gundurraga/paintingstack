@@ -2064,23 +2064,22 @@ gundurraga.sort(function (a, b) {
 function postUserTemplate(post) {
   return `
   <article class="post" id="${post.ID}-post">
-    <div class="boxDatePainting">
-      <h5 class="date"></h5>
-      <div class="frame ${post.onSale ? "on-sale" : ""}">
-        <a href="images/users/${post.UserID}/700p/${post.ID}.jpg"
-          data-srcset=" images/users/${post.UserID}/500p/${
-    post.ID
-  }.jpg 500w,  images/users/${post.UserID}/600p/${
-    post.ID
-  }.jpg 600w, images/users/${post.UserID}/700p/${post.ID}.jpg 700w" 
-          data-sizes="90vw" class="progressive replace">
-          <img src="images/users/${post.UserID}/preview/${
+  <div class="boxDatePainting">
+  <h5 class="date"></h5>
+  <div class="frame ${post.onSale ? "on-sale" : ""}">
+    <a href="images/users/${post.UserID}/700p/${post.ID}.jpg"
+      data-srcset="images/users/${post.UserID}/500p/${post.ID}.jpg 500w,
+                   images/users/${post.UserID}/600p/${post.ID}.jpg 600w,
+                   images/users/${post.UserID}/700p/${post.ID}.jpg 700w" 
+      data-sizes="90vw" class="progressive replace"
+      onclick="logImageClick('${post.ID}')">
+      <img src="images/users/${post.UserID}/preview/${
     post.ID
   }.jpg" class="preview"
-            alt="${post.Artist} - ${post.ArtworkTitle} (${post.ArtworkYear})" />
-        </a>
-      </div>
-    </div>
+        alt="${post.Artist} - ${post.ArtworkTitle.en} (${post.ArtworkYear})" />
+    </a>
+  </div>
+</div>
     <div class="info">
       <div class="info-text">
         <h4>
@@ -2131,6 +2130,37 @@ function postUserTemplate(post) {
     </div>
   </article>
   `;
+}
+
+function logImageClick(postId) {
+  console.log("Imagen clickeada:", postId);
+
+  const imageUrl = `images/users/gundurraga/download/${postId}.jpg`;
+
+  const modal = document.createElement("div");
+  modal.className = "modal";
+
+  modal.innerHTML = `
+    <span class="close-button">&times;</span>
+    <div class="modal-content">
+      <img src="${imageUrl}" alt="Imagen Grande">
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+  modal.style.display = "block";
+
+  modal.querySelector(".close-button").onclick = function () {
+    modal.style.display = "none";
+    modal.remove();
+  };
+
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      modal.remove();
+    }
+  };
 }
 
 document.querySelector(".loader").innerHTML = `
