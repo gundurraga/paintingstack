@@ -2143,22 +2143,29 @@ function logImageClick(postId) {
   modal.innerHTML = `
     <span class="close-button"><ion-icon name="close-outline"></ion-icon></span>
     <div class="modal-content">
-      <img src="${imageUrl}" alt="Imagen Grande">
+      <img src="${imageUrl}" alt="${postId}">
     </div>
   `;
 
   document.body.appendChild(modal);
   modal.style.display = "block";
 
-  modal.querySelector(".close-button").onclick = function () {
+  // Disable scrolling on the body
+  document.body.style.overflow = "hidden";
+
+  const closeModal = () => {
     modal.style.display = "none";
     modal.remove();
+    // Re-enable scrolling on the body
+    document.body.style.overflow = "";
   };
 
+  modal.querySelector(".close-button").onclick = closeModal;
+
+  // Modified click event handling
   window.onclick = function (event) {
     if (event.target === modal) {
-      modal.style.display = "none";
-      modal.remove();
+      closeModal();
     }
   };
 }
