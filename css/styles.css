@@ -975,6 +975,51 @@ nav.scrollUp {
   }
 }
 
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding-top: 57px;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 100%; /* Ajusta al tamaño de la pantalla */
+  max-height: calc(100vh); /* Ajusta al tamaño de la pantalla */
+  margin: auto;
+  top: calc(50% - 28px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content img {
+  max-width: 100vw; /* Hace que la imagen se ajuste al contenedor */
+  max-height: calc(
+    100vh - 77px
+  ); /* Mantiene la relación de aspecto de la imagen */
+}
+
+.close-button {
+  position: fixed;
+  top: 10px;
+  right: 21px;
+  color: var(--light-menuCross-color);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #aaa;
+}
+
 /* Information */
 
 .info {

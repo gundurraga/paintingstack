@@ -2141,7 +2141,7 @@ function logImageClick(postId) {
   modal.className = "modal";
 
   modal.innerHTML = `
-    <span class="close-button">&times;</span>
+    <span class="close-button"><ion-icon name="close-outline"></ion-icon></span>
     <div class="modal-content">
       <img src="${imageUrl}" alt="Imagen Grande">
     </div>
