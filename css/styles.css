@@ -982,8 +982,8 @@ nav.scrollUp {
   z-index: 1000;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.95);
   padding-top: 57px;
@@ -992,7 +992,7 @@ nav.scrollUp {
 .modal-content {
   position: relative;
   max-width: 100%; /* Ajusta al tamaño de la pantalla */
-  max-height: calc(100vh); /* Ajusta al tamaño de la pantalla */
+  max-height: calc(100vh - 77px); /* Ajusta al tamaño de la pantalla */
   margin: auto;
   top: calc(50% - 28px);
   left: 50%;
@@ -1002,7 +1002,7 @@ nav.scrollUp {
 .modal-content img {
   max-width: 100vw; /* Hace que la imagen se ajuste al contenedor */
   max-height: calc(
-    100vh - 77px
+    100vh - 57px
   ); /* Mantiene la relación de aspecto de la imagen */
 }
 
@@ -1131,6 +1131,15 @@ a.museumTwitter:active {
 .info-icons ion-icon {
   margin: 10px;
   font-size: 24px;
+  pointer-events: none;
+}
+
+.location-icon {
+  font-size: 1rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.125rem;
+  display: inline-block;
+  vertical-align: middle;
   pointer-events: none;
 }
 
