@@ -294,6 +294,91 @@ The style should go:
 Mobile first, media queries at the end
 */
 
+/* FONTS */
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_black_italic.otf") format("opentype");
+  font-weight: 900; /* Black */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_blackotf.otf") format("opentype");
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_bold_italic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_light_italic.otf") format("opentype");
+  font-weight: 300; /* Light */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_light.otf") format("opentype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_medium_italic.otf") format("opentype");
+  font-weight: 500; /* Medium */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_medium.otf") format("opentype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_regular_italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_thin_italic.otf") format("opentype");
+  font-weight: 100; /* Thin */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/Brandon_Grotesque_thin.otf") format("opentype");
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
 /* VARIABLES */
 * {
   /*Light mode colors*/
@@ -312,14 +397,14 @@ Mobile first, media queries at the end
   --light-menuBackground-color: rgb(230, 230, 230, 0.95);
   --light-menuBorder-color: var(--lightDesktop-postBorder-color);
   --light-btnMenu-color: rgb(200, 200, 200);
-  --light-font-firstColor: rgb(34, 34, 34);
-  --light-font-secondColor: rgb(35, 34, 39);
-  --light-font-thirdColor: rgb(63, 60, 77);
+  --light-font-firstColor: rgb(70, 70, 70);
+  --light-font-secondColor: rgb(60, 60, 60);
+  --light-font-thirdColor: rgb(60, 60, 60);
   --light-frame-secondColor: rgb(199, 199, 199);
   --light-frame-firstColor: rgb(220, 220, 220);
   --light-frameShadow-color: rgb(160, 160, 160);
   --light-infoBackground-color: rgb(230, 230, 230);
-  --light-infoBorder-color: rgb(199, 199, 199);
+  --light-infoBorder-color: rgb(220, 220, 220);
 
   /*Night mode colors*/
   --night-logo-firstColor: rgb(226, 219, 193);
@@ -337,8 +422,8 @@ Mobile first, media queries at the end
   --night-menuBackground-color: rgb(25, 24, 37, 0.95);
   --night-menuBorder-color: var(--nightDesktop-postBorder-color);
   --night-btnMenu-color: var(--light-btnMenu-color);
-  --night-font-firstColor: rgb(242, 230, 210);
-  --night-font-secondColor: rgb(217, 205, 188);
+  --night-font-firstColor: rgb(222, 220, 220);
+  --night-font-secondColor: rgb(235, 235, 235);
   --night-font-thirdColor: rgb(236, 228, 220);
   --night-frame-secondColor: rgb(80 60 21);
   --night-frame-firstColor: rgb(85, 78, 65);
@@ -366,6 +451,10 @@ span {
   border: 0;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* Base style */
 html,
 body {
@@ -382,7 +471,7 @@ body {
   height: 100%;
   max-width: 100vw;
   background-color: var(--light-background-color);
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-family: "Brandon Grotesque", "Roboto Condensed", Helvetica, sans-serif;
   text-align: center;
   overflow-x: hidden;
   overflow-y: auto;
@@ -563,7 +652,6 @@ nav.scrollUp {
   background-color: var(--light-menuIcon-color);
   margin: 6px 0;
   transition: 0.4s;
-  border-radius: 2px;
 }
 
 .night-mode .bar1,
@@ -679,13 +767,11 @@ nav.scrollUp {
   display: inline-block;
   cursor: pointer;
   padding: 0 15px 0 5px;
-  border-radius: 100px;
 }
 
 .menuLink {
   display: inline-block;
   cursor: pointer;
-  border-radius: 100px;
   padding: 0 5px;
 }
 
@@ -703,25 +789,22 @@ nav.scrollUp {
   width: 35px;
   height: 16px;
   background: var(--light-header-color);
-  border-radius: 25px;
   position: relative;
   display: inline-block;
-  border: 1px solid var(--light-font-secondColor);
+  border: 1px solid var(--light-frameShadow-color);
   top: 5px;
   cursor: pointer;
 }
 
 .night-mode .btn-nightMode {
   background: var(--night-postBackground-color);
-  border: 1px solid var(--night-font-secondColor);
 }
 
 .btn-nightMode .switch {
-  background: white;
+  background: var(--night-font-firstColor);
   width: 12px;
   height: 12px;
   background: var(--light-logo-firstColor);
-  border-radius: 100%;
   position: absolute;
   top: 2px;
   left: 2px;
@@ -885,7 +968,6 @@ nav.scrollUp {
 /* Painting */
 .frame {
   overflow: hidden;
-  border-radius: 2px;
   padding: var(--frame-width);
   box-shadow: 0px 1px 3px 1px var(--light-frameShadow-color),
     0px 0px 2px var(--frame-widthIn) var(--light-frame-firstColor) inset,
@@ -1028,9 +1110,7 @@ nav.scrollUp {
   margin-top: 15px;
   color: var(--light-font-firstColor);
   background-color: var(--light-infoBackground-color);
-  padding: 10px;
-  padding-bottom: 5px;
-  border-radius: 4px;
+  padding: 15px 20px 15px 15px;
   text-align: start;
   border: 1px solid var(--light-infoBorder-color);
 }
@@ -1059,7 +1139,7 @@ nav.scrollUp {
 
 .info h5 {
   margin: 0;
-  margin-top: 2px;
+  margin-top: 8px;
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.2rem;
@@ -1138,18 +1218,17 @@ a.museumTwitter:active {
   font-size: 1rem;
   margin-right: 0.2rem;
   margin-bottom: 0.125rem;
+  margin-left: 5px;
   display: inline-block;
   vertical-align: middle;
   pointer-events: none;
 }
 
-.downloadIcon,
-.copyrightIcon {
-  margin: 0 5px;
+.downloadIcon {
   cursor: pointer;
-  display: block;
-  border-radius: 50%;
   transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+  padding: 2px 5px 2px 0;
 }
 
 .downloadIcon:hover {
@@ -1157,24 +1236,16 @@ a.museumTwitter:active {
   color: rgb(23, 191, 99);
 }
 
-.copyrightIcon:hover {
-  background-color: rgba(29, 161, 242, 0.1);
-  color: rgb(29, 161, 242);
-}
-
-.downloadClicked,
-.copyrightClicked {
+.downloadClicked {
   display: none;
   margin: auto;
-  margin-top: 5px;
-  border-radius: 4px;
+  margin-top: 15px;
   text-align: center;
   border: 1px solid var(--light-infoBorder-color);
 }
 
-.downloadClicked h4,
-.copyrightClicked h4 {
-  margin: 7px;
+.downloadClicked h4 {
+  margin: 10px 15px;
 }
 
 .downloadClicked {
@@ -1182,13 +1253,7 @@ a.museumTwitter:active {
   color: rgb(23, 191, 99);
 }
 
-.copyrightClicked {
-  background-color: rgba(29, 161, 242, 0.1);
-  color: rgb(29, 161, 242);
-}
-
-.night-mode .downloadClicked,
-.night-mode .copyrightClicked {
+.night-mode .downloadClicked {
   color: var(--night-font-firstColor);
   background-color: rgb(50, 49, 59);
   border: 1px solid var(--night-infoBorder-color);
@@ -1437,7 +1502,6 @@ a:active i {
 ::-webkit-scrollbar-thumb {
   background: rgba(40, 40, 100, 0.2);
   border: 1px solid rgba(40, 40, 100, 0.45);
-  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
