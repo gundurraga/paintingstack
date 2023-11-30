@@ -360,7 +360,7 @@ textarea {
   --light-lineHeadFooter-color: var(--lightMobile-postBorder-color);
   --light-menuIcon-color: rgb(160, 160, 160);
   --light-menuCross-color: rgb(255, 184, 28);
-  --light-menuBackground-color: rgb(230, 230, 230, 0.95);
+  --light-menuBackground-color: rgb(230, 230, 230, 0.97);
   --light-menuBorder-color: var(--lightDesktop-postBorder-color);
   --light-btnMenu-color: rgb(200, 200, 200);
   --light-font-firstColor: rgb(70, 70, 70);
@@ -383,7 +383,7 @@ textarea {
   --night-lineHeadFooter-color: rgb(150, 123, 50);
   --night-menuIcon-color: var(--night-logo-firstColor);
   --night-menuCross-color: var(--light-menuCross-color);
-  --night-menuBackground-color: rgb(25, 24, 37, 0.95);
+  --night-menuBackground-color: rgb(25, 24, 37, 0.97);
   --night-menuBorder-color: var(--nightDesktop-postBorder-color);
   --night-btnMenu-color: var(--light-btnMenu-color);
   --night-font-firstColor: rgb(222, 220, 220);
@@ -638,14 +638,14 @@ nav.scrollUp {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 57px;
+  top: 56px;
   right: 0px;
   width: 200px;
   background: var(--light-menuBackground-color);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  transition: visibility 0s, opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: visibility 0s, opacity 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
   z-index: 3;
   border-left: 1px solid var(--lightMobile-postBorder-color);
 }
@@ -847,11 +847,8 @@ nav.scrollUp {
   display: block;
   max-height: 16vh;
   width: auto;
-  border: 4px solid var(--light-frame-firstColor);
-  -webkit-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
-  -moz-box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
-  box-shadow: 0px 0px 3px 0px var(--light-frameShadow-color);
   transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .slider img.on-sale {
@@ -859,11 +856,7 @@ nav.scrollUp {
 }
 
 .night-mode .slider img {
-  border: 4px solid var(--night-frame-firstColor);
   opacity: 1;
-  -webkit-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
-  -moz-box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
-  box-shadow: 0px 0px 3px 0px var(--night-frameShadow-color);
 }
 
 .night-mode .slider img.on-sale {
@@ -874,6 +867,9 @@ nav.scrollUp {
   opacity: 0.85;
 }
 
+.night-mode .slider img:hover {
+  opacity: 0.85;
+}
 .post {
   grid-column: center-start / center-end;
   display: flex;
@@ -1081,7 +1077,7 @@ nav.scrollUp {
 .info-text {
   width: min-content;
   margin: auto;
-  max-width: 11rem;
+  max-width: 12rem;
 }
 
 .info h4 {
@@ -1095,7 +1091,7 @@ nav.scrollUp {
 
 .info h5 {
   margin: 0;
-  margin-top: 5px;
+  margin-top: 8px;
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.2rem;
@@ -1123,34 +1119,6 @@ nav.scrollUp {
   width: auto;
 }
 
-a.museumTwitter:link,
-a.museumTwitter:visited {
-  text-decoration: none;
-  color: rgb(29, 161, 242);
-  font-weight: 400;
-}
-
-a.museumTwitter:hover,
-a.museumTwitter:active {
-  text-decoration: underline;
-  color: rgb(29, 161, 242);
-  font-weight: 400;
-}
-
-.night-mode a.museumTwitter:link,
-.night-mode a.museumTwitter:visited {
-  text-decoration: none;
-  color: rgb(27, 149, 224);
-  font-weight: 400;
-}
-
-.night-mode a.museumTwitter:hover,
-.night-mode a.museumTwitter:active {
-  text-decoration: underline;
-  color: rgb(27, 149, 224);
-  font-weight: 400;
-}
-
 .info-icons {
   display: flex;
   flex-direction: row;
@@ -1170,7 +1138,7 @@ a.museumTwitter:active {
   pointer-events: none;
 }
 
-.location-icon {
+.icon {
   font-size: 1rem;
   margin-right: 0.2rem;
   margin-bottom: 0.125rem;
@@ -1198,23 +1166,27 @@ a.museumTwitter:active {
   margin-top: 15px;
   text-align: center;
   border: 1px solid var(--light-infoBorder-color);
-  background-color: rgba(0, 59, 92, 0.1);
+  background-color: var(--light-infoBackground-color);
 }
 
 .downloadClicked h5 {
-  margin: 10px 15px;
+  margin: 0;
+  padding: 10px 15px;
 }
 
 .night-mode .downloadClicked {
+  background-color: var(--nightMobile-postBorder-color);
+
   border: 1px solid var(--night-infoBorder-color);
   color: white;
 }
 
 .downloadClicked:hover {
-  background-color: rgba(0, 59, 92, 0.15);
+  background-color: var(--lightMobile-postBorder-color);
   border: 1px solid var(--light-infoBorder-color);
 }
 .night-mode .downloadClicked:hover {
+  background-color: var(--night-postBackground-color);
   border: 1px solid var(--night-infoBorder-color);
 }
 
@@ -1329,7 +1301,6 @@ a.footerLink:active {
   text-align: center;
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
   background-color: var(--light-infoBackground-color);
   top: 50%;
   margin-top: -1rem;
