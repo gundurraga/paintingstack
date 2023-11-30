@@ -1303,22 +1303,16 @@ function postUserTemplate(post) {
   }"></span>  ${post.BirthYear})
         </h4>
         <h5>
-        <ion-icon class="location-icon" name="color-palette-outline"></ion-icon><span class="${
-          post.ArtworkMediaID
-        }">${post.ArtworkMedia}</span>
+<span class="${post.ArtworkMediaID}">${post.ArtworkMedia}</span>
         <br />
-        <ion-icon class="location-icon" name="expand-outline"></ion-icon>${
-          post.DimensionCm
-        }
+ ${post.DimensionCm}
         <br />
-        <ion-icon class="location-icon" name="earth-outline"></ion-icon><span class="${
-          post.Location
-        }">${post.ArtworkLocation}</span>
+       <span class="${post.Location}">${post.ArtworkLocation}</span>
         <br />   
         <div class="downloadIcon" id="${
           post.ID
         }-click" onclick="downloadClicked(this.id)">
-        <ion-icon class="location-icon" name="archive-outline"></ion-icon><span class="download">Download</span>
+<span class="download">Download</span>
         </div>
         <br />   
           </h5>
@@ -1412,7 +1406,6 @@ document.querySelector("#header").innerHTML = `
 <ul id="menu">
   <li>
     <div class="switchTheme">
-      <ion-icon name="moon-sharp"></ion-icon>
       <h4 id="themeSelector">Night Mode</h4>
       <div class="btn-nightMode">
         <div class="switch"></div>
@@ -1421,7 +1414,6 @@ document.querySelector("#header").innerHTML = `
   </li>
   <li>
     <div class="menuLink selectLanguage">
-      <ion-icon name="language-outline"></ion-icon>
       <h4 id="languageSelector">Language: EN</h4>
     </div>
   </li>
@@ -1452,7 +1444,6 @@ document.querySelector("#header").innerHTML = `
   <li>
     <a href="/cv.pdf" download="Undurraga_Gregorio_Resume">
       <div class="menuLink">
-        <ion-icon name="reader-outline"></ion-icon>
         <h4 id="cv">CV</h4>
       </div>
     </a>
@@ -1463,7 +1454,6 @@ document.querySelector("#header").innerHTML = `
       target="_blank"
     >
       <div class="menuLink">
-        <ion-icon name="extension-puzzle-outline"></ion-icon>
         <h4 id="nft">NFTs</h4>
       </div>
     </a>
@@ -1471,7 +1461,6 @@ document.querySelector("#header").innerHTML = `
   <li>
     <a href="https://twitter.com/gundurragad" target="_blank">
       <div class="menuLink">
-        <ion-icon name="logo-twitter"></ion-icon>
         <h4>Twitter</h4>
       </div>
     </a>

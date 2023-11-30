@@ -1,4 +1,415 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}:focus{outline:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_black_italic.otf) format("opentype");font-weight:900;font-style:italic}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_blackotf.otf) format("opentype");font-weight:900;font-style:normal}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_bold_italic.otf) format("opentype");font-weight:700;font-style:italic}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_bold.otf) format("opentype");font-weight:700;font-style:normal}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_light_italic.otf) format("opentype");font-weight:300;font-style:italic}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_light.otf) format("opentype");font-weight:300;font-style:normal}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_medium_italic.otf) format("opentype");font-weight:500;font-style:italic}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_medium.otf) format("opentype");font-weight:500;font-style:normal}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_regular_italic.otf) format("opentype");font-weight:400;font-style:italic}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_regular.otf) format("opentype");font-weight:400;font-style:normal}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_thin_italic.otf) format("opentype");font-weight:100;font-style:italic}@font-face{font-family:"Brandon Grotesque";src:url(../fonts/Brandon_Grotesque_thin.otf) format("opentype");font-weight:100;font-style:normal}*{--light-logo-firstColor:rgb(0, 59, 92);--light-logo-secondColor:rgb(255, 255, 255);--light-logoBorder-color:var(--light-frame-secondColor);--light-background-color:rgb(240, 240, 240);--light-postBackground-color:rgb(235, 235, 235);--lightMobile-postBorder-color:rgb(209, 209, 209);--lightDesktop-postBorder-color:rgb(221, 221, 221);--light-header-color:rgb(245, 245, 245, 0.65);--light-headerShadow-color:rgb(200, 200, 200);--light-lineHeadFooter-color:var(--lightMobile-postBorder-color);--light-menuIcon-color:rgb(160, 160, 160);--light-menuCross-color:rgb(255, 184, 28);--light-menuBackground-color:rgb(230, 230, 230, 0.95);--light-menuBorder-color:var(--lightDesktop-postBorder-color);--light-btnMenu-color:rgb(200, 200, 200);--light-font-firstColor:rgb(70, 70, 70);--light-font-secondColor:rgb(60, 60, 60);--light-font-thirdColor:rgb(60, 60, 60);--light-frame-secondColor:rgb(199, 199, 199);--light-frame-firstColor:rgb(220, 220, 220);--light-frameShadow-color:rgb(160, 160, 160);--light-infoBackground-color:rgb(230, 230, 230);--light-infoBorder-color:rgb(220, 220, 220);--night-logo-firstColor:rgb(226, 219, 193);--night-logo-secondColor:var(--light-logo-firstColor);--night-logoBorder-color:var(--night-frame-firstColor);--night-background-color:rgb(27, 27, 40);--night-postBackground-color:rgb(35, 35, 48);--nightMobile-postBorder-color:rgb(46, 46, 65);--nightDesktop-postBorder-color:rgb(37, 37, 50);--night-header-color:rgb(25, 24, 38, 0.65);--night-headerShadow-color:rgb(18, 18, 33);--night-lineHeadFooter-color:rgb(150, 123, 50);--night-menuIcon-color:var(--night-logo-firstColor);--night-menuCross-color:var(--light-menuCross-color);--night-menuBackground-color:rgb(25, 24, 37, 0.95);--night-menuBorder-color:var(--nightDesktop-postBorder-color);--night-btnMenu-color:var(--light-btnMenu-color);--night-font-firstColor:rgb(222, 220, 220);--night-font-secondColor:rgb(235, 235, 235);--night-font-thirdColor:rgb(236, 228, 220);--night-frame-secondColor:rgb(80 60 21);--night-frame-firstColor:rgb(85, 78, 65);--night-frameShadow-color:var(--night-header-color);--night-infoBackground-color:rgb(55, 54, 67);--night-infoBorder-color:rgb(71, 71, 73);--light-frame-secondColor-onSale:rgb(195 161 13);--light-frame-firstColor-onSale:rgb(224, 202, 100);--night-frame-secondColor-onSale:rgb(195 161 13);--night-frame-firstColor-onSale:rgb(224, 202, 100);--frame-widthIn:4px;--frame-width:7px;-webkit-tap-highlight-color:rgba(255,255,255,0)!important;-webkit-focus-ring-color:rgba(255,255,255,0)!important;outline:0!important}span{border:0}.uppercase{text-transform:uppercase}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+:focus {
+  outline: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  max-width: 100%;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button,
+html,
+input,
+select,
+textarea {
+  color: #222;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+img {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_black_italic.otf) format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_blackotf.otf) format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_bold_italic.otf) format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_light_italic.otf) format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_light.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_medium_italic.otf) format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_medium.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_regular_italic.otf) format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_regular.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_thin_italic.otf) format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(../fonts/Brandon_Grotesque_thin.otf) format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+* {
+  --light-logo-firstColor: rgb(0, 59, 92);
+  --light-logo-secondColor: rgb(255, 255, 255);
+  --light-logoBorder-color: var(--light-frame-secondColor);
+  --light-background-color: rgb(240, 240, 240);
+  --light-postBackground-color: rgb(235, 235, 235);
+  --lightMobile-postBorder-color: rgb(209, 209, 209);
+  --lightDesktop-postBorder-color: rgb(221, 221, 221);
+  --light-header-color: rgb(245, 245, 245, 0.65);
+  --light-headerShadow-color: rgb(200, 200, 200);
+  --light-lineHeadFooter-color: var(--lightMobile-postBorder-color);
+  --light-menuIcon-color: rgb(160, 160, 160);
+  --light-menuCross-color: rgb(255, 184, 28);
+  --light-menuBackground-color: rgb(230, 230, 230, 0.95);
+  --light-menuBorder-color: var(--lightDesktop-postBorder-color);
+  --light-btnMenu-color: rgb(200, 200, 200);
+  --light-font-firstColor: rgb(70, 70, 70);
+  --light-font-secondColor: rgb(60, 60, 60);
+  --light-font-thirdColor: rgb(60, 60, 60);
+  --light-frame-secondColor: rgb(199, 199, 199);
+  --light-frame-firstColor: rgb(220, 220, 220);
+  --light-frameShadow-color: rgb(180, 180, 180);
+  --light-infoBackground-color: rgb(230, 230, 230);
+  --light-infoBorder-color: rgb(220, 220, 220);
+  --night-logo-firstColor: rgb(226, 219, 193);
+  --night-logo-secondColor: var(--light-logo-firstColor);
+  --night-logoBorder-color: var(--night-frame-firstColor);
+  --night-background-color: rgb(27, 27, 40);
+  --night-postBackground-color: rgb(35, 35, 48);
+  --nightMobile-postBorder-color: rgb(46, 46, 65);
+  --nightDesktop-postBorder-color: rgb(37, 37, 50);
+  --night-header-color: rgb(25, 24, 38, 0.65);
+  --night-headerShadow-color: rgb(18, 18, 33);
+  --night-lineHeadFooter-color: rgb(150, 123, 50);
+  --night-menuIcon-color: var(--night-logo-firstColor);
+  --night-menuCross-color: var(--light-menuCross-color);
+  --night-menuBackground-color: rgb(25, 24, 37, 0.95);
+  --night-menuBorder-color: var(--nightDesktop-postBorder-color);
+  --night-btnMenu-color: var(--light-btnMenu-color);
+  --night-font-firstColor: rgb(222, 220, 220);
+  --night-font-secondColor: rgb(235, 235, 235);
+  --night-font-thirdColor: rgb(236, 228, 220);
+  --night-frame-secondColor: rgb(80 60 21);
+  --night-frame-firstColor: rgb(85, 78, 65);
+  --night-frameShadow-color: var(--night-header-color);
+  --night-infoBackground-color: rgb(55, 54, 67);
+  --night-infoBorder-color: rgb(71, 71, 73);
+  --light-frame-secondColor-onSale: rgb(195 161 13);
+  --light-frame-firstColor-onSale: rgb(224, 202, 100);
+  --night-frame-secondColor-onSale: rgb(195 161 13);
+  --night-frame-firstColor-onSale: rgb(224, 202, 100);
+  --frame-widthIn: 4px;
+  --frame-width: 7px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: 0 !important;
+}
+span {
+  border: 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
 
 /* Base style */
 html,
@@ -269,13 +680,13 @@ nav.scrollUp {
   display: inline-block;
   line-height: 30px;
   margin: 0;
-  padding: 5px 10px 5px 0;
+  padding: 5px 10px;
   font-weight: 400;
   vertical-align: middle;
 }
 
 #menu #themeSelector {
-  padding: 5px 5px 5px 0;
+  padding: 5px;
 }
 
 #menu .languages li {
@@ -684,7 +1095,7 @@ nav.scrollUp {
 
 .info h5 {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 5px;
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.2rem;
@@ -771,14 +1182,14 @@ a.museumTwitter:active {
 
 .downloadIcon {
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
   display: inline-block;
-  padding: 2px 5px 2px 0;
 }
 
 .downloadIcon:hover {
-  background-color: rgba(23, 191, 99, 0.1);
-  color: rgb(23, 191, 99);
+  color: rgb(0, 0, 0);
+}
+.night-mode .downloadIcon:hover {
+  color: rgb(255, 255, 255);
 }
 
 .downloadClicked {
@@ -787,29 +1198,23 @@ a.museumTwitter:active {
   margin-top: 15px;
   text-align: center;
   border: 1px solid var(--light-infoBorder-color);
+  background-color: rgba(0, 59, 92, 0.1);
 }
 
 .downloadClicked h5 {
   margin: 10px 15px;
 }
 
-.downloadClicked {
-  background-color: rgba(23, 191, 99, 0.1);
-  color: rgb(23, 191, 99);
-}
-
 .night-mode .downloadClicked {
-  color: var(--night-font-firstColor);
-  background-color: rgb(50, 49, 59);
   border: 1px solid var(--night-infoBorder-color);
+  color: white;
 }
 
 .downloadClicked:hover {
-  background-color: rgba(23, 191, 99, 0.15);
+  background-color: rgba(0, 59, 92, 0.15);
   border: 1px solid var(--light-infoBorder-color);
 }
 .night-mode .downloadClicked:hover {
-  background-color: var(--nightMobile-postBorder-color);
   border: 1px solid var(--night-infoBorder-color);
 }
 
@@ -838,7 +1243,7 @@ a.museumTwitter:active {
 
 .night-mode .iconClicked a:hover,
 .night-mode .iconClicked a:active {
-  color: rgb(131, 162, 185);
+  color: rgb(240, 240, 240);
 }
 
 .night-mode .iconClicked .copyrightClicked a:hover,
