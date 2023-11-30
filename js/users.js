@@ -1316,14 +1316,7 @@ function postUserTemplate(post) {
         </div>
         <br />   
           </h5>
-        ${
-          post.onSale
-            ? `<h5 id="available"><ion-icon class="location-icon" name="checkbox"></ion-icon><span class="available-translate">Available</span><br /></h5>`
-            : ""
-        }
-    
       </div>
-      <div class="info-icons">
       <div class="iconClicked">
         <div class="downloadClicked" >
           <a href="images/users/${post.UserID}/download/${post.ID}.jpg"
@@ -1334,7 +1327,6 @@ function postUserTemplate(post) {
   } MB)</strong><br>${post.ImageDimension} px</h5></a>
         </div>
       </div>
-    </div>
   </article>
   `;
 }
