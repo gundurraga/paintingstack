@@ -1296,7 +1296,7 @@ function postUserTemplate(post) {
         <h4>
           <strong><span id="${post.ID}" class="uppercase">${
     post.ArtworkTitle
-  }</span>, ${post.ArtworkYear}</strong> 
+  }</span>, ${post.ArtworkYear}</strong>
   <br />${post.Artist} (
           <span class="flag-icon flag-icon-${post.CountryId}" title="${
     post.Country
