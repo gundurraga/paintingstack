@@ -1318,7 +1318,7 @@ function postUserTemplate(post) {
         <div class="downloadIcon" id="${
           post.ID
         }-click" onclick="downloadClicked(this.id)">
-        <ion-icon class="location-icon" name="code-download-outline"></ion-icon><span class="download">Download</span>
+        <ion-icon class="location-icon" name="archive-outline"></ion-icon><span class="download">Download</span>
         </div>
         <br />   
           </h5>
