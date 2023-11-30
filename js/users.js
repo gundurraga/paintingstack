@@ -1300,7 +1300,7 @@ function postUserTemplate(post) {
   <br />${post.Artist} (
           <span class="flag-icon flag-icon-${post.CountryId}" title="${
     post.Country
-  }"></span> ${post.BirthYear})
+  }"></span>  ${post.BirthYear})
         </h4>
         <h5>
         <ion-icon class="location-icon" name="color-palette-outline"></ion-icon><span class="${
@@ -1318,7 +1318,7 @@ function postUserTemplate(post) {
         <div class="downloadIcon" id="${
           post.ID
         }-click" onclick="downloadClicked(this.id)">
-        <ion-icon class="location-icon" name="download-outline"></ion-icon><span class="download">Download</span>
+        <ion-icon class="location-icon" name="code-download-outline"></ion-icon><span class="download">Download</span>
         </div>
         <br />   
           </h5>
@@ -1335,9 +1335,9 @@ function postUserTemplate(post) {
           <a href="images/users/${post.UserID}/download/${post.ID}.jpg"
           download="${post.ArtworkTitle}, ${post.ArtworkYear} - ${
     post.Artist
-  }"><h4><strong><span class="download">Descargar</span> (${
+  }"><h5><strong><span class="download">Descargar</span> (${
     post.ImageSize
-  } MB)</strong><br>${post.ImageDimension} px</h4></a>
+  } MB)</strong><br>${post.ImageDimension} px</h5></a>
         </div>
       </div>
     </div>
@@ -1412,7 +1412,7 @@ document.querySelector("#header").innerHTML = `
 <ul id="menu">
   <li>
     <div class="switchTheme">
-      <ion-icon name="moon"></ion-icon>
+      <ion-icon name="moon-sharp"></ion-icon>
       <h4 id="themeSelector">Night Mode</h4>
       <div class="btn-nightMode">
         <div class="switch"></div>
@@ -1452,7 +1452,7 @@ document.querySelector("#header").innerHTML = `
   <li>
     <a href="/cv.pdf" download="Undurraga_Gregorio_Resume">
       <div class="menuLink">
-        <ion-icon name="document-text-outline"></ion-icon>
+        <ion-icon name="reader-outline"></ion-icon>
         <h4 id="cv">CV</h4>
       </div>
     </a>
