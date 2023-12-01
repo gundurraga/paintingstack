@@ -394,7 +394,7 @@ h4 {
   left: 50%;
   margin-top: -22vmin;
   margin-left: -22vmin;
-  transition: opacity 0.5s linear;
+  transition: opacity 0.3s linear;
 }
 
 .loader .logo {
@@ -535,7 +535,7 @@ nav.scrollUp {
   height: 4px;
   background-color: var(--light-menuIcon-color);
   margin: 6px 0;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .night-mode .bar1,
@@ -573,7 +573,7 @@ nav.scrollUp {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  transition: visibility 0s, opacity 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: visibility 0s, opacity 0.1s cubic-bezier(0.77, 0.2, 0.05, 1);
   z-index: 3;
   border-left: 1px solid var(--lightMobile-postBorder-color);
 }
@@ -692,7 +692,7 @@ nav.scrollUp {
   position: absolute;
   top: 2px;
   left: 2px;
-  transition: visibility 0s, transform 0.5s ease;
+  transition: visibility 0s, transform 0.2s ease;
 }
 
 .night-mode .btn-nightMode .switch {
@@ -775,7 +775,7 @@ nav.scrollUp {
   display: block;
   max-height: 16vh;
   width: auto;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
   cursor: pointer;
 }
 
