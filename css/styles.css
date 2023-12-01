@@ -406,7 +406,6 @@ h4 {
 
 .loader .inside-logo {
   background-color: rgb(168, 182, 207);
-  border-radius: 1px;
 }
 
 .noisy {
@@ -517,7 +516,6 @@ nav.scrollUp {
   margin-top: -24px;
   right: 17px;
   padding: 6px 8px;
-  border-radius: 50%;
 }
 
 .menuHamburguer:hover,
@@ -1028,7 +1026,6 @@ nav.scrollUp {
 
 #available {
   background-color: var(--light-frame-firstColor-onSale);
-  border-radius: 3px;
   font-size: 0.8rem;
   font-weight: bold;
   padding: 4px;
@@ -1292,13 +1289,6 @@ a:active i {
   .post {
     flex-direction: row;
     padding: calc(4 * var(--frame-width)) 0 calc(6 * var(--frame-width)) 0;
-  }
-
-  .post:nth-child(2) {
-    border-radius: 8px 8px 0 0;
-  }
-  .post:last-child {
-    border-radius: 0 0 8px 8px;
   }
 
   .slider img {

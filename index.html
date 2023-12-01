@@ -3,16 +3,19 @@
   <head>
     <!-- HTML Meta Tags -->
     <title>@gundurraga | Paintingstack</title>
-    <meta name="robots" content="max-snippet:-1, max-image-preview:large" />
-    <meta name="description" content="Gregorio Undurraga's Artworks 🖼️ " />
     <meta
       http-equiv="refresh"
       content="0; URL=https://paintingstack.com/gundurraga"
     />
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large" />
+    <meta
+      name="description"
+      content="Gregorio Undurraga, born in 1993, is a dynamic artist blending classic oil painting with digital innovation. Known for his distinctive style, he merges traditional techniques with modern tools, redefining contemporary art. His seamless fusion of the past and present marks him as a significant figure in the art world."
+    />
     <meta charset="utf-8" />
     <meta
       name="keywords"
-      content="painting, painter, art, museum, social, chile, chilean, oil, artist, fine, arles, chillien, peintre, artiste, gregorio, undurraga, deves, emerging, atelier"
+      content="Gregorio Undurraga, born in 1993, is a dynamic artist blending classic oil painting with digital innovation. Known for his distinctive style, he merges traditional techniques with modern tools, redefining contemporary art. His seamless fusion of the past and present marks him as a significant figure in the art world."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -20,7 +23,10 @@
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="@gundurraga | Paintingstack" />
-    <meta itemprop="description" content="Gregorio Undurraga's Artworks 🖼️  " />
+    <meta
+      itemprop="description"
+      content="Gregorio Undurraga, born in 1993, is a dynamic artist blending classic oil painting with digital innovation. Known for his distinctive style, he merges traditional techniques with modern tools, redefining contemporary art. His seamless fusion of the past and present marks him as a significant figure in the art world."
+    />
     <meta
       itemprop="image"
       content="https://paintingstack.com/icons/all-paintings.png"
@@ -32,7 +38,7 @@
     <meta property="og:title" content="@gundurraga | Paintingstack" />
     <meta
       property="og:description"
-      content="Gregorio Undurraga's Artworks 🖼️"
+      content="Gregorio Undurraga's Artworks 🖼️ "
     />
     <meta
       property="og:image"
@@ -44,7 +50,7 @@
     <meta name="twitter:title" content="@gundurraga | Paintingstack" />
     <meta
       name="twitter:description"
-      content="Gregorio Undurraga's Artworks 🖼️"
+      content="Gregorio Undurraga's Artworks 🖼️ "
     />
     <meta
       name="twitter:image"
@@ -59,7 +65,7 @@
     />
     <meta
       property="og:description"
-      content="Gregorio Undurraga's Artworks 🖼️"
+      content="Gregorio Undurraga, born in 1993, is a dynamic artist blending classic oil painting with digital innovation. Known for his distinctive style, he merges traditional techniques with modern tools, redefining contemporary art. His seamless fusion of the past and present marks him as a significant figure in the art world."
     />
     <meta property="og:url" content="https://paintingstack.com/gundurraga" />
 
@@ -147,15 +153,6 @@
     <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"
-    ></script>
-
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -174,6 +171,21 @@
 
   <body>
     <div class="loader"></div>
+
+    <nav id="header"></nav>
+
+    <main>
+      <div class="container"></div>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/progressive-image.min.js"></script>
     <script src="js/users.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/wheelzoom.js"></script>
+    <script>
+      wheelzoom(document.querySelector("img.zoom"));
+    </script>
   </body>
 </html>
