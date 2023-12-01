@@ -12,3 +12,5 @@ package.json
 
 # Ignore specific JSON file
 image-data.js
+
+resizeImages.js

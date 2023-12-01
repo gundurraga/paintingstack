@@ -1471,7 +1471,7 @@ ${gundurraga
     return `<div class="sliderPainting">
   <a onclick="scrollSmoothTo('${post.ID}-post')">
   <img ${post.onSale ? "class='on-sale'" : ""}
-  src="images/users/${post.UserID}/180p/${post.ID}.jpg"></a>
+  src="images/users/${post.UserID}/300p/${post.ID}.jpg"></a>
   </div>`;
   })
   .join("")}
