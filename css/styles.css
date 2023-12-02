@@ -917,7 +917,7 @@ nav.scrollUp {
   position: absolute;
   left: 0;
   top: 0;
-  animation: progressiveReveal 0.3s linear;
+  animation: progressiveReveal 0.2s ease;
   max-height: 100%;
   max-width: 100%;
   -moz-user-select: none;

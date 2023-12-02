@@ -1,5 +1,5 @@
 # Ignore MacOS system files
-*.DS_Store
+.DS_Store
 
 # Ignore node modules
 node_modules/
@@ -10,7 +10,8 @@ package-lock.json
 # Ignore package.json
 package.json
 
-# Ignore specific JSON file
-image-data.js
+images/users/gundurraga/compress/
 
+image-data.js
 resizeImages.js
+compressImages.js
