@@ -1457,6 +1457,13 @@ document.querySelector("#header").innerHTML = `
       </div>
     </a>
   </li>
+  <li>
+    <a href="https://www.instagram.com/gundurragad/" target="_blank">
+      <div class="menuLink">
+        <h4>Instagram</h4>
+      </div>
+    </a>
+  </li>
 </ul>
 `;
 
