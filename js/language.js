@@ -131,7 +131,7 @@ let es = {
   patience: "Paciencia",
   the_space_traveler: "El Viajero Espacial",
   snow_tiger: "Tigre de Nieve",
-  thats_cool: "Está Bacán",
+  thats_cool: "Los Búhos",
   the_yellow_rider: "El Jinete Amarillo",
   brown_hen: "Gallina Café",
   rainbow_hen: "Gallina Arcoíris",
