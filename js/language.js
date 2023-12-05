@@ -139,7 +139,7 @@ let es = {
   harlequin_and_pierrot: "Arlequín y Pierrot",
   the_jungle: "La Jungla",
   first_steps: "Primeros Pasos",
-  the_football_team: "El Equipo de Futbol",
+  the_football_team: "El Equipo de Fútbol",
   the_elephants: "Los Elefantes",
   the_thinker: "El Pensador",
   satoshi_nakamoto: "Satoshi Nakamoto",
