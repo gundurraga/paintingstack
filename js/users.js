@@ -1458,7 +1458,7 @@ document.querySelector("#header").innerHTML = `
     </a>
   </li>
   <li>
-    <a href="https://www.instagram.com/gundurragad/" target="_blank">
+    <a href="https://www.instagram.com/undurraga.art/" target="_blank">
       <div class="menuLink">
         <h4>Instagram</h4>
       </div>
