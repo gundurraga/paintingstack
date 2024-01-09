@@ -18,6 +18,14 @@ let en = {
   mixed: "Mixed Media",
 
   //artworks
+  wapping_on_thames_whistler: "Wapping on Thames (Whistler)",
+  house_of_cards_serebriakova: "House of Cards (Serebriakova)",
+  the_giraffes: "The Giraffes",
+  the_virgin_and_child_with_saint_anne_davinci:
+    "The Virgin and Child with Saint Anne (Da Vinci)",
+  the_hunter_lorca: "The Hunter (Lorca)",
+  the_temptations_of_saint_anthony_bravo:
+    "The Temptations of Saint Anthony (Bravo)",
   the_flock: "The Flock",
   the_flamingos: "The Flamingos",
   luma_park: "Luma Park",
@@ -109,6 +117,14 @@ let es = {
   oilpaper: "Óleo sobre papel",
   mixed: "Técnica mixta",
 
+  wapping_on_thames_whistler: "Wapping en el Támesis (Whistler)",
+  house_of_cards_serebriakova: "Castillo de Naipes (Serebriakova)",
+  the_giraffes: "Las Jirafas",
+  the_virgin_and_child_with_saint_anne_davinci:
+    "La Virgen, el Niño Jesús y Santa Ana (Da Vinci)",
+  the_hunter_lorca: "El Cazador (Lorca)",
+  the_temptations_of_saint_anthony_bravo:
+    "Las Tentaciones de San Antonio (Bravo)",
   the_flock: "El Rebaño",
   the_flamingos: "Los Flamencos",
   luma_park: "Parque Luma",
@@ -201,6 +217,14 @@ let fr = {
   oilpaper: "Huile sur papier",
   mixed: "Technique mixte",
 
+  wapping_on_thames_whistler: "Wapping sur la Tamise (Whistler)",
+  house_of_cards_serebriakova: "Château de Cartes (Serebriakova)",
+  the_giraffes: "Les Girafes",
+  the_virgin_and_child_with_saint_anne_davinci:
+    "La Vierge et l'Enfant avec Sainte Anne (Da Vinci)",
+  the_hunter_lorca: "Le Chasseur (Lorca)",
+  the_temptations_of_saint_anthony_bravo:
+    "Les Tentations de Saint Antoine (Bravo)",
   the_flock: "Le Troupeau",
   the_flamingos: "Les Flamants Roses",
   luma_park: "Parc Luma",
@@ -292,6 +316,14 @@ let pt = {
   oilpaper: "Óleo sobre papel",
   mixed: "Mídia mista",
 
+  wapping_on_thames_whistler: "Wapping no Tâmisa (Whistler)",
+  house_of_cards_serebriakova: "Casa de Cartas (Serebriakova)",
+  the_giraffes: "As Girafas",
+  the_virgin_and_child_with_saint_anne_davinci:
+    "A Virgem e o Menino com Santa Ana (Da Vinci)",
+  the_hunter_lorca: "O Caçador (Lorca)",
+  the_temptations_of_saint_anthony_bravo:
+    "As Tentações de Santo Antônio (Bravo)",
   the_flock: "O Rebanho",
   the_flamingos: "Os Flamingos",
   luma_park: "Parque Luma",
@@ -385,6 +417,14 @@ let it = {
   mixed: "Tecnica mista",
 
   // Opere d'arte
+  wapping_on_thames_whistler: "Wapping sul Tamigi (Whistler)",
+  house_of_cards_serebriakova: "Castello di Carte (Serebriakova)",
+  the_giraffes: "Le Giraffe",
+  the_virgin_and_child_with_saint_anne_davinci:
+    "La Vergine e il Bambino con Sant'Anna (Da Vinci)",
+  the_hunter_lorca: "Il Cacciatore (Lorca)",
+  the_temptations_of_saint_anthony_bravo:
+    "Le Tentazioni di Sant'Antonio (Bravo)",
   the_flock: "Il Gregge",
   the_flamingos: "I Fenicotteri",
   luma_park: "Parco Luma",
@@ -477,6 +517,14 @@ let de = {
   mixed: "Mischtechnik",
 
   // Kunstwerke
+  wapping_on_thames_whistler: "Wapping an der Themse (Whistler)",
+  house_of_cards_serebriakova: "Kartenhaus (Serebriakova)",
+  the_giraffes: "Die Giraffen",
+  the_virgin_and_child_with_saint_anne_davinci:
+    "Die Jungfrau und Kind mit Heiliger Anna (Da Vinci)",
+  the_hunter_lorca: "Der Jäger (Lorca)",
+  the_temptations_of_saint_anthony_bravo:
+    "Die Versuchungen des Heiligen Antonius (Bravo)",
   the_flock: "Die Herde",
   the_flamingos: "Die Flamingos",
   luma_park: "Luma Park",
@@ -569,6 +617,13 @@ let ja = {
   mixed: "ミクストメディア",
 
   // アートワーク
+  wapping_on_thames_whistler: "テムズ川のワッピング (ウィスラー)",
+  house_of_cards_serebriakova: "カードの家 (セレブリャコワ)",
+  the_giraffes: "キリン",
+  the_virgin_and_child_with_saint_anne_davinci:
+    "聖アンナと聖母子 (ダ・ヴィンチ)",
+  the_hunter_lorca: "狩人 (ロルカ)",
+  the_temptations_of_saint_anthony_bravo: "聖アントニウスの誘惑 (ブラボ)",
   the_flock: "群れ",
   the_flamingos: "フラミンゴ",
   luma_park: "ルマパーク",
@@ -655,6 +710,20 @@ function translate(lang) {
   document.getElementById("languageSelector").innerHTML = lang.languageSelector;
   document.getElementById("themeSelector").innerHTML = lang.themeSelector;
   document.getElementById("sayHello").innerHTML = lang.sayHello;
+
+  document.getElementById("wapping-on-thames-(whistler)-2023").innerHTML =
+    lang.wapping_on_thames_whistler;
+  document.getElementById("house-of-cards-(serebriakova)-2023").innerHTML =
+    lang.house_of_cards_serebriakova;
+  document.getElementById("the-giraffes-2023").innerHTML = lang.the_giraffes;
+  document.getElementById(
+    "the-virgin-and-child-with-saint-anne-(davinci)-2023"
+  ).innerHTML = lang.the_virgin_and_child_with_saint_anne_davinci;
+  document.getElementById("the-hunter-(lorca)-2023").innerHTML =
+    lang.the_hunter_lorca;
+  document.getElementById(
+    "the-temptations-of-saint-anthony-(bravo)-2023"
+  ).innerHTML = lang.the_temptations_of_saint_anthony_bravo;
 
   document.getElementById("the-flock-2023").innerHTML = lang.the_flock;
   document.getElementById("the-flamingos-2023").innerHTML = lang.the_flamingos;
