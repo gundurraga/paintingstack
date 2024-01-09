@@ -1549,16 +1549,6 @@ document.querySelector("#header").innerHTML = `
     </a>
   </li>
   <li>
-    <a
-      href="https://opensea.io/collection/undurraga-oil-paintings"
-      target="_blank"
-    >
-      <div class="menuLink">
-        <h4 id="nft">NFTs</h4>
-      </div>
-    </a>
-  </li>
-  <li>
     <a href="https://twitter.com/gundurragad" target="_blank">
       <div class="menuLink">
         <h4>Twitter</h4>
